@@ -1,0 +1,11 @@
+As part of its commitment to Trustworthy AI, NVIDIA developed Model Card++ to uplevel AI model documentation originally proposed by data scientists at Google: https://arxiv.org/pdf/1810.03993.  
+
+Model Card documentation gives model consumers (namely enterprise developers as well as nontechnical influencers like customers, investors, users, and policymakers) information about key metadata fields in a clear and uniform manner.  Model Cards provide more than expected performance data; they clarify intent, applicable domains and use cases, restrictions around use, and known technical limitations.  Model cards also help developers more quickly adopt, deploy, and build upon our software.  Producing model card documentation is a state-of-the-art best practice for advancing AI transparently and trustworthily in the software development lifecycle.  
+
+Following an engineering pilot and model card market research conducted in spring and summer 2022 respectively, NVIDIA affirmed we could uplevel our model card documentation to provide Model Card++, which focuses on providing additional detail on software quality and the data that underpins our artificial intelligence (AI) models. 
+
+Model card documentation is part of our company’s goal to meet current and future requirements from the evolving global regulatory and industry bodies.  Finally, Model Card is helping us steward and democratize AI responsibly.
+
+Please use the templates provided in the repo as you see fit.  If you have recommendations or questions, please file an issue.  
+
+To learn more about how NVIDIA is enhancing AI transparency and ethical considerations with model card, read https://developer.nvidia.com/blog/enhancing-ai-transparency-and-ethical-considerations-with-model-card/.
