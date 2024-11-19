@@ -1,0 +1,139 @@
+# Model Overview
+
+## Description:
+[Describe what this algorithm/model does in one sentence, including supporting image/video and/or reference blog/article as available.  For instance, _______ [insert name of model] _______ [insert verb] _______.]<br>
+
+[This model is ready for commercial/non-commercial use.] OR [This model is for research and development only.] OR [This model is for demonstration purposes and not for production usage.]  <br>
+
+## Third-Party Community Consideration (Insert Only for Third-Party Community Models)
+This model is not owned or developed by [Insert AI Supply Chain Owner]. This model has been developed and built to a third-party’s requirements for this application and use case; see link to Model Card [(Insert Name) Model Card](Insert Link). 
+
+### License/Terms of Use [(Insert Only for Third-Party Community Models)]
+[Insert link(s)]
+
+## References(s):
+[Provide list of reference(s), link(s) to the publication/paper/article, associated works, and lineage where relevant.]  <br> 
+
+## Model Architecture:
+**Architecture Type:** [Classify the architecture of the neural network if applicable (Convolution Neural Network (CNN), Recurrent Neural Network (RNN), Name Other Not Listed, Not Applicable (N/A))] <br>
+**Network Architecture:** [(DarkNet19, DarkNet53, DetectNetv2, GoogleNet, MobileNet_v1, MobileNetv2, NvHelnet10, NvHelnet18, ResNet10, ResNet18, ResNet34, ResNet34, ResNet50, SqueezeNet, UNET, Vegg16, Vegg19, VGG10, Name Other Not Listed, or N/A)] <br>
+
+## Input: (Enter "None" As Needed) <br>
+**Input Type(s):** [Audio, Image, Text, Tabular, etcetera (etc.)] <br>
+**Input Format:** [Red, Green, Blue (RGB), Infrared (IR), Lidar, or String] <br>
+**Input Parameters:** [(2D, 3D)] <br>
+**Other Properties Related to Input:** [Specific Resolution/Minimum or Maximum Resolution or Characters (Including Restrictions), Image Range Needed (W x Y x Z), Pre-Processing Needed, Alpha Channel, Bit] <br>
+
+## Output: (Enter "None" As Needed) <br>
+**Output Type(s):** [Audio, Image, Text, Tabular, etc.] <br>
+**Output Format:** [Red, Green, Blue (RGB), Infrared (IR), Lidar, or String] <br>
+**Output Parameters:** [(2D, 3D)] <br>
+**Other Properties Related to Output:** [Specific Resolution/Minimum or Maximum Resolution or Characters (Including Restrictions), Image Range (W x Y x Z), Post-Processing Needed, Alpha Channel, Bit] <br>
+
+## Software Integration:
+**Runtime Engine(s):** 
+* [Name Platform: Name Multiple if Applicable] <br> 
+
+**Supported Hardware Microarchitecture Compatibility:** <br>
+* [Insert Microarchitecture Listed] <br>
+
+## Preferred/Supported Operating System(s):
+* [Linux] <br>
+* [Linux 4 Tegra] <br>
+* [QNX]  <br>
+* [Windows] <br>
+* [Name Other Not Listed Above)] <br>
+
+## Model Version(s):
+[Use unique identifier for identifying the model in the future- this may be part of our internal naming, specifying variation like "pruned," "unpruned," "trained," or "deployable" or "quantized" where necessary and including a versioning number like vX.X along with short description differentiating if multiple versions are available]  <br>
+
+## Training, Testing, and Evaluation Datasets:
+
+### Training Dataset:
+**Link:** [Link or name to dataset used for training the model.]  <br>
+
+Data Collection Method by dataset:  <br>
+* [Automated] <br>
+* [Automatic/Sensors] <br>
+* [Human] <br>
+* [Synthetic] <br>
+* [Unknown] <br>
+* [Hybrid: _______, _______] <br>
+* [Not Applicable] <br>
+
+Labeling Method by dataset:  <br>
+* [Automated] <br>
+* [Automatic/Sensors] <br>
+* [Human] <br>
+* [Synthetic] <br>
+* [Unknown] <br>
+* [Hybrid: _______, _______] <br>
+* [Not Applicable] <br>
+
+**Properties (Quantity, Dataset Descriptions, Sensor(s)):**
+
+[Number of data items in training set, Descriptive Information about the data, If applicable, what specific sensor type was used for Data Collection] <br>
+
+
+### Testing Dataset:
+
+**Link:** [Link or name to dataset used for evaluating the model.]  <br>
+
+Data Collection Method by dataset:  <br>
+* [Automated] <br>
+* [Automatic/Sensors] <br>
+* [Human] <br>
+* [Synthetic] <br>
+* [Unknown] <br>
+* [Hybrid: _______, _______] <br>
+* [Not Applicable] <br>
+Labeling Method by dataset:  <br>
+* [Automated] <br>
+* [Automatic/Sensors] <br>
+* [Human] <br>
+* [Synthetic] <br>
+* [Unknown] <br>
+* [Hybrid: _______, _______] <br>
+
+**Properties (Quantity, Dataset Descriptions, Sensor(s)):**
+[Number of data items in training set, Descriptive Information about the data, If applicable, what specific sensor type was used for Data Collection] <br>
+
+
+### Evaluation Dataset:
+
+**Link:** [Link or name to dataset used for evaluating the model.]  <br>
+
+Data Collection Method by dataset:  <br>
+* [Automated] <br>
+* [Automatic/Sensors] <br>
+* [Human] <br>
+* [Synthetic] <br>
+* [Unknown] <br>
+* [Hybrid: _______, _______] <br>
+* [Not Applicable] <br>
+Labeling Method by dataset:  <br>
+* [Automated] <br>
+* [Automatic/Sensors] <br>
+* [Human] <br>
+* [Synthetic] <br>
+* [Unknown] <br>
+* [Hybrid: _______, _______] <br>
+
+**Properties (Quantity, Dataset Descriptions, Sensor(s)):**
+[Number of data items in training set, Descriptive Information about the data, If applicable, what specific sensor type was used for Data Collection] <br>
+
+*Insert Evaluation Benchmarks Here
+
+# Inference:
+**Engine:** [Tensor(RT), Triton, Or List Other Here (Embed Link)] <br>
+**Test Hardware:** <br>  
+* [Jetson XXNN] <br>
+* [Drive X.X] <br>
+* [List Other Here X.X]  <br>
+
+*Additional description content may be included here
+
+## Ethical Considerations:
+Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with the (insert terms of service or license), developers should work with their internal model team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse.  For more detailed information on ethical considerations for this model, please see the Model Card++ Explainability, Bias, Safety & Security, and Privacy Subcards [Insert Link to Model Card++ here].  Please report security vulnerabilities or AI Concerns [here](Insert Link Here).
+
+For more detailed information on ethical considerations for this model, please see the Model Card++ Explainability, Bias, Safety & Security, and Privacy Subcards [Insert Link to Model Card++ here]. 
