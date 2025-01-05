@@ -1,4 +1,4 @@
-As part of its commitment to Trustworthy AI, NVIDIA developed Model Card++ to uplevel [AI model documentation originally proposed by data scientists at Google](https://arxiv.org/pdf/1810.03993).  
+As part of our commitment to Trustworthy AI, NVIDIA developed Model Card++ to uplevel [AI model documentation originally proposed by data scientists at Google](https://arxiv.org/pdf/1810.03993).  
 
 Model Card is helping us steward and democratize AI responsibly.  Model Card documentation gives model consumers (namely enterprise developers as well as nontechnical influencers like customers, investors, users, and policymakers) information about key metadata fields in a clear and uniform manner.  Model Cards provide more than expected performance data; they clarify intended domain, applications, use cases; restrictions around use; dataset characterizations, and known technical limitations and risk.  Model cards also help developers more quickly adopt, deploy, and build state of the art software.  Producing model card documentation is a state-of-the-art best practice for advancing AI transparently and trustworthily in the software development lifecycle.  
 
