@@ -5,7 +5,7 @@
 
 [This model is ready for commercial/non-commercial use.] OR [This model is for research and development only.] OR [This model is for demonstration purposes and not for production usage.]  <br>
 
-## Third-Party Community Consideration [(Insert  for Non-NVIDIA Third-Party Community Models)] <br>
+## Third-Party Community Consideration [(Insert for Non-NVIDIA Third-Party Community Models)] <br>
 This model is not owned or developed by NVIDIA. This model has been developed and built to a third-party’s requirements for this application and use case; see link to Non-NVIDIA [(Insert Name) Model Card](Insert Link).
 
 ### License/Terms of Use: <br> 
@@ -102,8 +102,8 @@ This model is not owned or developed by NVIDIA. This model has been developed an
 **Properties (Quantity, Dataset Descriptions, Sensor(s)):** [Number of data items in training set, Descriptive Information about the data, If applicable, what specific sensor type was used for Data Collection] <br>
 **Dataset License(s):** [Name, Link applicable to dataset license or applicable Jira ticket or NVBug. Write none if not applicable (N/A). This is an internal-only field.] <br>
 
-## Testing Dataset [Typically, a subset of the training dataset that affirms the model is  performing as expected]:
-**Link:** [Link or name to dataset used for training the model.  Share nSpect IDs.  nSpect IDs will be internal-only]  <br>
+## Testing Dataset [Typically, a subset of the training dataset that affirms the model is performing as expected]:
+**Link:** [Link or name to dataset used for testing the model.  Share nSpect IDs.  nSpect IDs will be internal-only]  <br>
 ** Data Collection Method by dataset <br>
 * [Automated] <br>
 * [Automatic/Sensors] <br>
@@ -120,7 +120,7 @@ This model is not owned or developed by NVIDIA. This model has been developed an
 * [Undisclosed] <br>
 * [Hybrid: _______, _______] <br>
 * [Not Applicable] <br>
-**Properties (Quantity, Dataset Descriptions, Sensor(s)):** [Number of data items in training set, Descriptive Information about the data, If applicable, what specific sensor type was used for Data Collection] <br>
+**Properties (Quantity, Dataset Descriptions, Sensor(s)):** [Number of data items in test set, Descriptive Information about the data, If applicable, what specific sensor type was used for Data Collection] <br>
 **Dataset License(s):** [Name, Link applicable to dataset license or applicable Jira ticket or NVBug. Write none if not applicable (N/A). This is an internal-only field.] <br>
 
 ## Evaluation Dataset [Dataset used to formally evaluate the model apart from the training dataset]:
@@ -141,7 +141,7 @@ This model is not owned or developed by NVIDIA. This model has been developed an
 * [Undisclosed] <br>
 * [Hybrid: _______, _______] <br>
 * [Not Applicable] <br>
-**Properties (Quantity, Dataset Descriptions, Sensor(s)):** [Number of data items in training set, Descriptive Information about the data, If applicable, what specific sensor type was used for Data Collection] <br>
+**Properties (Quantity, Dataset Descriptions, Sensor(s)):** [Number of data items in evaluation set, Descriptive Information about the data, If applicable, what specific sensor type was used for Data Collection] <br>
 **Dataset License(s):** [Name, Link applicable to dataset license or applicable Jira ticket or NVBug. Write none if not applicable (N/A). This is an internal-only field.] <br>
 
 *Insert Key Performance Indicators or Evaluation Benchmarks Here (Reference https://docs.google.com/spreadsheets/d/1SwyHhBTFQJTLZ4tuc-JdDcjA7wy68DyWdTehGNUgJ6M/edit?gid=721511647#gid=721511647 for large language models)
@@ -157,6 +157,8 @@ This model is not owned or developed by NVIDIA. This model has been developed an
 
 ## Ethical Considerations:
 NVIDIA believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with our terms of service, developers should work with their internal model team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse.  
+
+(Optional for BioNeMo models) Users are responsible for ensuring the physical properties of model-generated molecules are appropriately evaluated and comply with applicable safety regulations and ethical standards.
 
 (For NVIDIA Commercial Models Only) For more detailed information on ethical considerations for this model, please see the Model Card++ Explainability, Bias, Safety & Security, and Privacy Subcards [Insert Link to Model Card++ here].  
 
