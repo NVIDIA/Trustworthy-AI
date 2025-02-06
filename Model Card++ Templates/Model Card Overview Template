@@ -24,7 +24,7 @@ This model is not owned or developed by NVIDIA. This model has been developed an
 [Answer who would be expected to use this system and for what] <br>
 
 ### Release Date:  <br>
-[Insert MM/DD/YYY] <br>
+[Insert MM/DD/YYYY] <br>
 
 ## Reference(s) (Leave Blank If None):
 [Provide list of reference(s), link(s) to the publication/paper/article, associated works, and lineage where relevant.]  <br> 
@@ -36,13 +36,13 @@ This model is not owned or developed by NVIDIA. This model has been developed an
 ## Input: (Enter "None" As Needed) <br>
 **Input Type(s):** [Audio, Image, Text, Tabular, etcetera (etc.)] <br>
 **Input Format(s):** [Red, Green, Blue (RGB), Infrared (IR), Lidar, or String] <br>
-**Input Parameters:** [(2D, 3D)] <br>
+**Input Parameters:** [(1D, 2D, 3D, etcetera)] <br>
 **Other Properties Related to Input:** [Specific Resolution/Minimum or Maximum Resolution, Characters (Including Restrictions), or Tokens;  Image Range Needed (W x Y x Z), Pre-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Such] <br>
 
 ## Output: (Enter "None" As Needed) <br>
 **Output Type(s):** [Audio, Image, Text, Tabular, etc.] <br>
 **Output Format:** [Red, Green, Blue (RGB), Infrared (IR), Lidar, or String] <br>
-**Output Parameters:** [(2D, 3D)] <br>
+**Output Parameters:** [(1D, 2D, 3D, etcetera)] <br>
 **Other Properties Related to Output:** [Specific Resolution/Minimum or Maximum Resolution or Characters (Including Restrictions), or Tokens; Image Range (W x Y x Z), Post-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Such] <br> 
 
 ## Software Integration (Required For NVIDIA Models Only): <br>
