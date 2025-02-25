@@ -1,9 +1,9 @@
 # [Insert Name Here] Overview
 
 ## Description: <br>
-[Describe what this algorithm/model does in one sentence, including supporting image/video and/or reference blog/article as available.  For instance, _______ [insert name of model] _______ [insert verb] _______.]
-
-[This model is ready for commercial/non-commercial use.] OR [This model is for research and development only.] OR [This model is for demonstration purposes and not for production usage.]  <br>
+Describe what this algorithm/model does starting with the model name and verb; this should be one sentence starting with the model name. You may add additional detail following the initial sentence. For instance, _______ [insert name of model] _______ [insert verb] _______.] <br>
+ 
+Please pick one of the following to insert at the end of your description:[This model is ready for commercial/non-commercial use.] OR [This model is for research and development only.] OR [This model is for demonstration purposes and not for production usage.]  <br>
 
 ## Third-Party Community Consideration [(Insert for Non-NVIDIA Third-Party Community Models)] <br>
 This model is not owned or developed by NVIDIA. This model has been developed and built to a third-party’s requirements for this application and use case; see link to Non-NVIDIA [(Insert Name) Model Card](Insert Link).
@@ -17,14 +17,19 @@ This model is not owned or developed by NVIDIA. This model has been developed an
 
 -If your release allows for commercial purposes, submit [Product Legal Support Form](https://forms.office.com/pages/responsepage.aspx?id=FT0IQ3NywUC32znv2czBejILt4CYhTJKv0O6I4gccylUMVlMSE4xSFhYMUYyT1VMNVNCREk4RlE1NS4u&route=shorturl).
 
-### Deployment Geography:
+Optional if applicable: [You are responsible for ensuring that your use of NVIDIA AI Foundation Models complies with all applicable laws]
+
+### Deployment Geography: <br>
 [Insert Global; Asia-Pacific (APAC); Europe, Middle East, and Africa (EMEA); Latin America (LATAM), North America (NAM), and/or specific countries]
 
 ### Use Case: <br>
 [Answer who would be expected to use this system and for what] <br>
 
 ### Release Date:  <br>
-[Insert MM/DD/YYYY] <br>
+Build.Nvidia.com [Insert MM/DD/YYY] via [URL] <br> 
+Github [Insert MM/DD/YYY] via [URL] <br> 
+Huggingface [Insert MM/DD/YYY] via [URL] <br> 
+NGC [Insert MM/DD/YYY] <br>
 
 ## Reference(s) (Leave Blank If None):
 [Provide list of reference(s), link(s) to the publication/paper/article, associated works, and lineage where relevant.]  <br> 
@@ -32,18 +37,23 @@ This model is not owned or developed by NVIDIA. This model has been developed an
 ## Model Architecture: <br> 
 **Architecture Type:** [Classify the architecture of the neural network if applicable (Convolution Neural Network (CNN), Recurrent Neural Network (RNN), or List Something Else]  <br>
 **Network Architecture:** [(DarkNet19, DarkNet53, DetectNetv2, GoogleNet, MobileNet_v1, MobileNetv2, NvHelnet10, NvHelnet18, ResNet10, ResNet18, ResNet34, ResNet34, ResNet50, SqueezeNet, UNET, Vegg16, Vegg19, VGG10, or List Something Else] <br>
+ 
+**This model was developed based on [insert base model name (if applicable)] 
+** This model has [insert number here] of model parameters. <br>
 
-## Input: (Enter "None" As Needed) <br>
+## Input: <br>
 **Input Type(s):** [Audio, Image, Text, Tabular, etcetera (etc.)] <br>
 **Input Format(s):** [Red, Green, Blue (RGB), Infrared (IR), Lidar, or String] <br>
 **Input Parameters:** [(1D, 2D, 3D, etcetera)] <br>
-**Other Properties Related to Input:** [Specific Resolution/Minimum or Maximum Resolution, Characters (Including Restrictions), or Tokens;  Image Range Needed (W x Y x Z), Pre-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Such] <br>
+**Other Properties Related to Input:** [Specific Resolution/Minimum or Maximum Resolution, Characters (Including Restrictions), or Tokens;  Image Range Needed (W x Y x Z), Pre-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Explicitly] <br>
+**For GPAI Models: State size and length limits for each input modality <br>
 
-## Output: (Enter "None" As Needed) <br>
+## Output: <br>
 **Output Type(s):** [Audio, Image, Text, Tabular, etc.] <br>
 **Output Format:** [Red, Green, Blue (RGB), Infrared (IR), Lidar, or String] <br>
 **Output Parameters:** [(1D, 2D, 3D, etcetera)] <br>
-**Other Properties Related to Output:** [Specific Resolution/Minimum or Maximum Resolution or Characters (Including Restrictions), or Tokens; Image Range (W x Y x Z), Post-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Such] <br> 
+**Other Properties Related to Output:** [Specific Resolution/Minimum or Maximum Resolution or Characters (Including Restrictions), or Tokens; Image Range (W x Y x Z), Post-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Explicitly] <br> 
+Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated systems [or name equivalent hardware preference]. By leveraging NVIDIA’s hardware (e.g. GPU cores) and software frameworks (e.g., CUDA libraries), the model achieves faster training and inference times compared to CPU-only solutions. <br>   
 
 ## Software Integration (Required For NVIDIA Models Only): <br>
 **Runtime Engine(s):** <br>
@@ -78,6 +88,8 @@ This model is not owned or developed by NVIDIA. This model has been developed an
 ## Model Version(s): 
 [Use unique identifier for identifying the model in the future- this may be part of our internal naming, specifying variation like "pruned," "unpruned," "trained," or "deployable" or "quantized" where necessary and including a versioning number like vX.X along with short description differentiating if multiple versions are available]  <br>
 
+Describe how the model can be integrated into an AI system. <br>
+ 
 # Training, Testing, and Evaluation Datasets: 
 
 ## Training Dataset [The dataset the model was trained on]:
