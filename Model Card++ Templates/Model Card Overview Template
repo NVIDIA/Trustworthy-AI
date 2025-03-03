@@ -9,15 +9,6 @@ Please pick one of the following to insert at the end of your description:[This 
 This model is not owned or developed by NVIDIA. This model has been developed and built to a third-party’s requirements for this application and use case; see link to Non-NVIDIA [(Insert Name) Model Card](Insert Link).
 
 ### License/Terms of Use: <br> 
-[Visit the NVIDIA Legal Release Process](https://nvidia.sharepoint.com/sites/ProductLegalSupport) for instructions on getting legal support for a license selection:
-
--If you are releasing under an open source license (such as Apache 2.0, MIT), contact the [Open Source Review Board](https://confluence.nvidia.com/pages/viewpage.action?pageId=800720661) (formerly SWIPAT) by filing a contribution bug request [here](https://nvbugspro.nvidia.com/bug/2885991).
-
--If your release is for non-commercial or research purposes only, file a new bug [here](https://nvbugspro.nvidia.com/bug/3508089).
-
--If your release allows for commercial purposes, submit [Product Legal Support Form](https://forms.office.com/pages/responsepage.aspx?id=FT0IQ3NywUC32znv2czBejILt4CYhTJKv0O6I4gccylUMVlMSE4xSFhYMUYyT1VMNVNCREk4RlE1NS4u&route=shorturl).
-
-Optional if applicable: [You are responsible for ensuring that your use of NVIDIA AI Foundation Models complies with all applicable laws]
 
 ### Deployment Geography: <br>
 [Insert Global; Asia-Pacific (APAC); Europe, Middle East, and Africa (EMEA); Latin America (LATAM), North America (NAM), and/or specific countries]
@@ -85,15 +76,58 @@ Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated sys
 * [Windows] <br>
 * [Name Other Not Listed Above] <br>
 
+This AI model can be embedded as an Application Programming Interface (API) call into the architecture described above. <br>
+
 ## Model Version(s): 
 [Use unique identifier for identifying the model in the future- this may be part of our internal naming, specifying variation like "pruned," "unpruned," "trained," or "deployable" or "quantized" where necessary and including a versioning number like vX.X along with short description differentiating if multiple versions are available]  <br>
 
 Describe how the model can be integrated into an AI system. <br>
  
-# Training, Testing, and Evaluation Datasets: 
+# Training, Testing, and Evaluation Datasets: <br>
+
+(For GPAI Models Only)
+** The total size (in number of data points) <br>
+** Total number of datasets <br>   
+** Dataset partition: Training [%], testing [%], validation [%] <br> 
+** Time period for training data collection [insert] <br> 
+** Time period for testing data collection [insert] <br> 
+** Time period for validation data collection [insert] <br>
+ 
+(For GPAI Models Only)
+** A general description of the data processing involved in transforming the acquired data into the training data for the model <br>
+ 
+(For GPAI Models Only)
+#Public Datasets <br>
+ 
+*List of 'main/large' datasets (above 5% of the overall data in this category) with unique identification, links, and period of collection <br> 
+(For GPAI Models Only)
+#Private Non-publicly Accessible Datasets <br>
+ 
+*List of 'main/large' private data sets acquired from other third parties (above 5% of the overall data in this category), unique identifiers and links (if available), and narrative description and period of collection <br> 
+(For GPAI Models Only)
+#If using data crawled and scraped from online sources by NVIDIA <br>
+ 
+(For GPAI Models Only)
+* Overall size per modality, period of scraping <br> 
+* Identification of crawlers, their purpose and behavior; <br> 
+* The period of data collection and name of organization(s) operating the crawler for each web crawler used <br> 
+* A general description of how the crawler respects preferences indicated in robots.txt for each web crawler used <br> 
+* Explanation what content has been targeted; <br> 
+* List of top 10 % of all internet domain names per type of data modality (e.g., text, image. <br> 
+* Measures implemented to respect reservations of rights from the text and data-mining exception under Art.4(3) DSM Directive during data collection incl. specification of the opt-out protocols and solutions honored by the provider [STANDARDIZED INPUT] <br>
+ 
+(For GPAI Models Only)
+#If using user-sourced data (collected by provider incl. prompts) 
+* Overall size per modality <br>
+* List of providers' services/products <br>
+ 
+(For GPAI Models Only)
+#If self-sourced synthetic data(sets) 
+*Overall size per modality <br> 
+* A description of the methods, if any, used to synthetically generate training data <br>
+* The name(s) of any AI model(s) or system(s) used to synthetically generate training data <br> 
 
 ## Training Dataset [The dataset the model was trained on]:
-
 **Link:** [Link or name to dataset used for training the model.  Share nSpect IDs.  nSpect IDs will be internal-only]  <br>
 ** Data Collection Method by dataset <br>
 * [Automated] <br>
@@ -137,6 +171,9 @@ Describe how the model can be integrated into an AI system. <br>
 
 ## Evaluation Dataset [Dataset used to formally evaluate the model apart from the training dataset]:
 **Link:** [Link or name to dataset used for evaluating the model.  Share nSpect IDs.  nSpect IDs will be internal-only]  <br>
+(Internal Only: Not To Be Published) <br> 
+**Benchmark Score <br>
+
 ** Data Collection Method by dataset <br>
 * [Automated] <br>
 * [Automatic/Sensors] <br>
@@ -165,17 +202,12 @@ Describe how the model can be integrated into an AI system. <br>
 * [Drive X.X] <br>
 * [List Other Here X.X]  <br>
 
-*Additional content may be included here
+*Additional content may be included here <br>
 
 ## Ethical Considerations:
 NVIDIA believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with our terms of service, developers should work with their internal model team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse.  
 
-(Optional for BioNeMo models) Users are responsible for ensuring the physical properties of model-generated molecules are appropriately evaluated and comply with applicable safety regulations and ethical standards.
-
-(For NVIDIA Commercial Models Only) For more detailed information on ethical considerations for this model, please see the Model Card++ Explainability, Bias, Safety & Security, and Privacy Subcards [Insert Link to Model Card++ here].  
-
-(For Release on NVIDIA Platforms Only)
-Please report security vulnerabilities or NVIDIA AI Concerns [here](https://www.nvidia.com/en-us/support/submit-security-vulnerability/).
+For more detailed information on ethical considerations for this model, please see the Model Card++ Explainability, Bias, Safety & Security, and Privacy Subcards [Insert Link to Model Card++ subcards here].  
 
 **If anything is meant for internal-purposes only (including this statement and pre-filled content recommendations, please alert Trustworthy AI Product Manager or designee before publishing)
 
