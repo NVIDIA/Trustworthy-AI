@@ -1,7 +1,7 @@
 Field                                               |  Response
 :---------------------------------------------------|:----------------------------------
-List types of high-risk AI systems, if any, in which the model can be integrated: Select from the following: [Biometrics] OR [Critical infrastructure] OR [Machinery and Robotics] OR [Medical Devices] OR [Vehicles] OR [Aviation] OR [Education and vocational training] OR [Employment and Workers Management] <br>
 Model Application(s):                               |  [Insert Response Here]
+List types of specific high-risk AI systems, if any, in which the model can be integrated: Select from the following: [Biometrics] OR [Critical infrastructure] OR [Machinery and Robotics] OR [Medical Devices] OR [Vehicles] OR [Aviation] OR [Education and vocational training] OR [Employment and Workers Management] <br>
 Describe the life critical impact (if present).   |  [Insert Response Here]
 Use Case Restrictions:                              |  [Insert Response Here]
 Model and dataset restrictions:            |  [Insert Response Here]
