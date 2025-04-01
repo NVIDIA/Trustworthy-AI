@@ -32,6 +32,9 @@ NGC [Insert MM/DD/YYY] <br>
 **This model was developed based on [insert base model name (if applicable)] 
 ** This model has [insert number here] of model parameters. <br>
 
+(Internal Only: Not To Be Published) <br> 
+** Describe design choices related to initialization techniques, hyperparameter tuning, regularization techniques, model optimization, damping, and training parameters. [CAN BE EXTRACTED FROM MODEL CARD GENERATOR]  <br>   
+
 ## Input: <br>
 **Input Type(s):** [Audio, Image, Text, Tabular, etcetera (etc.)] <br>
 **Input Format(s):** [Red, Green, Blue (RGB), Infrared (IR), Lidar, or String] <br>
@@ -201,6 +204,15 @@ Describe how the model can be integrated into an AI system. <br>
 * [Jetson XXNN] <br>
 * [Drive X.X] <br>
 * [List Other Here X.X]  <br>
+
+(Internal Only: Not To Be Published) <br> 
+**Computational Load** <br>
+* The number and type of hardware units used to train the model <br>  
+* The duration of model training measured in wall clock time (reported in units of days) and hardware time (reported in units of hardware hours, e.g. GPU hours) <br>  
+
+* GPU Utilization Rate <br>
+* The compute used during model training (reported in units of integer or floating-point operations) <br>  
+* The known or estimated emissions associated with model training (reported in tCO2eq) [AUTOMATICALLY GENERATED FROM ABOVE 3 ANSWERS] <br> 
 
 *Additional content may be included here <br>
 
