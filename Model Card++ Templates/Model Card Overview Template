@@ -84,7 +84,7 @@ This AI model can be embedded as an Application Programming Interface (API) call
 ## Model Version(s): 
 [Use unique identifier for identifying the model in the future- this may be part of our internal naming, specifying variation like "pruned," "unpruned," "trained," or "deployable" or "quantized" where necessary and including a versioning number like vX.X along with short description differentiating if multiple versions are available]  <br>
 
-Describe how the model can be integrated into an AI system. <br>
+(Optional) Describe how the model can be integrated into an AI system. <br>
  
 # Training, Testing, and Evaluation Datasets: <br>
 
@@ -210,7 +210,7 @@ Describe how the model can be integrated into an AI system. <br>
 * The number and type of hardware units used to train the model <br>  
 * The duration of model training measured in wall clock time (reported in units of days) and hardware time (reported in units of hardware hours, e.g. GPU hours) <br>  
 
-* GPU Utilization Rate <br>
+**GPU Utilization Rate** <br>
 * The compute used during model training (reported in units of integer or floating-point operations) <br>  
 * The known or estimated emissions associated with model training (reported in tCO2eq) [AUTOMATICALLY GENERATED FROM ABOVE 3 ANSWERS] <br> 
 
