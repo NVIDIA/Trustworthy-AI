@@ -198,13 +198,14 @@ This AI model can be embedded as an Application Programming Interface (API) call
 
 *Insert Key Performance Indicators or Evaluation Benchmarks Here (Reference https://docs.google.com/spreadsheets/d/1SwyHhBTFQJTLZ4tuc-JdDcjA7wy68DyWdTehGNUgJ6M/edit?gid=721511647#gid=721511647 for large language models)
 
-## Inference:
+## Inference: 
 **Engine:** [Tensor(RT), Triton, Or List Other Here] <br>
 **Test Hardware [Name the specific test hardware model]:** <br>
 * [Jetson XXNN] <br>
 * [Drive X.X] <br>
 * [List Other Here X.X]  <br>
-
+* [List Other Here X.X or Minimum Hardware Requirements]  <br>
+ 
 (Internal Only: Not To Be Published) <br> 
 **Computational Load** <br>
 * The number and type of hardware units used to train the model <br>  
