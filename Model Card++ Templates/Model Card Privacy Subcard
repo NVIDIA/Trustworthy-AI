@@ -1,17 +1,17 @@
 Field                                                                                                                              |  Response
 :----------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------
 Generatable or reverse engineerable personal data?                                                     |  [Insert Response Here]
-Personal data used to create this model? Yes (If "None" or "None Known," Remove "Not Applicable" Fields Below)                      |  [Insert Response Here]
-Was consent obtained for any personal data used?                                                                                             |  [Insert Response Here]
-How often is dataset reviewed?                                                                                                     |  [Insert Response Here]
+Personal data used to create this model? Yes (If "None" or "None Known," Remove "Not Applicable" Fields Below)                     |  [Insert Response Here]
+Was consent obtained for any personal data used?                                                                                   |  [Insert Response Here]
+How often is dataset reviewed?                                                                                                     |  [Before Release OR [During dataset creation, model training, evaluation and before release] OR [Dataset is initially reviewed upon addition, and subsequent reviews are conducted as needed or upon request for changes.]]
 Is a mechanism in place to honor data subject right of access or deletion of personal data?                                        |  [Insert Response Here] [May Delete Question Altogether if No Personal Data Used]
 If personal data was collected for the development of the model, was it collected directly by [Insert Company Name Here]?                                            |  [Insert Response Here] [May Delete Question Altogether if No Personal Data Used] 
 If personal data was collected for the development of the model by [Insert Company Name Here], do you maintain or have access to disclosures made to data subjects?  |  [Insert Response Here] [May Delete Question Altogether if No Personal Data Used]
-If personal data was collected for the development of this AI model, was it minimized to only what was required?                                 |  [Insert Response Here] [May Delete Question Altogether if No Personal Data Used]
-Is there provenance for all datasets used in training?                                                                                |  [Insert Response Here]
+If personal data was collected for the development of this AI model, was it minimized to only what was required?                   |  [Insert Response Here] [May Delete Question Altogether if No Personal Data Used]
+Is there provenance for all datasets used in training?                                                                             |  [Insert Response Here]
 Does data labeling (annotation, metadata) comply with privacy laws?                                                                |  [Insert Response Here]
 Is data compliant with data subject requests for data correction or removal, if such a request was made?                           |  [Insert Response Here]
-Applicable Privacy Poicy                                                                                                          | [Insert Response Here]
+Applicable Privacy Policy                                                                                                          | [Insert Response Here]
 Description of methods implemented in data (For GPAI Models Only)
 (For GPAI Models) Description of methods implemented in data acquisition or processing (if any) to address the prevalence of copyrighted materials in training, testing, and validation data: | [Insert Response Here]
 (For GPAI Models) Measures implemented after data collection is completed to identify and remove content for which rights have been reserved by the rightsholders:  [Insert Response Here]
