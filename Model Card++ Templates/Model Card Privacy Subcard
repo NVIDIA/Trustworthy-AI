@@ -12,8 +12,5 @@ Is there provenance for all datasets used in training?                          
 Does data labeling (annotation, metadata) comply with privacy laws?                                                                |  [Insert Response Here]
 Is data compliant with data subject requests for data correction or removal, if such a request was made?                           |  [Insert Response Here]
 Applicable Privacy Policy                                                                                                          | [Insert Response Here]
-Description of methods implemented in data (For GPAI Models Only)
-(For GPAI Models) Description of methods implemented in data acquisition or processing (if any) to address the prevalence of copyrighted materials in training, testing, and validation data: | [Insert Response Here]
-(For GPAI Models) Measures implemented after data collection is completed to identify and remove content for which rights have been reserved by the rightsholders:  [Insert Response Here]
 
 ***You may remove "[]s" before publishing.  
