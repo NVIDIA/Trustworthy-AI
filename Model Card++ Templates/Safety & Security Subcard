@@ -5,7 +5,5 @@ List types of specific high-risk AI systems, if any, in which the model can be i
 Describe the life critical impact (if present).   |  [Insert Response Here]
 Use Case Restrictions:                              |  [Insert Response Here]
 Model and dataset restrictions:            |  [Insert Response Here]
-(For GPAI Models Only): A description of any methods implemented in data acquisition or processing, if any, to address other types of potentially harmful data in the training, testing, and validation data: | [Insert Response Here]
-(For GPAI Models Only): Child sexual abuse material (CSAM) or non-consensual intimate imagery (NCII) has been removed to our best abilities in the training, testing, and validation data. | [True]
 
 ***You may remove "[]s" before publishing.  
