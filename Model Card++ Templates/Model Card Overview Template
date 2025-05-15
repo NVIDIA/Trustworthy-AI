@@ -94,20 +94,20 @@ Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated sys
 ## Training Dataset [The dataset the model was trained on]:
 **Link:** [Link or name to dataset used for training the model.  Share nSpect IDs.  nSpect IDs will be internal-only]  <br>
 ** Data Collection Method by dataset <br>
-* [Automated] <br>
-* [Automatic/Sensors] <br>
+* [Automated] - [Think "Scraper"]  <br>
+* [Automatic/Sensors] - [Machine-derived] <br>
 * [Human] <br>
 * [Synthetic] <br>
-* [Undisclosed] <br>
-* [Hybrid: _______, _______] <br>
+* [Undisclosed] - [Only note Undisclosed if the data collection methods have not been disclosed. If we are able to ascertain the data collection method, please describe using one of other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the data collection method.]<br>
+* [Hybrid: _______, _______] - [If you have multiple datasets, instead of listing a Data Collection Method for each dataset, you may use "Hybrid" and list the applicable data collection methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
 ** Labeling Method by dataset <br>
-* [Automated] <br>
-* [Automatic/Sensors] <br>
+* [Automated] - [Think "Scraper"] <br>
+* [Automatic/Sensors] - [Machine-derived]  <br>
 * [Human] <br>
 * [Synthetic] <br>
-* [Undisclosed] <br>
-* [Hybrid: _______, _______] <br>
+* [Undisclosed] - [Only note Undisclosed if the labeling methods have not been disclosed. If we are able to ascertain the Labeling Method, please describe using one of other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the labeling method.] <br>
+* [Hybrid: _______, _______] - [If you have multiple datasets, instead of listing a Labeling Method for each dataset, you may use "Hybrid" and list the applicable labeling methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
 **Properties (Quantity, Dataset Descriptions, Sensor(s)):** [Number of data items in training set, Descriptive Information about the data, If applicable, what specific sensor type was used for Data Collection] <br>
 **Dataset License(s):** [Name, Link applicable to dataset license or applicable Jira ticket or NVBug. Write none if not applicable (N/A). This is an internal-only field.] <br>
@@ -115,20 +115,20 @@ Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated sys
 ## Testing Dataset [Typically, a subset of the training dataset that affirms the model is performing as expected]:
 **Link:** [Link or name to dataset used for testing the model.  Share nSpect IDs.  nSpect IDs will be internal-only]  <br>
 ** Data Collection Method by dataset <br>
-* [Automated] <br>
-* [Automatic/Sensors] <br>
+* [Automated] - [Think "Scraper"] <br>
+* [Automatic/Sensors] - [Machine-derived]  <br>
 * [Human] <br>
 * [Synthetic] <br>
-* [Undisclosed] <br>
-* [Hybrid: _______, _______] <br>
+* [Undisclosed] - [Only note Undisclosed if the data collection methods have not been disclosed. If we are able to ascertain the data collection method, please describe using one of other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the data collection method.] <br>
+* [Hybrid: _______, _______] - [If you have multiple datasets, instead of listing a Data Collection Method for each dataset, you may use "Hybrid" and list the applicable data collection methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
 ** Labeling Method by dataset <br>
-* [Automated] <br>
-* [Automatic/Sensors] <br>
+* [Automated] - [Think "Scraper"] <br>
+* [Automatic/Sensors] - [Machine-derived] <br>
 * [Human] <br>
 * [Synthetic] <br>
-* [Undisclosed] <br>
-* [Hybrid: _______, _______] <br>
+* [Undisclosed] -  [Only note Undisclosed if the labeling methods have not been disclosed. If we are able to ascertain the labeling method, please describe using one of other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the labeling method.] <br>
+* [Hybrid: _______, _______] - [If you have multiple datasets, instead of listing a Labeling Method for each dataset, you may use "Hybrid" and list the applicable labeling methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
 **Properties (Quantity, Dataset Descriptions, Sensor(s)):** [Number of data items in test set, Descriptive Information about the data, If applicable, what specific sensor type was used for Data Collection] <br>
 **Dataset License(s):** [Name, Link applicable to dataset license or applicable Jira ticket or NVBug. Write none if not applicable (N/A). This is an internal-only field.] <br>
@@ -139,20 +139,20 @@ Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated sys
 **Benchmark Score <br>
 
 ** Data Collection Method by dataset <br>
-* [Automated] <br>
-* [Automatic/Sensors] <br>
+* [Automated] - [Think "Scraper"]<br>
+* [Automatic/Sensors] - [Machine-derived] <br>
 * [Human] <br>
 * [Synthetic] <br>
-* [Undisclosed] <br>
-* [Hybrid: _______, _______] <br>
+* [Undisclosed] - [Only note Undisclosed if the data collection methods have not been disclosed. If we are able to ascertain the data collection method, please describe using one of other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the data collection method.]  <br>
+* [Hybrid: _______, _______] - [If you have multiple datasets, instead of listing a Data Collection Method for each dataset, you may use "Hybrid" and list the applicable data collection methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
 ** Labeling Method by dataset <br>
-* [Automated] <br>
-* [Automatic/Sensors] <br>
+* [Automated] - [Think "Scraper"] <br>
+* [Automatic/Sensors] - [Machine-derived]  <br>
 * [Human] <br>
 * [Synthetic] <br>
-* [Undisclosed] <br>
-* [Hybrid: _______, _______] <br>
+* [Undisclosed] - [Only note Undisclosed if the labeling methods have not been disclosed. If we are able to ascertain the labeling method, please describe using one of other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the labeling method.] <br>
+* [Hybrid: _______, _______] -[If you have multiple datasets, instead of listing a Labeling Method for each dataset, you may use "Hybrid" and list the applicable labeling methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
 **Properties (Quantity, Dataset Descriptions, Sensor(s)):** [Number of data items in evaluation set, Descriptive Information about the data, If applicable, what specific sensor type was used for Data Collection] <br>
 **Dataset License(s):** [Name, Link applicable to dataset license or applicable Jira ticket or NVBug. Write none if not applicable (N/A). This is an internal-only field.] <br>
