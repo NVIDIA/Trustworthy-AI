@@ -98,7 +98,7 @@ Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated sys
 * [Automatic/Sensors] - [Machine-derived] <br>
 * [Human] <br>
 * [Synthetic] <br>
-* [Undisclosed] - [Only note Undisclosed if the data collection methods have not been disclosed. If we are able to ascertain the data collection method, please describe using one of other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the data collection method.]<br>
+* [Undisclosed] - [Only note Undisclosed if the data collection methods have not been disclosed. If we are able to ascertain the data collection method, please describe using one of the other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the data collection method.]<br>
 * [Hybrid: _______, _______] - [If you have multiple datasets, instead of listing a Data Collection Method for each dataset, you may use "Hybrid" and list the applicable data collection methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
 ** Labeling Method by dataset <br>
@@ -106,7 +106,7 @@ Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated sys
 * [Automatic/Sensors] - [Machine-derived]  <br>
 * [Human] <br>
 * [Synthetic] <br>
-* [Undisclosed] - [Only note Undisclosed if the labeling methods have not been disclosed. If we are able to ascertain the Labeling Method, please describe using one of other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the labeling method.] <br>
+* [Undisclosed] - [Only note Undisclosed if the labeling methods have not been disclosed. If we are able to ascertain the Labeling Method, please describe using one of the other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the labeling method.] <br>
 * [Hybrid: _______, _______] - [If you have multiple datasets, instead of listing a Labeling Method for each dataset, you may use "Hybrid" and list the applicable labeling methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
 **Properties (Quantity, Dataset Descriptions, Sensor(s)):** [Number of data items in training set, Descriptive Information about the data, If applicable, what specific sensor type was used for Data Collection] <br>
@@ -119,7 +119,7 @@ Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated sys
 * [Automatic/Sensors] - [Machine-derived]  <br>
 * [Human] <br>
 * [Synthetic] <br>
-* [Undisclosed] - [Only note Undisclosed if the data collection methods have not been disclosed. If we are able to ascertain the data collection method, please describe using one of other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the data collection method.] <br>
+* [Undisclosed] - [Only note Undisclosed if the data collection methods have not been disclosed. If we are able to ascertain the data collection method, please describe using one of the other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the data collection method.] <br>
 * [Hybrid: _______, _______] - [If you have multiple datasets, instead of listing a Data Collection Method for each dataset, you may use "Hybrid" and list the applicable data collection methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
 ** Labeling Method by dataset <br>
@@ -127,7 +127,7 @@ Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated sys
 * [Automatic/Sensors] - [Machine-derived] <br>
 * [Human] <br>
 * [Synthetic] <br>
-* [Undisclosed] -  [Only note Undisclosed if the labeling methods have not been disclosed. If we are able to ascertain the labeling method, please describe using one of other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the labeling method.] <br>
+* [Undisclosed] -  [Only note Undisclosed if the labeling methods have not been disclosed. If we are able to ascertain the labeling method, please describe using one of the other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the labeling method.] <br>
 * [Hybrid: _______, _______] - [If you have multiple datasets, instead of listing a Labeling Method for each dataset, you may use "Hybrid" and list the applicable labeling methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
 **Properties (Quantity, Dataset Descriptions, Sensor(s)):** [Number of data items in test set, Descriptive Information about the data, If applicable, what specific sensor type was used for Data Collection] <br>
@@ -143,7 +143,7 @@ Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated sys
 * [Automatic/Sensors] - [Machine-derived] <br>
 * [Human] <br>
 * [Synthetic] <br>
-* [Undisclosed] - [Only note Undisclosed if the data collection methods have not been disclosed. If we are able to ascertain the data collection method, please describe using one of other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the data collection method.]  <br>
+* [Undisclosed] - [Only note Undisclosed if the data collection methods have not been disclosed. If we are able to ascertain the data collection method, please describe using one of the other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the data collection method.]  <br>
 * [Hybrid: _______, _______] - [If you have multiple datasets, instead of listing a Data Collection Method for each dataset, you may use "Hybrid" and list the applicable data collection methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
 ** Labeling Method by dataset <br>
@@ -151,7 +151,7 @@ Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated sys
 * [Automatic/Sensors] - [Machine-derived]  <br>
 * [Human] <br>
 * [Synthetic] <br>
-* [Undisclosed] - [Only note Undisclosed if the labeling methods have not been disclosed. If we are able to ascertain the labeling method, please describe using one of other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the labeling method.] <br>
+* [Undisclosed] - [Only note Undisclosed if the labeling methods have not been disclosed. If we are able to ascertain the labeling method, please describe using one of the other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the labeling method.] <br>
 * [Hybrid: _______, _______] -[If you have multiple datasets, instead of listing a Labeling Method for each dataset, you may use "Hybrid" and list the applicable labeling methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
 **Properties (Quantity, Dataset Descriptions, Sensor(s)):** [Number of data items in evaluation set, Descriptive Information about the data, If applicable, what specific sensor type was used for Data Collection] <br>
