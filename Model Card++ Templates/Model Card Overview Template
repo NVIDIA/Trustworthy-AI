@@ -1,7 +1,9 @@
 # [Insert Name Here] Overview
 
 ## Description: <br>
-Describe what this algorithm/model does starting with the model name and verb; this should be one sentence starting with the model name. You may add additional detail following the initial sentence. For instance, _______ [insert name of model] _______ [insert verb] _______.] <br>
+Describe what this algorithm/model does starting with the model name and verb; this should be one sentence starting with the model name. You may add additional detail following the initial sentence. For instance, _______ [insert name of model] _______ [insert verb] _______.] <br> 
+[Insert model name and version] was developed by [Insert Company Name] as a part of [insert model family name, if applicable].<br>
+ 
  
 Please pick one of the following to insert at the end of your description:[This model is ready for commercial/non-commercial use.] OR [This model is for research and development only.] OR [This model is for demonstration purposes and not for production usage.]  <br>
 
@@ -17,28 +19,35 @@ This model is not owned or developed by NVIDIA. This model has been developed an
 [Answer who would be expected to use this system and for what] <br>
 
 ### Release Date:  <br>
-Build.Nvidia.com [Insert MM/DD/YYY] via [URL] <br> 
-Github [Insert MM/DD/YYY] via [URL] <br> 
-Huggingface [Insert MM/DD/YYY] via [URL] <br> 
-NGC [Insert MM/DD/YYY] <br>
+Build.Nvidia.com [Insert MM/DD/YYYY] via [URL] <br> 
+Github [Insert MM/DD/YYYY] via [URL] <br> 
+Huggingface [Insert MM/DD/YYYY] via [URL] <br> 
+NGC [Insert MM/DD/YYYY] <br>
+Other [Insert MM/DD/YYYY] <br>
 
 ## Reference(s) (Leave Blank If None):
 [Provide list of reference(s), link(s) to the publication/paper/article, associated works, and lineage where relevant.]  <br> 
 
 ## Model Architecture: <br> 
-**Architecture Type:** [Classify the architecture of the neural network if applicable (Convolution Neural Network (CNN), Recurrent Neural Network (RNN), or List Something Else]  <br>
+**Architecture Type:** [Classify the architecture of the neural network if applicable (Convolution Neural Network (CNN), Recurrent Neural Network (RNN), Transformer, or List Something Else]  <br>
 **Network Architecture:** [(DarkNet19, DarkNet53, DetectNetv2, GoogleNet, MobileNet_v1, MobileNetv2, NvHelnet10, NvHelnet18, ResNet10, ResNet18, ResNet34, ResNet34, ResNet50, SqueezeNet, UNET, Vegg16, Vegg19, VGG10, or List Something Else] <br>
  
 **This model was developed based on [insert base model name (if applicable)]. 
+** Number of model parameters [(Recorded with at least two significant figures e.g. 7.3*10^10)] <br>
 
-(Internal Only: Not To Be Published) <br> 
-** Describe design choices related to initialization techniques, hyperparameter tuning, regularization techniques, model optimization, damping, and training parameters. [CAN BE EXTRACTED FROM MODEL CARD GENERATOR]  <br>   
+(Internal Only for GPAI Models: Not To Be Published) <br>
+** Describe design choices related to initialization techniques, hyperparameter tuning, regularization techniques, model optimization, damping, and training parameters. <br>  
 
+## Computational Load
+**Cumulative Compute:** <br>
+**Estimated Energy and Emissions for Model Training:** <br>
+ 
 ## Input: <br>
 **Input Type(s):** [Audio, Image, Text, Tabular, etcetera (etc.)] <br>
 **Input Format(s):** [Red, Green, Blue (RGB), Infrared (IR), Lidar, or String] <br>
 **Input Parameters:** [(1D, 2D, 3D, etcetera)] <br>
-**Other Properties Related to Input:** [Specific Resolution/Minimum or Maximum Resolution, Characters (Including Restrictions), or Tokens;  Image Range Needed (W x Y x Z), Pre-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Explicitly; State size and length limits for each input modality <br>
+**Other Properties Related to Input:** [Specific Resolution/Minimum or Maximum Resolution, Characters (Including Restrictions), or Tokens;  Image Range Needed (W x Y x Z), Pre-Processing Needed, Alpha Channel, Bit; Please State Explicitly.] 
+(For GPAI Models Only): State size and length limits for each input modality. <br>
 
 ## Output: <br>
 **Output Type(s):** [Audio, Image, Text, Tabular, etc.] <br>
@@ -61,6 +70,7 @@ Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated sys
 * [Not Applicable (N/A)- Name Platform If Multiple] <br> 
 
 **Supported Hardware Microarchitecture Compatibility:** <br>
+[List in Alphabetic Order]:** <br>
 * [NVIDIA Ampere or specific models] <br>
 * [NVIDIA Blackwell or specific models] <br>
 * [NVIDIA Jetson or specific models]  <br>
@@ -78,6 +88,8 @@ Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated sys
 * [Windows] <br>
 * [Name Other Not Listed Above] <br>
 
+The integration of foundation and fine-tuned models into AI systems requires additional testing using use-case-specific data to ensure safe and effective deployment. Following the V-model methodology, iterative testing and validation at both unit and system levels are essential to mitigate risks, meet technical and functional requirements, and ensure compliance with safety and ethical standards before deployment. <br>
+
 (Optional) This AI model can be embedded as an Application Programming Interface (API) call into the software environment described above. <br>
 
 ## Model Version(s): 
@@ -87,9 +99,14 @@ Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated sys
  
 # Training, Testing, and Evaluation Datasets: <br>
 
-** The total size (in number of data points) <br>
-** Total number of datasets <br>   
-** Dataset partition: Training [%], testing [%], validation [%] <br>  
+### [GPAI Model Specific Information:]
+** The total size (in number of data points to at least two significant figures) <br>
+** Total number of datasets <br>  
+ 
+** (If Applicable) Dataset partition: Training [%], testing [%], validation [%] <br>
+** Time period for training data collection [insert] <br>
+** Time period for testing data collection [insert] <br>
+** Time period for validation data collection [insert] <br>
 
 ## Training Dataset [The dataset the model was trained on]:
 **Link:** [Link or name to dataset used for training the model.  Share nSpect IDs.  nSpect IDs will be internal-only]  <br>
