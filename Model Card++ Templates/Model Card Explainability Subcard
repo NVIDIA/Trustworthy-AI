@@ -4,6 +4,7 @@ Intended Task/Domain:                                                           
 Model Type:                                                                                            |  [Insert Response Here]
 Intended Users:                                                                                        |  [Insert Response Here]
 Output:                                                                                                |  [Insert Response Here]
+(For GPAI Models): Tools used to evaluate datasets to identify synthetic data and ensure data authenticity | [Insert Response Here]
 Describe how the model works:                                                                          |  [Insert Response Here]
 Name the adversely impacted groups this has been tested to deliver comparable outcomes regardless of:  |  [Insert Response Here]
 Technical Limitations and Mitigation:                                                                  |  [Insert Response Here - Describe where the model might not work well under the intended operational design domain]
