@@ -4,7 +4,6 @@
 Describe what this algorithm/model does starting with the model name and verb; this should be one sentence starting with the model name. You may add additional detail following the initial sentence. For instance, _______ [insert name of model] _______ [insert verb] _______.] <br> 
 [Insert model name and version] was developed by [Insert Company Name] as a part of [insert model family name, if applicable].<br>
  
- 
 Please pick one of the following to insert at the end of your description:[This model is ready for commercial/non-commercial use.] OR [This model is for research and development only.] OR [This model is for demonstration purposes and not for production usage.]  <br>
 
 ## Third-Party Community Consideration [(Insert for Non-NVIDIA Third-Party Community Models)] <br>
@@ -36,7 +35,7 @@ Other [Insert MM/DD/YYYY] <br>
 ** Number of model parameters [(Recorded with at least two significant figures e.g. 7.3*10^10)] <br>
 
 (Internal Only for GPAI Models: Not To Be Published) <br>
-** Describe design choices related to initialization techniques, hyperparameter tuning, regularization techniques, model optimization, damping, and training parameters. <br>  
+** Describe design choices related to initialization techniques, hyperparameter tuning, regularization techniques, model optimization, damping, and training parameters. [100 Words or Less] <br>  
 
 ## Computational Load
 **Cumulative Compute:** <br>
@@ -99,17 +98,53 @@ The integration of foundation and fine-tuned models into AI systems requires add
  
 # Training, Testing, and Evaluation Datasets: <br>
 
-### Dataset Overview
-[Beginning of GPAI Model Specific Section:]
-** The total size (in number of data points to at least two significant figures) <br>
-** Total number of datasets <br>  
+### Dataset Overview [Beginning of GPAI Model Specific Section:]
+** Total Size: [in number of data points to at least two significant figures] <br>
+** Total Number of Datasets: [insert] <br>  
  
-** Dataset partition: Training [%], testing [%], validation [%] <br>
-** Time period for training data collection [insert] <br>
-** Time period for testing data collection [insert] <br>
-** Time period for validation data collection [insert] <br>
-
-[End of GPAI Model Specific Section:]
+** Dataset partition: Training [%], Testing [%], Validation [%] <br>
+** Time period for training data collection [Insert Period] <br>
+** Time period for testing data collection [Insert Period] <br>
+** Time period for validation data collection [Insert Period] <br>
+ 
+** A general description of the data processing involved in transforming the acquired data into the training data for the model (recommended 200 words) <br>
+ 
+# Public Datasets
+[Applicable if using] <br>
+ 
+*List of 'main/large' datasets (above 5% of the overall data in this category) with unique identification, links + period of collection <br>
+ 
+# Private Datasets
+[Applicable if using] <br>
+ 
+*List of 'main/large' private datasets acquired from other third parties (above 5% of the overall data in this category), unique identifiers and links (if available) and narrative description + period of collection <br>
+ 
+# Data Crawling and Scraping
+[Applicable if using]  
+ 
+* Overall size per modality and period of scraping <br>
+* Identification of crawlers along with their purpose and behaviour; <br>  
+* Period of data collection and name of organization(s) operating the crawler for each web crawler used <br>  
+* A general description of how the crawler respects preferences indicated in robots.txt for each web crawler used <br>  
+* Explanation of what content has been targeted; <br>  
+* List of top 10 % of all internet domain names per type of data modality (e.g., text, image). <br>  
+ 
+* Measures implemented to respect reservations of rights from the text and data-mining exception under Art.4(3) DSM Directive during data collection including specification of the opt-out protocols and solutions honored by the provider [STANDARDIZED INPUT] <br>  
+ 
+# User-Sourced Data (Collected by Provider including Prompts)
+[Applicable if using]  
+ 
+* Overall size per modality
+* List of providers' services/products
+ 
+# Self-Sourced Synthetic Data
+[Applicable if using]
+ 
+* Overall Size per Modality
+* A description of the methods, if any, used to synthetically generate training data
+* The name(s) of any AI model(s) or system(s) used to synthetically generate training data
+ 
+[End of GPAI Model Specific Section] <br>
 
 ## Training Dataset [The dataset the model was trained on]:
 **Link:** [Link or name to dataset used for training the model.  Share nSpect IDs.  nSpect IDs will be internal-only]  <br>
