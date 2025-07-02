@@ -99,14 +99,17 @@ The integration of foundation and fine-tuned models into AI systems requires add
  
 # Training, Testing, and Evaluation Datasets: <br>
 
-### [GPAI Model Specific Information:]
+### Dataset Overview
+[Beginning of GPAI Model Specific Section:]
 ** The total size (in number of data points to at least two significant figures) <br>
 ** Total number of datasets <br>  
  
-** (If Applicable) Dataset partition: Training [%], testing [%], validation [%] <br>
+** Dataset partition: Training [%], testing [%], validation [%] <br>
 ** Time period for training data collection [insert] <br>
 ** Time period for testing data collection [insert] <br>
 ** Time period for validation data collection [insert] <br>
+
+[End of GPAI Model Specific Section:]
 
 ## Training Dataset [The dataset the model was trained on]:
 **Link:** [Link or name to dataset used for training the model.  Share nSpect IDs.  nSpect IDs will be internal-only]  <br>
