@@ -1,7 +1,8 @@
 Field                                               |  Response
 :---------------------------------------------------|:----------------------------------
-Model Application Field(s):                               |  [List where model could be reasonably integrated: Select from the following: [Autonomous Vehicles] OR [Aviation] OR [Climate] OR [Critical infrastructure] OR [Customer Service] OR [Healthcare] OR [Industrial/Machinery and Robotics] OR [Media & Entertainment] OR [Insert Name Relevant Field Here] <br>]
+Model Application Field(s):                               |  [List where model could be reasonably integrated: Select from the following: [Autonomous Vehicles] OR [Aviation] OR [Climate] OR [Critical infrastructure] OR [Customer Service] OR [Healthcare] OR [Industrial/Machinery and Robotics] OR [Media & Entertainment] OR [Insert Name Relevant Field Here] 
 Describe the life critical impact (if present).   |  [Insert Response Here]
+(For GPAI Models): Description of methods implemented in data acquisition or processing, if any, to address other types of potentially harmful data in the training, testing, and validation data: | [300 words recommended]
 Use Case Restrictions:                              |  [Insert Response Here]
 Model and dataset restrictions:            |  [Insert Response Here]
 
