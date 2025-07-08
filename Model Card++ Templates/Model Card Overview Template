@@ -7,7 +7,7 @@ Describe what this algorithm/model does starting with the model name and verb; t
 Please pick one of the following to insert at the end of your description:[This model is ready for commercial/non-commercial use.] OR [This model is for research and development only.] OR [This model is for demonstration purposes and not for production usage.]  <br>
 
 ## Third-Party Community Consideration [(Insert for Non-NVIDIA Third-Party Community Models)] <br>
-This model is not owned or developed by NVIDIA. This model has been developed and built to a third-party’s requirements for this application and use case; see link to Non-NVIDIA [(Insert Name) Model Card](Insert Link).
+This model is not owned or developed by NVIDIA. This model has been developed and built to a third-party’s requirements for this application and use case; see link to Non-NVIDIA [(Insert Name) Model Card](Insert Link). <br>
 
 ### License/Terms of Use: <br> 
 
@@ -108,6 +108,8 @@ The integration of foundation and fine-tuned models into AI systems requires add
 ** Time period for validation data collection [Insert Period] <br>
  
 ** A general description of the data processing involved in transforming the acquired data into the training data for the model (recommended 200 words) <br>
+
+** A description of any methods implemented in data acquisition or processing, if any, to address other types of potentially harmful (weapons, criminal planning, sexual minor, harassment, hate, profanity, threats, violence, or suicide) data in the training, testing, or evaluation data (recommended 300 words) <br>
  
 # Public Datasets
 [Applicable if using] <br>
@@ -120,7 +122,7 @@ The integration of foundation and fine-tuned models into AI systems requires add
 *List of 'main/large' private datasets acquired from other third parties (above 5% of the overall data in this category), unique identifiers and links (if available) and narrative description + period of collection <br>
  
 # Data Crawling and Scraping
-[Applicable if using]  
+[Applicable if using]  <br>
  
 * Overall size per modality and period of scraping <br>
 * Identification of crawlers along with their purpose and behaviour; <br>  
@@ -129,20 +131,20 @@ The integration of foundation and fine-tuned models into AI systems requires add
 * Explanation of what content has been targeted; <br>  
 * List of top 10 % of all internet domain names per type of data modality (e.g., text, image). <br>  
  
-* Measures implemented to respect reservations of rights from the text and data-mining exception under Art.4(3) DSM Directive during data collection including specification of the opt-out protocols and solutions honored by the provider [STANDARDIZED INPUT] <br>  
- 
+* Measures implemented to respect reservations of rights from the text and data-mining exception during data collection including specification of the opt-out protocols and solutions honored by the provider. <br>  
+  
 # User-Sourced Data (Collected by Provider including Prompts)
-[Applicable if using]  
+[Applicable if using]  <br>
  
 * Overall size per modality
-* List of providers' services/products
+* List of providers' services/products <br>
  
 # Self-Sourced Synthetic Data
-[Applicable if using]
+[Applicable if using] <br>
  
 * Overall Size per Modality
-* A description of the methods, if any, used to synthetically generate training data
-* The name(s) of any AI model(s) or system(s) used to synthetically generate training data
+* A description of the methods, if any, used to synthetically generate training data <br>
+* The name(s) of any AI model(s) or system(s) used to synthetically generate training data <br>
  
 [End of GPAI Model Specific Section] <br>
 
@@ -212,7 +214,7 @@ The integration of foundation and fine-tuned models into AI systems requires add
 **Properties (Quantity, Dataset Descriptions, Sensor(s)):** [Number of data items in evaluation set, Descriptive Information about the data, If applicable, what specific sensor type was used for Data Collection] <br>
 **Dataset License(s):** [Name, Link applicable to dataset license or applicable Jira ticket or NVBug. Write none if not applicable (N/A). This is an internal-only field.] <br>
 
-*Insert Key Performance Indicators or Evaluation Benchmarks Here (Language Model Reference https://docs.google.com/spreadsheets/d/1SwyHhBTFQJTLZ4tuc-JdDcjA7wy68DyWdTehGNUgJ6M/edit?gid=721511647#gid=721511647)
+*Insert Key Performance Indicators or Evaluation Benchmarks Here (Language Model Reference https://docs.google.com/spreadsheets/d/1SwyHhBTFQJTLZ4tuc-JdDcjA7wy68DyWdTehGNUgJ6M/edit?gid=721511647#gid=721511647). <br>
 
 ## Inference: 
 **Acceleration Engine:** [Tensor(RT), Tensor (RT)-LLM, Triton, Or List Other Here] <br>
@@ -226,5 +228,7 @@ The integration of foundation and fine-tuned models into AI systems requires add
 NVIDIA believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with our terms of service, developers should work with their internal model team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse.  
 
 For more detailed information on ethical considerations for this model, please see the Model Card++ Explainability, Bias, Safety & Security, and Privacy Subcards [Insert Link to Model Card++ subcards here].  
+
+Please report model quality, risk, security vulnerabilities or concerns [here](Insert Link Here).  <br>
 
 ***You may remove "[]s" before publishing.  
