@@ -2,7 +2,7 @@ Field                                                                           
 :---------------------------------------------------------------------------------------------------|:---------------
 Participation considerations from adversely impacted groups [protected classes](https://www.senate.ca.gov/content/protected-classes) in model design and testing:  |  [Insert Response Here]
 Bias Metric (If Measured):                                                   |  [Insert Response Here] 
-(For GPAI Models): Which feature(s) show(s) the greatest difference in performance by embedder?:                                                   |  [Insert Response Here] 
+(For GPAI Models): Which characteristic (feature) show(s) the greatest difference in performance?: |  [Insert Response Here]
 (For GPAI Models): Which feature(s) have have the worst performance overall? | [Insert Response Here]
 Measures taken to mitigate against unwanted bias:                                                   |  [Insert Response Here]
 (For GPAI Models): If using internal data, description of methods implemented in data acquisition or processing, if any, to address the prevalence of identifiable biases in the training, testing, and validation data: | [200 words recommended]
