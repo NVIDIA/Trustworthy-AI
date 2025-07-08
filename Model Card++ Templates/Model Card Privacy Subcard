@@ -13,5 +13,5 @@ Is there provenance for all datasets used in training?                          
 Does data labeling (annotation, metadata) comply with privacy laws?                                                                |  [Insert Response Here]
 Is data compliant with data subject requests for data correction or removal, if such a request was made?                           |  [Insert Response Here]
 Applicable Privacy Policy                                                                                                          | [Insert Response Here]
-
+During AI model development, strict adherence to copyright policy ensured compliance through risk mitigation and legal reviews. Post-data collection, reserved rights content is identified and removed, with verified opt-out processes for rightsholders. Detailed records document due diligence and transparency.
 ***You may remove "[]s" before publishing.  
