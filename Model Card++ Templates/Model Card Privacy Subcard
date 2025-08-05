@@ -14,4 +14,6 @@ Does data labeling (annotation, metadata) comply with privacy laws?             
 Is data compliant with data subject requests for data correction or removal, if such a request was made?                           |  [Insert Response Here]
 Applicable Privacy Policy                                                                                                          | [Insert Response Here]
 (For GPAI Models): During AI model development, strict adherence to copyright policy ensured compliance through risk mitigation and legal reviews. Post-data collection, reserved rights content is identified and removed, with verified opt-out processes for rightsholders. Detailed records document due diligence and transparency.
+(For GPAI Models): We employ automated tools and data processing techniques [insert data scanned for here] during pre-training to identify and filter certain categories of personal information, including [insert taxonomy here].  Scans of [insert dataset names here] detected no PII.  
+[Insert name of automated tool or data processing] indicated potential [insert finding here] such as [insert relevant example here] for which we removed using verified instances of PII using [insert tool or technique].
 ***You may remove "[]s" before publishing.  
