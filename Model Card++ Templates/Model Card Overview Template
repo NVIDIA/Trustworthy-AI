@@ -257,6 +257,9 @@ The integration of foundation and fine-tuned models into AI systems requires add
 ## Ethical Considerations:
 NVIDIA believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with our terms of service, developers should work with their internal model team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse.  
 
+(Required for models with input images and video) <br>
+Please make sure you have proper rights and permissions for all input image and video content; if image or video includes people, personal health information, or intellectual property, the image or video generated will not blur or maintain proportions of image subjects included. <br>
+
 For more detailed information on ethical considerations for this model, please see the Model Card++ Explainability, Bias, Safety & Security, and Privacy Subcards [Insert Link to Model Card++ subcards here].  
 
 Please report model quality, risk, security vulnerabilities or concerns [here](Insert Link Here).  <br>
