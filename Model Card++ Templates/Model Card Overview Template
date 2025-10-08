@@ -138,10 +138,10 @@ The integration of foundation and fine-tuned models into AI systems requires add
 * Overall size per modality <br>
 
 * List of providers' services/products <br>
-
-* Was data collected from user interactions with the provider’s other services or products used to train the model? <br>
  
-* Provide a general description of the provider’s services or products that were used to collect the user data? <br>
+* Provide a general description of the provider’s services or products that were used to collect the user data? [Insert Description Here] <br>
+
+* Was data collected from user interactions with the provider’s other services or products used to train the model? [Yes/No]  <br>
 
 # Self-Sourced Synthetic Data
 [Applicable if using] <br>
