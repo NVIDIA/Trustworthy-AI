@@ -9,6 +9,7 @@ Is a mechanism in place to honor data subject right of access or deletion of per
 If personal data was collected for the development of the model, was it collected directly by [Insert Company Name Here]?                                            |  [Insert Response Here] [May Delete Question Altogether if No Personal Data Used] 
 If personal data was collected for the development of the model by [Insert Company Name Here], do you maintain or have access to disclosures made to data subjects?  |  [Insert Response Here] [May Delete Question Altogether if No Personal Data Used]
 If personal data was collected for the development of this AI model, was it minimized to only what was required?                   |  [Insert Response Here] [May Delete Question Altogether if No Personal Data Used]
+Was data from user interactions with the AI model (e.g. user input and prompts) used to train the model?               |  [Yes/No] 
 Is there provenance for all datasets used in training?                                                                             |  [Insert Response Here]
 Does data labeling (annotation, metadata) comply with privacy laws?                                                                |  [Insert Response Here]
 Is data compliant with data subject requests for data correction or removal, if such a request was made?                           |  [Insert Response Here]
@@ -16,4 +17,3 @@ Applicable Privacy Policy                                                       
 (For GPAI Models): During AI model development, strict adherence to copyright policy ensured compliance through risk mitigation and legal reviews. Post-data collection, reserved rights content is identified and removed, with verified opt-out processes for rightsholders. Detailed records document due diligence and transparency.
 (For GPAI Models): We employ automated tools and data processing techniques [insert data scanned for here] during pre-training to identify and filter certain categories of personal information, including [insert taxonomy here].  Scans of [insert dataset names here] detected no PII.  
 [Insert name of automated tool or data processing] indicated potential [insert finding here] such as [insert relevant example here] for which we removed using verified instances of PII using [insert tool or technique].
-***You may remove "[]s" before publishing.  
