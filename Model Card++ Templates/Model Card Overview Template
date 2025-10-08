@@ -131,13 +131,18 @@ The integration of foundation and fine-tuned models into AI systems requires add
 * Explanation of what content has been targeted; <br>  
 * List of top 10 % of all internet domain names per type of data modality (e.g., text, image). <br>  
 * Measures implemented to respect reservations of rights from the text and data-mining exception during data collection including specification of the opt-out protocols and solutions honored by the provider. <br>  
-  
+ 
 # User-Sourced Data (Collected by Provider including Prompts)
 [Applicable if using]  <br>
  
-* Overall size per modality
+* Overall size per modality <br>
+
 * List of providers' services/products <br>
+
+* Was data collected from user interactions with the provider’s other services or products used to train the model? <br>
  
+* Provide a general description of the provider’s services or products that were used to collect the user data? <br>
+
 # Self-Sourced Synthetic Data
 [Applicable if using] <br>
  
