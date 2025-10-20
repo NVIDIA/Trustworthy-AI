@@ -1,52 +1,34 @@
-## [Insert Name of Blueprint]
-
-## Description:
-Describe what this blueprint does starting with the blueprint name and verb; this should be one sentence starting with the blueprint name. You may add additional detail following the initial sentence. 
-Please pick one of the following to insert at the end of your description: [This blueprint is ready for commercial/non-commercial use.] OR [This blueprint is for research and development only.] OR [This blueprint is for demonstration purposes and not for production usage.] <br>
-
-## License/Terms of Use: <br>  
+# [Insert Name Here] Overview
+## Description: [Provide a general overview of the Container, including a description of the specific program classes that are housed within the Container]. For example, if models are used/referenced in the Container, provide a high-level description of the models.] <br>
+Select one of the following to insert at the end of your description: [The container components are ready for commercial/non-commercial use.] OR [The container components are for research and development only.] OR [The container components are for demonstration purposes and not for production usage.]  <br>
+## Third-Party Community Consideration [(Insert for Third-Party Community Models)] <br>  
+This model is not owned or developed by [Insert name of company]. This model has been developed and built to a third-party’s requirements for this application and use case; see link to [(Insert Name) Model Card](Insert Link).
+### License/Terms of Use:  
 [Insert License Name Here](Insert Link to License here)
-
-## Third-Party Community Consideration: [If there are third-party assets included in this blueprint, please include this section]
-
-The software components in this blueprint are not owned or developed by [insert name of company]. They have been developed and built to a third-party’s requirements; see link to (Insert Name and Link) Model Card.
-
-## Deployment Geography:
-[Insert Global; Asia-Pacific (APAC); Europe, Middle East, and Africa (EMEA); Latin America (LATAM), North America (NAM), and/or specific countries.] 
-
-## Architecture Diagram:   
-[Provide a diagram of the blueprint’s overall architecture].
-
-## What’s Included in the Blueprint:
-
-| Software Components | Link to AI Transparency Card |
-| :---- | :---- |
-|  |  |
-|  |  |
-
-## Use Case:   
-[Answer who would be expected to use this blueprint and for what\].
-
-## Experience Walkthrough:  
-[Provide a 1-2 paragraph overview of the walkthrough experience\].
-
-## Release Date:   
-[Insert Name of Publishing Platform] [Insert MM/DD/YYYY] via [URL] <br> 
-
-## Blueprint Version: 
-[Use unique identifier for identifying the blueprint in the future- this may be part of our internal naming, specifying variation like "pruned," "unpruned," "trained," or "deployable" or "quantized" where necessary and including a versioning number like vX.X along with short description differentiating if multiple versions are available.] 
-
-## Minimum System Requirements:  
-[Describe the minimum Hardware and Operating System requirements].
-
-## Hardware Requirements
-** OS Requirements
-
-## Software Used in This Blueprint:  
-[Provide a description of the software used in the blueprint; include links where applicable].
-
+### Deployment Geography: [Describe where the Container (and models/tools referenced in the Container) will be deployed.] <br>
+[Insert Global; Asia-Pacific (APAC); Europe, Middle East, and Africa (EMEA); Latin America (LATAM), North America (NAM), and/or specific countries] <br>
+### Release Date: [Indicate the platforms where the Container (and models/tools referenced in the Container) will be published, along with the release date.] <br>
+[Insert Name of Publishing Platform] [Insert MM/DD/YYY] via [URL] <br>
+## Program Classes: <br>  
+[Outline the program classes that are housed within the Container. If the Container contains models, provide links to the approved model card, and provide a brief sentence describing the use case and method for pulling the model (either Automatic or Manual).]
+For example: The [insert Container name] Container includes the following models:
+| Model Name & Link | Use Case | How to Pull the Model  |
+| :---- | :---- | :---- |
+|  |  | \[Automatic or Manual\] |
+|  |  | \[Automatic or Manual\] |
+## Deployment Details:
+[Provide a description of how to deploy the models/tools.] <br>
+## Reference(s):  
+[Provide list of reference(s), link(s) to the publication/paper/article, associated works, blogs/articles as available and lineage where relevant.]  <br>
+## Container Version(s):  
+[Use unique identifier for identifying the model in the future- this may be part of our internal naming, specifying variation like "pruned," "unpruned," "trained," or "deployable" or "quantized" where necessary and including a versioning number like vX.X along with short description differentiating if multiple versions are available]  <br>
+## Security Common Vulnerabilities and Exposures (CVEs)  
+Please review [Insert link name here of where security results are located](Insert link here to security results) to view the latest security scan results.
 ## Ethical Considerations:  
-[Insert Name of Company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with our terms of service, developers should work with their internal model team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse.
-
-Please report model quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)].  
-
+[Insert name of company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with our terms of service, developers should work with their internal developer team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse.
+Please report model quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)].
+# Get Help
+## Getting Started Materials  
+Visit the [Insert Name of Page] page for release documentation, deployment guides and more [the hyperlink](insert link here).
+## Enterprise Support (Optional: Not For Early Access)  
+Get access to knowledge base articles and support cases or [Insert Name of Page for Enterprise Support](Insert Link to Enterprise Support).
