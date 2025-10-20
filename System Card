@@ -1,0 +1,76 @@
+# [Insert Name Here] Overview
+
+## Description:  
+[Describe what this system does in one sentence, including supporting image/video and/or reference blog/article as available.  For instance, _______ [insert name of system] _______ [insert verb] _______.]
+[This system is ready for commercial/non-commercial use.] OR [This system is for research and development only.] OR [This system is for demonstration purposes and not for production usage.]  <br>
+
+## Third-Party Community Consideration [(Insert for Third-Party Community Systems)]  
+This system is not owned or developed by [insert name of company]. This system has been developed and built to a third-party’s requirements for this application and use case; see link to (Insert Name and Link) Model Card.
+
+### License/Terms of Use:  
+[Insert License Name Here](Insert Link to License here)
+
+### Deployment Geography:  
+[Insert Global; Asia-Pacific (APAC); Europe, Middle East, and Africa (EMEA); Latin America (LATAM), North America (NAM), and/or specific countries.]
+
+### Release Management: <br>  
+[Answer how this system is exposed for use/download.] <br>
+
+## Automation Level:  
+* [Autonomous] <br>  
+* [Partial Automation] <br>  
+* [Assistant]  <br
+
+## Use Case:  
+[Answer who would be expected to use this system and for what.] <br>
+
+## Known Technical Limitations:  
+[Where does this system struggle within its operational design domain? Do NOT leave blank or put "Not Applicable"/"N/A."] <br>
+
+## Known Risks:  
+[What would happen if this did not work as intended within its operational design domain?  Do NOT leave blank or put "Not Applicable"/"N/A."] <br>
+
+## Fail Safe In-Place:  
+* [Emergency Override] <br>  
+* [Shut-Down] <br>
+
+### Release Date: <br>  
+[Insert MM/DD/YYY] <br>
+
+## Reference(s): <br>  
+[Provide list of reference(s), link(s) to the publication/paper/article, associated works, and lineage where relevant.  Links to model cards underpinning the system go here.]  <br>
+
+## System Architecture: <br>  
+**Architecture Diagram:** [Insert]  <br>
+
+# System Input and Output <br>
+## Input:  
+**Input Type(s):** [Audio, Image, Text, Tabular, etcetera (etc.)] <br>  
+**Input Format(s):** [Red, Green, Blue (RGB), Infrared (IR), Lidar, or String] <br>  
+**Input Parameters:** [(1D, 2D, 3D)] <br>  
+**Other Properties Related to Input:** [Specific Resolution/Minimum or Maximum Resolution, Characters (Including Restrictions), or Tokens;  Image Range Needed (W x Y x Z), Pre-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Such] <br>
+
+## Output:  
+**Output Type(s):** [Audio, Image, Text, Tabular, etc.] <br>  
+**Output Format:** [Red, Green, Blue (RGB), Infrared (IR), Lidar, or String] <br>  
+**Output Parameters:** [(1D, 2D, 3D)] <br>  
+**Other Properties Related to Output:** [Specific Resolution/Minimum or Maximum Resolution or Characters (Including Restrictions), or Tokens; Image Range (W x Y x Z), Post-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Such] <br>
+
+## Supported Hardware Microarchitecture Compatibility:** <br>  
+* [Insert Supported Hardware Microarchitecture] <br>
+**[Preferred/Supported] Operating System(s):** <br>  
+* [Linux] <br>  
+* [Linux 4 Tegra] <br>  
+* [QNX]  <br>  
+* [Windows] <br>  
+* [Name Other Not Listed Above] <br>
+
+## Hardware Specific Requirements:** <br>  
+[Insert compute performance, memory bandwidth, or thermal power needed here] <br>
+
+## System Version(s):  
+[Use unique identifier for identifying the system in the future- this may be part of our internal naming, specifying variation like "pruned," "unpruned," "trained," or "deployable" or "quantized" where necessary and including a versioning number like vX.X along with short description differentiating if multiple versions are available]  <br>
+
+## Ethical Considerations:  
+NVIDIA believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with our terms of service, developers should work with their internal model team to ensure this system meets requirements for the relevant industry and use case and addresses unforeseen product misuse.
+Please report model quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)].
