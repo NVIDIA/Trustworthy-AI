@@ -1,0 +1,52 @@
+## [Insert Name of Blueprint]
+
+## Description:
+Describe what this blueprint does starting with the blueprint name and verb; this should be one sentence starting with the blueprint name. You may add additional detail following the initial sentence. 
+Please pick one of the following to insert at the end of your description: [This blueprint is ready for commercial/non-commercial use.] OR [This blueprint is for research and development only.] OR [This blueprint is for demonstration purposes and not for production usage.] <br>
+
+## License/Terms of Use: <br>  
+[Insert License Name Here](Insert Link to License here)
+
+## Third-Party Community Consideration: [If there are third-party assets included in this blueprint, please include this section]
+
+The software components in this blueprint are not owned or developed by [insert name of company]. They have been developed and built to a third-party’s requirements; see link to (Insert Name and Link) Model Card.
+
+## Deployment Geography:
+[Insert Global; Asia-Pacific (APAC); Europe, Middle East, and Africa (EMEA); Latin America (LATAM), North America (NAM), and/or specific countries.] 
+
+## Architecture Diagram:   
+[Provide a diagram of the blueprint’s overall architecture].
+
+## What’s Included in the Blueprint:
+
+| Software Components | Link to AI Transparency Card |
+| :---- | :---- |
+|  |  |
+|  |  |
+
+## Use Case:   
+[Answer who would be expected to use this blueprint and for what\].
+
+## Experience Walkthrough:  
+[Provide a 1-2 paragraph overview of the walkthrough experience\].
+
+## Release Date:   
+[Insert Name of Publishing Platform] [Insert MM/DD/YYYY] via [URL] <br> 
+
+## Blueprint Version: 
+[Use unique identifier for identifying the blueprint in the future- this may be part of our internal naming, specifying variation like "pruned," "unpruned," "trained," or "deployable" or "quantized" where necessary and including a versioning number like vX.X along with short description differentiating if multiple versions are available.] 
+
+## Minimum System Requirements:  
+[Describe the minimum Hardware and Operating System requirements].
+
+## Hardware Requirements
+** OS Requirements
+
+## Software Used in This Blueprint:  
+[Provide a description of the software used in the blueprint; include links where applicable].
+
+## Ethical Considerations:  
+[Insert Name of Company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with our terms of service, developers should work with their internal model team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse.
+
+Please report model quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)].  
+
