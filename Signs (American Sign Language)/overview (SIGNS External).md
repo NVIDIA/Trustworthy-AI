@@ -6,7 +6,7 @@ SIGNS detects and classifies American Sign Language hand gestures in real-time v
 
 
 ### License/Terms of Use
-This model is not approved for external distribution.  <br>
+This model is not approved for external distribution.  No audio or video data is captured for learning; Abide by the [data collection terms](https://signs-ai.com/datacollectionterms) for contributions.  <br>
 
 ### Deployment Geography:
 Global - web-based application accessible worldwide <br>
