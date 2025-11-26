@@ -1,0 +1,114 @@
+# SPDX-FileCopyrightText: Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+[tool.poetry]
+name = "asl-data-pipeline"
+version = "0.1.0"
+description = "ASL Data Pipeline - A data processing pipeline for American Sign Language data"
+authors = ["NVIDIA"]
+readme = "README.md"
+packages = [{include = "asl_data_pipeline", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+pandas = "^2.0.0"
+numpy = "^1.26.0"
+scikit-learn = "^1.3.0"
+matplotlib = "^3.10.3"
+seaborn = "^0.12.0"
+jupyter = "^1.0.0"
+opencv-python = "^4.8.0"
+Pillow = "^10.0.0"
+scipy = "^1.16.0"
+pydantic = "^2.10.0"
+pydantic-settings = "^2.0.0"
+boto3 = "^1.35.0"
+python-dotenv = "^1.0.0"
+mediapipe = "^0.10.21"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+black = "24.10.0"
+flake8 = "7.1.1"
+pre-commit = "4.2.0"
+flake8-docstrings = "1.7.0"
+isort = "5.13.2"
+autoflake = "2.2.1"
+pytest-asyncio = "^0.25.2"
+pytest-mock = "^3.14.0"
+coverage = "7.8.1"
+mypy = "^1.5.0"
+ipykernel = "^6.29.5"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^7.1.0"
+sphinx-rtd-theme = "^1.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py311']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.coverage.run]
+source = ["asl_data_pipeline"]
+
+[tool.coverage.report]
+omit = [
+    "*/tests/*",  # Exclude all files in any 'tests' directory
+]
+
+# To make sure that isort has a consistent understanding of third party imports, between
+# local env and CI, we need to specify the third party imports in the isort config.
+[tool.isort]
+profile = "black"
+line_length = 120
+known_third_party = [
+    "superannotate",
+]
+
+[tool.flake8]
+max-line-length = 120
+ignore = ["F401", "W503", "E203"]
+exclude = [
+    ".git",
+    "__pycache__",
+    ".venv",
+    "build",
+    "dist",
+    "*.egg-info"
+]
