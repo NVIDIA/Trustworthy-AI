@@ -4,4 +4,3 @@ NVIDIA is committed to building a better world through the advancement of AI we 
 
 ## Community
 We will be keeping this page updated on a monthly basis.  Start by checking out our Model Card++ templates [here](https://github.com/NVIDIA/Trustworthy-AI/tree/main/Model%20Card%2B%2B%20Templates).  We invite contributions! Open a GitHub issue or pull request!
-
