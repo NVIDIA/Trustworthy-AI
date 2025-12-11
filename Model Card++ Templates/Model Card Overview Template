@@ -18,11 +18,7 @@ This model is not owned or developed by [Insert Company Name]. This model has be
 [Answer who would be expected to use this model and for what specific use cases] <br>
 
 ### Release Date:  <br>
-Build.Nvidia.com [Insert MM/DD/YYYY] via [URL] <br> 
-Github [Insert MM/DD/YYYY] via [URL] <br> 
-Hugging Face [Insert MM/DD/YYYY] via [URL] <br> 
-NGC [Insert MM/DD/YYYY] <br>
-Other [Insert MM/DD/YYYY] <br>
+[Insert Publishing Location Name] [Insert MM/DD/YYYY] via [URL] <br> 
 
 ## Reference(s) (Leave Blank If None):
 [Provide list of reference(s), link(s) to the publication/paper/article, associated works, and lineage where relevant.]  <br> 
@@ -71,31 +67,12 @@ Other [Insert MM/DD/YYYY] <br>
 * Video: Three-Dimensional (3D) <br>
 **Other Properties Related to Output:** [Specific Resolution/Minimum or Maximum Resolution or Characters (Including Restrictions), Context Length; Image Range (W x Y x Z), Post-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Explicitly] <br> 
 
-Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated systems [or name equivalent hardware preference]. By leveraging NVIDIA’s hardware (e.g. GPU cores) and software frameworks (e.g., CUDA libraries), the model achieves faster training and inference times compared to CPU-only solutions. <br>   
-
 ## Software Integration: <br>
 **Runtime Engine(s):** <br>
-* [BioNeMo- Name Minimally Compatible Version] <br>
-* [DeepStream- Name Minimally Compatible Version] <br>
-* [DXIS- Name Minimally Compatible Version] <br>
-* [Maxine- Name Minimally Compatible Version] <br>
-* [Morpheus- Name Minimally Compatible Version] <br>
-* [NeMo- Name Minimally Compatible Version] <br>
-* [Riva- Name Minimally Compatible Version] <br>
-* [TAO- Name Minimally Compatible Version] <br>
-* [Not Applicable (N/A)- Name Platform If Multiple] <br> 
+* [Insert Runtime Engine] <br>
 
 **Supported Hardware Microarchitecture Compatibility:** <br>
-[List in Alphabetic Order]:** <br>
-* [NVIDIA Ampere or specific models] <br>
-* [NVIDIA Blackwell or specific models] <br>
-* [NVIDIA Jetson or specific models]  <br>
-* [NVIDIA Hopper or specific models] <br>
-* [NVIDIA Lovelace or specific models] <br>
-* [NVIDIA Pascal or specific models] <br>
-* [NVIDIA Turing or specific models] <br>
-* [NVIDIA Volta or specific models] <br>
-* [Insert NVIDIA Microarchitecture Name Not Listed Above] <br>
+* [Insert Microarchitecture Name] <br>
 
 **[Preferred/Supported] Operating System(s):** <br>
 * [Linux] <br>
@@ -218,7 +195,7 @@ The integration of foundation and fine-tuned models into AI systems requires add
 * [Undisclosed] - [Only note Undisclosed if the labeling methods have not been disclosed. If we are able to ascertain the Labeling Method, please describe using one of the other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the labeling method.] <br>
 * [Hybrid: _______, _______] - [If you have multiple datasets, instead of listing a Labeling Method for each dataset, you may use "Hybrid" and list the applicable labeling methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
-**Properties (Quantity, Dataset Descriptions, Sensor(s)):** [[Number of data items in training set, descriptive information about the data indicating (i) the modalities (e.g,, text, images), (ii) nature of the content (e.g., personal data, copyright protected content, machine generated data such as Internet of Things or synthetic data) and (iii) its linguistic characteristics. If applicable, what specific sensor type was used for Data Collection]] <br>
+**Properties:** [[Number of data items in training set, descriptive information about the data indicating (i) the modalities (e.g,, text, images), (ii) nature of the content (e.g., personal data, copyright protected content, machine generated data such as Internet of Things or synthetic data) and (iii) its linguistic characteristics. If applicable, what specific sensor type was used for Data Collection]] <br>
 
 ## Testing Dataset [Typically, a subset of the training dataset that affirms the model is performing as expected]:
 **Link:** [Link or name to dataset used for testing the model. ]  <br>
@@ -238,11 +215,10 @@ The integration of foundation and fine-tuned models into AI systems requires add
 * [Undisclosed] -  [Only note Undisclosed if the labeling methods have not been disclosed. If we are able to ascertain the labeling method, please describe using one of the other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the labeling method.] <br>
 * [Hybrid: _______, _______] - [If you have multiple datasets, instead of listing a Labeling Method for each dataset, you may use "Hybrid" and list the applicable labeling methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
-**Properties (Quantity, Dataset Descriptions, Sensor(s)):** [[Number of data items in training set, descriptive information about the data indicating (i) the modalities (e.g,, text, images), (ii) nature of the content (e.g., personal data, copyright protected content, machine generated data such as Internet of Things or synthetic data) and (iii) its linguistic characteristics. If applicable, what specific sensor type was used for Data Collection]] <br>
+**Properties:** [[Number of data items in training set, descriptive information about the data indicating (i) the modalities (e.g,, text, images), (ii) nature of the content (e.g., personal data, copyright protected content, machine generated data such as Internet of Things or synthetic data) and (iii) its linguistic characteristics. If applicable, what specific sensor type was used for Data Collection]] <br>
 
 ## Evaluation Dataset [Dataset used to formally evaluate the model apart from the training dataset]:
 **Link:** [Link or name to dataset used for evaluating the model.]  <br>
-(Internal Only: Not To Be Published) <br> 
 **Benchmark Score <br>
 
 ** Data Collection Method by dataset <br>
@@ -261,17 +237,13 @@ The integration of foundation and fine-tuned models into AI systems requires add
 * [Undisclosed] - [Only note Undisclosed if the labeling methods have not been disclosed. If we are able to ascertain the labeling method, please describe using one of the other methods noted above. For 3PP models, please review the 3PP publisher's documentation to determine whether we can characterize the labeling method.] <br>
 * [Hybrid: _______, _______] -[If you have multiple datasets, instead of listing a Labeling Method for each dataset, you may use "Hybrid" and list the applicable labeling methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
-**Properties (Quantity, Dataset Descriptions, Sensor(s)):** [[Number of data items in training set, descriptive information about the data indicating (i) the modalities (e.g,, text, images), (ii) nature of the content (e.g., personal data, copyright protected content, machine generated data such as Internet of Things or synthetic data) and (iii) its linguistic characteristics. If applicable, what specific sensor type was used for Data Collection]] <br>
+**Properties:** [[Number of data items in training set, descriptive information about the data indicating (i) the modalities (e.g,, text, images), (ii) nature of the content (e.g., personal data, copyright protected content, machine generated data such as Internet of Things or synthetic data) and (iii) its linguistic characteristics. If applicable, what specific sensor type was used for Data Collection]] <br>
 
-*Insert Key Performance Indicators or Evaluation Benchmarks Here (Language Model Reference https://docs.google.com/spreadsheets/d/1SwyHhBTFQJTLZ4tuc-JdDcjA7wy68DyWdTehGNUgJ6M/edit?gid=721511647#gid=721511647). <br>
+*Insert Key Performance Indicators or Evaluation Benchmarks Here <br>
 
 ## Inference: 
-**Acceleration Engine:** [Tensor(RT), Tensor (RT)-LLM, Triton, Or List Other Here] <br>
+**Acceleration Engine:** <br>
 **Test Hardware [Name the specific test hardware model]:** <br>
-* [Jetson XXNN] <br>
-* [Drive X.X] <br>
-* [List Other Here X.X]  <br>
-* [List Other Here X.X or Minimum Hardware Requirements]  <br>
 
 ## Ethical Considerations:
 [Insert Company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with our terms of service, developers should work with their internal model team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse.  
