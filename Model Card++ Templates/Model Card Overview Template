@@ -15,7 +15,7 @@ This model is not owned or developed by [Insert Company Name]. This model has be
 [Insert Global; Asia-Pacific (APAC); Europe, Middle East, and Africa (EMEA); Latin America (LATAM), North America (NAM), and/or specific countries]
 
 ### Use Case: <br>
-[Answer who would be expected to use this system and for what specific use cases] <br>
+[Answer who would be expected to use this model and for what specific use cases] <br>
 
 ### Release Date:  <br>
 Build.Nvidia.com [Insert MM/DD/YYYY] via [URL] <br> 
@@ -170,7 +170,7 @@ The integration of foundation and fine-tuned models into AI systems requires add
 [End of GPAI Model Specific Section] <br>
 
 ## Training Dataset [The dataset the model was trained on]:
-**Link:** [Link or name to dataset used for training the model.  Share nSpect IDs.  nSpect IDs will be internal-only]  <br>
+**Link:** [Link or name to dataset used for training the model.]  <br>
 
 ** Data Modality <br>
 * [Audio] <br>
@@ -221,7 +221,7 @@ The integration of foundation and fine-tuned models into AI systems requires add
 **Properties (Quantity, Dataset Descriptions, Sensor(s)):** [[Number of data items in training set, descriptive information about the data indicating (i) the modalities (e.g,, text, images), (ii) nature of the content (e.g., personal data, copyright protected content, machine generated data such as Internet of Things or synthetic data) and (iii) its linguistic characteristics. If applicable, what specific sensor type was used for Data Collection]] <br>
 
 ## Testing Dataset [Typically, a subset of the training dataset that affirms the model is performing as expected]:
-**Link:** [Link or name to dataset used for testing the model.  Share nSpect IDs.  nSpect IDs will be internal-only]  <br>
+**Link:** [Link or name to dataset used for testing the model. ]  <br>
 ** Data Collection Method by dataset <br>
 * [Automated] - [Think "Scraper"] <br>
 * [Automatic/Sensors] - [Machine-derived]  <br>
@@ -241,7 +241,7 @@ The integration of foundation and fine-tuned models into AI systems requires add
 **Properties (Quantity, Dataset Descriptions, Sensor(s)):** [[Number of data items in training set, descriptive information about the data indicating (i) the modalities (e.g,, text, images), (ii) nature of the content (e.g., personal data, copyright protected content, machine generated data such as Internet of Things or synthetic data) and (iii) its linguistic characteristics. If applicable, what specific sensor type was used for Data Collection]] <br>
 
 ## Evaluation Dataset [Dataset used to formally evaluate the model apart from the training dataset]:
-**Link:** [Link or name to dataset used for evaluating the model.  Share nSpect IDs.  nSpect IDs will be internal-only]  <br>
+**Link:** [Link or name to dataset used for evaluating the model.]  <br>
 (Internal Only: Not To Be Published) <br> 
 **Benchmark Score <br>
 
@@ -282,5 +282,3 @@ Please make sure you have proper rights and permissions for all input image and 
 For more detailed information on ethical considerations for this model, please see the Model Card++ Explainability, Bias, Safety & Security, and Privacy Subcards [Insert Link to Model Card++ subcards here].  
 
 Please report model quality, risk, security vulnerabilities or concerns [here](Insert Link Here).  <br>
-
-***You may remove "[]s" before publishing.  
