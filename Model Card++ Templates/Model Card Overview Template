@@ -6,8 +6,8 @@ Describe what this algorithm/model does starting with the model name and verb; t
  
 Please pick one of the following to insert at the end of your description:[This model is ready for commercial/non-commercial use.] OR [This model is for research and development only.] OR [This model is for demonstration purposes and not for production usage.]  <br>
 
-## Third-Party Community Consideration [(Insert for Non-NVIDIA Third-Party Community Models)] <br>
-This model is not owned or developed by NVIDIA. This model has been developed and built to a third-party’s requirements for this application and use case; see link to Non-NVIDIA [(Insert Name) Model Card](Insert Link). <br>
+## Third-Party Community Consideration [(Insert for Third-Party Community Models)] <br>
+This model is not owned or developed by [Insert Company Name]. This model has been developed and built to a third-party’s requirements for this application and use case; see link to [(Insert Name) Model Card](Insert Link). <br>
 
 ### License/Terms of Use: <br> 
 
@@ -15,12 +15,12 @@ This model is not owned or developed by NVIDIA. This model has been developed an
 [Insert Global; Asia-Pacific (APAC); Europe, Middle East, and Africa (EMEA); Latin America (LATAM), North America (NAM), and/or specific countries]
 
 ### Use Case: <br>
-[Answer who would be expected to use this system and for what] <br>
+[Answer who would be expected to use this system and for what specific use cases] <br>
 
 ### Release Date:  <br>
 Build.Nvidia.com [Insert MM/DD/YYYY] via [URL] <br> 
 Github [Insert MM/DD/YYYY] via [URL] <br> 
-Huggingface [Insert MM/DD/YYYY] via [URL] <br> 
+Hugging Face [Insert MM/DD/YYYY] via [URL] <br> 
 NGC [Insert MM/DD/YYYY] <br>
 Other [Insert MM/DD/YYYY] <br>
 
@@ -32,7 +32,7 @@ Other [Insert MM/DD/YYYY] <br>
 **Network Architecture:** [(DarkNet19, DarkNet53, DetectNetv2, GoogleNet, MobileNet_v1, MobileNetv2, NvHelnet10, NvHelnet18, ResNet10, ResNet18, ResNet34, ResNet34, ResNet50, SqueezeNet, UNET, Vegg16, Vegg19, VGG10, or List Something Else] <br>
  
 **This model was developed based on [insert base model name (if applicable)]. 
-** Number of model parameters [(Recorded with at least two significant figures e.g. 7.3*10^10)] <br>
+** Number of model parameters [(Recorded with at least two significant figures e.g. 7.3*10^10). If this is a third-party release, and the parameters are undisclosed, state Undisclosed.] <br>
 
 (Internal Only for GPAI Models: Not To Be Published) <br>
 ** Describe design choices related to initialization techniques, hyperparameter tuning, regularization techniques, model optimization, damping, and training parameters. [100 Words or Less] <br>  
@@ -42,17 +42,34 @@ Other [Insert MM/DD/YYYY] <br>
 **Estimated Energy and Emissions for Model Training:** <br>
  
 ## Input: <br>
-**Input Type(s):** [Audio, Image, Text, Tabular, etcetera (etc.)] <br>
-**Input Format(s):** [Red, Green, Blue (RGB), Infrared (IR), Lidar, or String] <br>
-**Input Parameters:** [(1D, 2D, 3D, etcetera). Please write out in first mention of instance.] <br>
-**Other Properties Related to Input:** [Specific Resolution/Minimum or Maximum Resolution, Characters (Including Restrictions), or Tokens;  Image Range Needed (W x Y x Z), Pre-Processing Needed, Alpha Channel, Bit; Please State Explicitly.] 
+**Input Type(s):** [Specify ALL input types. For example, Audio, Image, Text, Video)] <br>
+**Input Format(s):** [Specify at least one format for each input type. For example: <br>
+* Audio: .wav <br>
+* Image: Red, Green, Blue (RGB) <br>
+* Text: String <br>
+* Video: .mov <br>
+**Input Parameters:** [How do we characterize the input in terms of the number of dimensions?]  <br>
+* Audio: One-Dimensional (1D)  <br>
+* Image: Two-Dimensional (2D0 <br>
+* Text: One-Dimensional (1D) <br>
+* Video: Three-Dimensional (3D) <br>
+**Other Properties Related to Input:** [Specific Resolution/Minimum or Maximum Resolution, Characters (Including Restrictions), Context Length; Image Range Needed (W x Y x Z), Pre-Processing Needed, Alpha Channel, Bit; Please State Explicitly.] 
+
 (For GPAI Models Only): State size and length limits for each input modality. <br>
 
 ## Output: <br>
-**Output Type(s):** [Audio, Image, Text, Tabular, etc.] <br>
-**Output Format:** [Red, Green, Blue (RGB), Infrared (IR), Lidar, or String] <br>
-**Output Parameters:** [(1D, 2D, 3D, etcetera). Please write out in first mention of instance.]] <br>
-**Other Properties Related to Output:** [Specific Resolution/Minimum or Maximum Resolution or Characters (Including Restrictions), or Tokens; Image Range (W x Y x Z), Post-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Explicitly] <br> 
+**Output Type(s):** [Specify ALL output types. For example, Audio, Image, Text, Video)] <br>
+**Output Format(s):** [Specify at least one format for each output type. For example: <br>
+* Audio: .wav <br>
+* Image: Red, Green, Blue (RGB) <br>
+* Text: String <br>
+* Video: .mov <br>
+**Output Parameters:** [How do we characterize the output in terms of the number of dimensions?]  <br>
+* Audio: One-Dimensional (1D)  <br>
+* Image: Two-Dimensional (2D0 <br>
+* Text: One-Dimensional (1D) <br>
+* Video: Three-Dimensional (3D) <br>
+**Other Properties Related to Output:** [Specific Resolution/Minimum or Maximum Resolution or Characters (Including Restrictions), Context Length; Image Range (W x Y x Z), Post-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Explicitly] <br> 
 
 Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated systems [or name equivalent hardware preference]. By leveraging NVIDIA’s hardware (e.g. GPU cores) and software frameworks (e.g., CUDA libraries), the model achieves faster training and inference times compared to CPU-only solutions. <br>   
 
@@ -202,7 +219,6 @@ The integration of foundation and fine-tuned models into AI systems requires add
 * [Hybrid: _______, _______] - [If you have multiple datasets, instead of listing a Labeling Method for each dataset, you may use "Hybrid" and list the applicable labeling methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
 **Properties (Quantity, Dataset Descriptions, Sensor(s)):** [[Number of data items in training set, descriptive information about the data indicating (i) the modalities (e.g,, text, images), (ii) nature of the content (e.g., personal data, copyright protected content, machine generated data such as Internet of Things or synthetic data) and (iii) its linguistic characteristics. If applicable, what specific sensor type was used for Data Collection]] <br>
-**Dataset License(s):** [Name, Link applicable to dataset license or applicable Jira ticket or NVBug. Write none if not applicable (N/A). This is an internal-only field.] <br>
 
 ## Testing Dataset [Typically, a subset of the training dataset that affirms the model is performing as expected]:
 **Link:** [Link or name to dataset used for testing the model.  Share nSpect IDs.  nSpect IDs will be internal-only]  <br>
@@ -223,7 +239,6 @@ The integration of foundation and fine-tuned models into AI systems requires add
 * [Hybrid: _______, _______] - [If you have multiple datasets, instead of listing a Labeling Method for each dataset, you may use "Hybrid" and list the applicable labeling methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
 **Properties (Quantity, Dataset Descriptions, Sensor(s)):** [[Number of data items in training set, descriptive information about the data indicating (i) the modalities (e.g,, text, images), (ii) nature of the content (e.g., personal data, copyright protected content, machine generated data such as Internet of Things or synthetic data) and (iii) its linguistic characteristics. If applicable, what specific sensor type was used for Data Collection]] <br>
-**Dataset License(s):** [Name, Link applicable to dataset license or applicable Jira ticket or NVBug. Write none if not applicable (N/A). This is an internal-only field.] <br>
 
 ## Evaluation Dataset [Dataset used to formally evaluate the model apart from the training dataset]:
 **Link:** [Link or name to dataset used for evaluating the model.  Share nSpect IDs.  nSpect IDs will be internal-only]  <br>
@@ -247,7 +262,6 @@ The integration of foundation and fine-tuned models into AI systems requires add
 * [Hybrid: _______, _______] -[If you have multiple datasets, instead of listing a Labeling Method for each dataset, you may use "Hybrid" and list the applicable labeling methods encompassing all datasets.] <br>
 * [Not Applicable] <br>
 **Properties (Quantity, Dataset Descriptions, Sensor(s)):** [[Number of data items in training set, descriptive information about the data indicating (i) the modalities (e.g,, text, images), (ii) nature of the content (e.g., personal data, copyright protected content, machine generated data such as Internet of Things or synthetic data) and (iii) its linguistic characteristics. If applicable, what specific sensor type was used for Data Collection]] <br>
-**Dataset License(s):** [Name, Link applicable to dataset license or applicable Jira ticket or NVBug. Write none if not applicable (N/A). This is an internal-only field.] <br>
 
 *Insert Key Performance Indicators or Evaluation Benchmarks Here (Language Model Reference https://docs.google.com/spreadsheets/d/1SwyHhBTFQJTLZ4tuc-JdDcjA7wy68DyWdTehGNUgJ6M/edit?gid=721511647#gid=721511647). <br>
 
@@ -260,7 +274,7 @@ The integration of foundation and fine-tuned models into AI systems requires add
 * [List Other Here X.X or Minimum Hardware Requirements]  <br>
 
 ## Ethical Considerations:
-NVIDIA believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with our terms of service, developers should work with their internal model team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse.  
+[Insert Company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with our terms of service, developers should work with their internal model team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse.  
 
 (Required for models with input images and video) <br>
 Please make sure you have proper rights and permissions for all input image and video content; if image or video includes people, personal health information, or intellectual property, the image or video generated will not blur or maintain proportions of image subjects included. <br>
