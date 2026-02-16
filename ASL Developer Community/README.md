@@ -549,7 +549,7 @@ This project is licensed under the Apache License, Version 2.0 - see the [LICENS
 If you use the code or data in your research, please cite:
 ```
 @article{nv_asl_data_pipeline_2026,
-  title={A Scalable Data Pipeline for ASL Media Processing and},
+  title={A Scalable Data Pipeline for ASL Media Processing and Annotation},
   author={Nguyen, Khanh and Sri-Tharan, Radha and Zachariah, Arun George and Maiti, Pratyusha and Grainger, Latasha and Arias, Amariah and Minor, Dnaijsha and Oliver, Jesse and Diamond, Jenna and Yared, Dina and others},
   year={2026}
 }
