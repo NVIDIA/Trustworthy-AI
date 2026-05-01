@@ -3,7 +3,8 @@
 
 [This skill is ready for commercial/non-commercial use.] OR [This skill is for research and development only.] OR [This skill is for demonstration purposes and not for production usage.]  <br>
 
-## Owner: [Insert Name Here] <br>
+## Owner: <br>
+[Insert Name Here] <br>
 
 ### License/Terms of Use: <br>
 [Insert license link here] <br>
