@@ -6,7 +6,7 @@
 ## Owner: [Insert Name Here] <br>
 
 ### License/Terms of Use: <br>
-[Apache/Creative Commons] <br>
+[Insert license link here] <br>
 
 ## Use Case: <br>
 [Answer who [Employees (IT Enterprise Agents), External (Open Sourced Agents)], Developers (Coding Agents) would be expected to use this skill and for what.] <br>
@@ -26,7 +26,7 @@ Risk: Review before execution as proposals could introduce incorrect or misleadi
 **Output Parameters:** [(1D)] <br>
 **Other Properties Related to Output:** [Specifics related to output] <br> 
 
-## Skill Version(s): <br> 
+## Skill Version: <br> 
 [Signing Identifier]  <br>
 
 ## Ethical Considerations: <br>
