@@ -4,7 +4,7 @@ description: "Reads an agent skill's source files and produces a populated NVIDI
 license: "MIT"
 compatibility: "Any agent that can run Python scripts and write files"
 metadata:
-  author: "Trustworthyaiprojects@nvidia.com <trustworthyaiprojects@nvidia.com>"
+  author: "Pratyusha Maiti <pmaiti@nvidia.com>"
   tags:
     - skill-card
     - governance
