@@ -13,7 +13,7 @@ metadata:
   domain: documentation
 ---
 
-# Populate Skill Card
+# Generate Skill Card
 
 **Skill directory to analyze**: $ARGUMENTS
 
