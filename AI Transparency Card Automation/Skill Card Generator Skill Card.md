@@ -1,10 +1,10 @@
 ---
-name: "populate-skill-card"
+name: "Skill Card Generator"
 description: "Reads an agent skill's source files and produces a populated NVIDIA skill card plus a review table. Use when a skill directory exists and a governance card needs to be generated or updated."
 license: "MIT"
 compatibility: "Any agent that can run Python scripts and write files"
 metadata:
-  author: "Pratyusha Maiti <pmaiti@nvidia.com>"
+  author: "Trustworthy AI Projects <trustworthyaiprojects@nvidia.com>"
   tags:
     - skill-card
     - governance
