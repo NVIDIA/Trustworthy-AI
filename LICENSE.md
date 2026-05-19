@@ -1,4 +1,4 @@
-Creative Commons Zero (CCO) License for AI Transparency Card Templatez:
+Creative Commons Zero (CCO) License for AI Transparency Card Templates:
 Version 1.0 Universal
 https://creativecommons.org/publicdomain/zero/1.0/.
 
