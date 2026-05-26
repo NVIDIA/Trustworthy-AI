@@ -1,5 +1,5 @@
 ---
-name: "Skill Card Generator"
+name: "skill-card-generator"
 description: "Reads an agent skill's source files and produces a skill card plus a review table. Use when a skill directory exists and a governance card needs to be generated or updated."
 license: https://creativecommons.org/licenses/by/4.0/deed.en & https://www.apache.org/licenses/LICENSE-2.0
 compatibility: "Any agent that can run Python scripts and write files"
