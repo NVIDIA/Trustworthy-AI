@@ -27,6 +27,18 @@ Risk: Review before execution as proposals could introduce incorrect or misleadi
 **Output Parameters:** [(1D)] <br>
 **Other Properties Related to Output:** [Specifics related to output] <br> 
 
+## Evaluation Agent: <br>
+[Answer which agent was used for evaluating the skill.] <br>
+
+## Evaluation Tasks: <br>
+[Answer which dataset was used for evaluating the skill. IF not a public dataset, describe the nature and size of the dataset.] <br>
+
+## Evaluation Metrics: <br>
+[Answer which metrics was computed during the evaluation. E.g. token reduction, accuracy improvement, tool calling, other task specific metrics.] <br>
+
+## Evaluation Results: <br>
+[Answer which metrics was computed during the evaluation. E.g. token reduction, accuracy improvement, tool calling, other task specific metrics.] <br>
+
 ## Skill Version: <br> 
 [Signing Identifier]  <br>
 
