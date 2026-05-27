@@ -10,10 +10,12 @@ This guide defines every context field: its purpose, where to look for a value, 
 skill_name, skill_kind, description_sentence, usage_posture,
 owner, license_identifier, use_case,
 deployment_geography, references, output,
-skill_version
+skill_version, evaluation
 ```
 
-Every key must be present. Lists may be empty. Strings may be `""` only if the field genuinely has no grounding in any source you were given. Otherwise write an informed value — even if uncertain — and mark it INFERRED in the review table. Writing "" or HUMAN-REQUIRED is a last resort, not a default.
+Every required key must be present. Lists may be empty. Strings may be `""` only if the field genuinely has no grounding in any source you were given. Otherwise write an informed value — even if uncertain — and mark it INFERRED in the review table. Writing "" or HUMAN-REQUIRED is a last resort, not a default.
+
+`evaluation` is optional. Include it only when source evidence or user-provided context supports at least one evaluation field. If no evaluation evidence exists, omit `evaluation` entirely so the optional evaluation sections do not render.
 
 ## Verify markers (read this before filling in `owner` and `license_identifier`)
 
@@ -141,6 +143,50 @@ Prefer in order:
 
 When multiple sources agree, cite them together: `"1.0.0 (source: pyproject.toml, CHANGELOG, git tag)"`. When they disagree, use the CHANGELOG version and flag the discrepancy in the review table.
 
+### `evaluation` (object, optional)
+
+Use only when evaluation details are grounded in evaluation docs, benchmark notes, red-team/security reports, validation logs, test output, or explicit user-provided context. Do not create placeholders for missing evaluation data; omit missing subfields. If no subfield can be grounded, omit the whole `evaluation` object.
+
+Shape:
+
+```
+{
+  "agents": [
+    "Agent Name (`model-or-version`)"
+  ],
+  "tasks": "Evaluated against 3 internal skill directories.",
+  "metrics": {
+    "dimensions": [
+      {
+        "name": "Dimension name",
+        "description": "What this reported benchmark dimension checks."
+      }
+    ],
+    "signals": [
+      {
+        "name": "signal_name",
+        "description": "What this underlying evaluation signal verifies."
+      }
+    ]
+  },
+  "results_markdown": "| Dimension | Num | Agent Name |\n|---|---:|---:|\n| Dimension name | 1 | 95% |",
+  "testing_completed": {
+    "agent_red_teaming": true,
+    "network_security": false,
+    "product_security": false
+  }
+}
+```
+
+- `agents` — list of agent display strings used for evaluation. Include versions or model identifiers when known, e.g. `"Agent Name (`model-version`)"`. For backward compatibility, a legacy string `agent` is still accepted.
+- `tasks` — the dataset, task set, benchmark, or nature/size of internal evaluation cases.
+- `metrics.dimensions` — reported benchmark dimensions and what each checks. Write clear descriptions of the items being checked, such as safety, correctness, discoverability, effectiveness, or efficiency criteria when those are actually used by the evaluation.
+- `metrics.signals` — underlying evaluation signals and what each verifies, such as skill execution, routing quality, final-answer accuracy, goal completion, expected behavior checks, or token efficiency when those are actually present in the evaluation. For backward compatibility, a legacy string `metrics` is still accepted.
+- `results_markdown` — a complete Markdown table copied or composed from the evaluation report. Include all listed metrics/dimensions and values. Do not use this field for prose; if there is no table-backed result, omit it.
+- `testing_completed` — include only when all three explicit boolean values are known: `agent_red_teaming`, `network_security`, and `product_security`. `true` renders a checked row; `false` renders an unchecked row.
+
+Prefer concise, evidence-backed prose. If the discovery output says no evaluation artifacts were detected and the user did not provide evaluation details, do not include this object.
+
 ## Cross-field consistency checks
 
 Before finalizing the context, verify:
@@ -150,7 +196,7 @@ Before finalizing the context, verify:
 
 ## What goes in the review table
 
-For every context key, emit a row with: Section (card section name), Field (context key), Confidence (`HIGH` / `INFERRED` / `HUMAN-REQUIRED`), Review Needed (`Yes` / `No`), Reasoning (short sentence), Source Files (comma-separated relative paths, or `None`).
+For every required context key, emit a row with: Section (card section name), Field (context key), Confidence (`HIGH` / `INFERRED` / `HUMAN-REQUIRED`), Review Needed (`Yes` / `No`), Reasoning (short sentence), Source Files (comma-separated relative paths, or `None`). If `evaluation` is present, emit rows for its populated subfields.
 
 Rules:
 - `HIGH` when the value is copied verbatim or structurally from a specific source (frontmatter key, LICENSE file, explicit URL).

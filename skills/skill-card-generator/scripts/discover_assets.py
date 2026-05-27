@@ -10,6 +10,7 @@ this output.
 
 Usage: python3 discover_assets.py <skill_directory>
 """
+from __future__ import annotations
 
 import json
 import re
@@ -57,7 +58,23 @@ CONSTRAINT_KEYWORDS = [
     "cannot", "unsupported", "requires", "limited to",
 ]
 
-EVAL_KEYWORDS = ["eval", "benchmark", "performance", "accuracy", "testing", "metric"]
+EVAL_KEYWORDS = [
+    "eval",
+    "evaluation",
+    "benchmark",
+    "performance",
+    "accuracy",
+    "testing",
+    "metric",
+    "metrics",
+    "validation",
+    "red-team",
+    "red team",
+    "red_teaming",
+    "redteam",
+    "network security",
+    "product security",
+]
 
 # Legal/process links that should NOT be emitted as release channels.
 LEGAL_URL_FRAGMENTS = [
@@ -604,7 +621,7 @@ def emit_signal_summary(
         for d in eval_docs:
             print(f"  - {d['path']}  ({d['title']})")
     else:
-        print("  [none detected — evaluation fields may require human input]")
+        print("  [none detected — omit optional evaluation fields unless user provides details]")
     print()
 
     # Docs index

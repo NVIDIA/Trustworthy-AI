@@ -47,10 +47,18 @@ SCHEMA = {
     "references":                (list,  True),   # [{label, url}]
     "output":                    (dict,  True),   # {types: [str], format, parameters, other_properties}
     "skill_version":             (str,   True),
+    "evaluation":                (dict,  False),  # optional: evaluation details
 }
 
 VALID_USAGE = {"commercial", "research_dev", "demonstration"}
 VALID_OWNER_KINDS = {"nvidia", "third_party"}
+EVALUATION_STRING_FIELDS = ("agent", "tasks", "results_markdown")
+EVALUATION_METRIC_GROUPS = ("dimensions", "signals")
+TESTING_COMPLETED_FIELDS = (
+    "agent_red_teaming",
+    "network_security",
+    "product_security",
+)
 
 
 def validate(ctx: dict) -> list[str]:
@@ -84,6 +92,81 @@ def validate(ctx: dict) -> list[str]:
         for k in ("types", "format", "parameters", "other_properties"):
             if k not in ctx["output"]:
                 errors.append(f"'output.{k}' missing")
+    if "evaluation" in ctx and isinstance(ctx["evaluation"], dict):
+        evaluation = ctx["evaluation"]
+        for key in EVALUATION_STRING_FIELDS:
+            if key in evaluation and not isinstance(evaluation[key], str):
+                errors.append(
+                    f"'evaluation.{key}' should be str, got "
+                    f"{type(evaluation[key]).__name__}"
+                )
+        if "agents" in evaluation:
+            agents = evaluation["agents"]
+            if not isinstance(agents, list):
+                errors.append(
+                    "'evaluation.agents' should be list, got "
+                    f"{type(agents).__name__}"
+                )
+            else:
+                for idx, agent in enumerate(agents):
+                    if not isinstance(agent, str):
+                        errors.append(
+                            f"'evaluation.agents[{idx}]' should be str, got "
+                            f"{type(agent).__name__}"
+                        )
+        if "metrics" in evaluation:
+            metrics = evaluation["metrics"]
+            if isinstance(metrics, str):
+                pass
+            elif isinstance(metrics, dict):
+                for group in EVALUATION_METRIC_GROUPS:
+                    if group not in metrics:
+                        continue
+                    entries = metrics[group]
+                    if not isinstance(entries, list):
+                        errors.append(
+                            f"'evaluation.metrics.{group}' should be list, got "
+                            f"{type(entries).__name__}"
+                        )
+                        continue
+                    for idx, entry in enumerate(entries):
+                        if not isinstance(entry, dict):
+                            errors.append(
+                                f"'evaluation.metrics.{group}[{idx}]' should be dict, got "
+                                f"{type(entry).__name__}"
+                            )
+                            continue
+                        for field in ("name", "description"):
+                            if field not in entry:
+                                errors.append(
+                                    f"'evaluation.metrics.{group}[{idx}].{field}' missing"
+                                )
+                            elif not isinstance(entry[field], str):
+                                errors.append(
+                                    f"'evaluation.metrics.{group}[{idx}].{field}' should be str, got "
+                                    f"{type(entry[field]).__name__}"
+                                )
+            else:
+                errors.append(
+                    "'evaluation.metrics' should be str or dict, got "
+                    f"{type(metrics).__name__}"
+                )
+        if "testing_completed" in evaluation:
+            testing_completed = evaluation["testing_completed"]
+            if not isinstance(testing_completed, dict):
+                errors.append(
+                    "'evaluation.testing_completed' should be dict, got "
+                    f"{type(testing_completed).__name__}"
+                )
+            else:
+                for key in TESTING_COMPLETED_FIELDS:
+                    if key not in testing_completed:
+                        errors.append(f"'evaluation.testing_completed.{key}' missing")
+                    elif not isinstance(testing_completed[key], bool):
+                        errors.append(
+                            f"'evaluation.testing_completed.{key}' should be bool, got "
+                            f"{type(testing_completed[key]).__name__}"
+                        )
     for item in ctx.get("references", []):
         if not isinstance(item, dict) or "label" not in item or "url" not in item:
             errors.append("each 'references' item needs 'label' and 'url'")

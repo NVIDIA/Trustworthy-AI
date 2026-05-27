@@ -11,6 +11,7 @@ Verify markers:
   - `scripts/validate_submission.py` fails if any marker remains in the
     rendered card at submission time.
 -#}
+{%- set evaluation = evaluation | default({}) -%}
 
 ## Description: <br>
 {{ description_sentence }} <br>
@@ -64,6 +65,55 @@ Mitigation: Review and scan skill before deployment. <br>
 **Output Parameters:** [{{ output.parameters }}] <br>
 **Other Properties Related to Output:** [{{ output.other_properties }}] <br>
 
+{% if evaluation.get("agents") or evaluation.get("agent") -%}
+## Evaluation Agents Used: <br>
+{% if evaluation.get("agents") -%}
+{% for agent in evaluation.agents -%}
+- {{ agent }} <br>
+{% endfor %}
+{% else -%}
+- {{ evaluation.agent }} <br>
+{% endif %}
+
+{% endif -%}
+{% if evaluation.get("tasks") -%}
+## Evaluation Tasks: <br>
+{{ evaluation.tasks }} <br>
+
+{% endif -%}
+{% if evaluation.get("metrics") -%}
+## Evaluation Metrics Used: <br>
+{% set metrics = evaluation.metrics -%}
+{% if metrics is mapping -%}
+{% if metrics.get("dimensions") -%}
+Reported benchmark dimensions: <br>
+{% for metric in metrics.dimensions -%}
+- {{ metric.name }}: {{ metric.description }} <br>
+{% endfor %}
+{% endif -%}
+{% if metrics.get("signals") -%}
+Underlying evaluation signals used in this run: <br>
+{% for signal in metrics.signals -%}
+- `{{ signal.name }}`: {{ signal.description }} <br>
+{% endfor %}
+{% endif -%}
+{% else -%}
+{{ metrics }} <br>
+{% endif %}
+
+{% endif -%}
+{% if evaluation.get("results_markdown") -%}
+## Evaluation Results: <br>
+{{ evaluation.results_markdown }}
+
+{% endif -%}
+{% if evaluation.get("testing_completed") -%}
+## Testing Completed <br>
+**[{% if evaluation.testing_completed.agent_red_teaming %}x{% else %} {% endif %}] Agent Red-Teaming** <br>
+**[{% if evaluation.testing_completed.network_security %}x{% else %} {% endif %}] Network Security** <br>
+**[{% if evaluation.testing_completed.product_security %}x{% else %} {% endif %}] Product Security** <br>
+
+{% endif -%}
 ## Skill Version(s): <br>
 {{ skill_version }} <br>
 

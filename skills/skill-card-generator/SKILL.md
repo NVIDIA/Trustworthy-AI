@@ -58,6 +58,7 @@ Read the style guide and build a context object for this skill. Every field is d
 - When neither source supports a field, choose the honest default the style guide specifies; use `HUMAN-REQUIRED` placeholders only as a last resort.
 - Do not leave `use_case` empty.
 - Set `owner.verify: true` whenever ownership is inferred or defaulted (see style guide for when `verify: false` is appropriate). Set `license_verify: true` unless the license identifier was extracted verbatim from a documentation file.
+- If evaluation artifacts or user-provided evaluation details are available, add the optional structured `evaluation` object. Omit `evaluation` entirely when no evaluation evidence is grounded.
 
 Write the context to a temp file, e.g. `/tmp/<skill-name>-context.json`.
 
