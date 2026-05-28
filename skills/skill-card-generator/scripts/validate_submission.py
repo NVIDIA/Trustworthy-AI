@@ -42,7 +42,7 @@ CHECKS = [
         re.compile(r"<!--\s*VERIFY\b"),
         "verify-comment",
         "Confirm or edit each red-highlighted field value, then delete the "
-        '`<!-- VERIFY: ... -->` comment and the surrounding '
+        "`<!-- VERIFY: ... -->` comment and the surrounding "
         '`<span style="color:#d73a49">...</span>` wrapper.',
     ),
     (
@@ -61,14 +61,14 @@ CHECKS = [
     (
         re.compile(r"color:\s*#d73a49", re.IGNORECASE),
         "verify-style",
-        "Red verify styling is still present: remove the `<span style=\"color:#d73a49\">...</span>` "
+        'Red verify styling is still present: remove the `<span style="color:#d73a49">...</span>` '
         "wrappers after you have confirmed the inferred field values.",
     ),
     (
         re.compile(r"color:\s*#0366d6", re.IGNORECASE),
         "select-style",
         "Blue select styling is still present: remove the blue intro line "
-        "(`<span style=\"color:#0366d6\">...</span>`) after you have pruned each SELECT block.",
+        '(`<span style="color:#0366d6">...</span>`) after you have pruned each SELECT block.',
     ),
     (
         re.compile(r"^>\s*\*\*Red lines need your verification", re.MULTILINE),
