@@ -25,9 +25,14 @@ This skill is for demonstration purposes and not for production usage. <br>
 {%- endif %}
 
 {% if owner.kind == "nvidia" -%}
-## Owner: {% if owner.verify %}<span style="color:#d73a49">NVIDIA</span> <!-- VERIFY: {{ owner.verify_reason or "inferred or defaulted; confirm or correct before submission" }} -->{% else %}NVIDIA{% endif %} <br>
+## Owner
+{% if owner.verify -%}
+<span style="color:#d73a49">NVIDIA</span> <!-- VERIFY: {{ owner.verify_reason or "inferred or defaulted; confirm or correct before submission" }} --> <br>
 {%- else -%}
-## Third-Party Community Consideration <br>
+NVIDIA <br>
+{%- endif %}
+{%- else -%}
+## Third-Party Community Consideration
 {% if owner.verify -%}
 <span style="color:#d73a49">This skill is not owned or developed by NVIDIA. This skill has been developed and built to a third-party's requirements for this application and use case; see link to Non-NVIDIA [{{ owner.name }} Agent Card]({{ owner.card_link }}).</span> <!-- VERIFY: {{ owner.verify_reason or "third-party ownership inferred; confirm vendor name and card link" }} --> <br>
 {%- else -%}
@@ -108,7 +113,7 @@ Underlying evaluation signals used in this run: <br>
 
 {% endif -%}
 {% if evaluation.get("testing_completed") -%}
-## Testing Completed <br>
+## Testing Completed: <br>
 **[{% if evaluation.testing_completed.agent_red_teaming %}x{% else %} {% endif %}] Agent Red-Teaming** <br>
 **[{% if evaluation.testing_completed.network_security %}x{% else %} {% endif %}] Network Security** <br>
 **[{% if evaluation.testing_completed.product_security %}x{% else %} {% endif %}] Product Security** <br>
