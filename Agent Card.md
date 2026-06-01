@@ -16,13 +16,7 @@ scans_passed <br>
 This agent is not owned or developed by NVIDIA. This agent has been developed and built to a third-party’s requirements for this application and use case; see link to Non-NVIDIA [(Insert Name) Agent Card](Insert Link). <br>
 
 ### License/Terms of Use: <br> 
-[Visit the NVIDIA Legal Release Process](https://nvidia.sharepoint.com/sites/ProductLegalSupport) for instructions on getting legal support for a license selection: <br>
-
--If you are releasing under an open source license (such as Apache 2.0, MIT), contact the [Open Source Review Board](https://confluence.nvidia.com/pages/viewpage.action?pageId=800720661) (formerly SWIPAT) by filing a contribution bug request [here](https://nvbugspro.nvidia.com/bug/2885991). <br>
-
--If your release is for non-commercial or research purposes only, file a new bug [here](https://nvbugspro.nvidia.com/bug/3508089). <br>
-
--If your release allows for commercial purposes, submit [Product Legal Support Form](https://forms.office.com/pages/responsepage.aspx?id=FT0IQ3NywUC32znv2czBejILt4CYhTJKv0O6I4gccylUMVlMSE4xSFhYMUYyT1VMNVNCREk4RlE1NS4u&route=shorturl). <br>
+[Insert Link Here] <br>
 
 ## Use Case: <br>
 
@@ -173,8 +167,4 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 **[ ] Internal** <br>
 
 ## Ethical Considerations: <br> 
-NVIDIA believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  Developers should work with their internal team to ensure this agent meets requirements for the relevant industry and use case and addresses unforeseen product misuse. <br>   
-
-(For Release on NVIDIA Platforms Only) <br>
-Please report quality, risk, security vulnerabilities or NVIDIA AI Concerns here. <br>  
-
+Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  Developers should work with their internal team to ensure this agent meets requirements for the relevant industry and use case and addresses unforeseen product misuse. <br>   
