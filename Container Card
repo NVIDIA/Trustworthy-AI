@@ -39,7 +39,8 @@ For example: The [insert Container name] Container includes the following models
 Please review [Insert link name here of where security results are located](Insert link here to security results) to view the latest security scan results.
 
 ## Ethical Considerations: <br>
-[Insert name of company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with our terms of service, developers should work with their internal developer team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse.
+[Insert name of company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications. Developers should work with their internal developer team to ensure these software components meet requirements for the relevant industry and use case and addresses unforeseen product misuse.
+
 Please report model quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)].
 
 # Get Help <br>
