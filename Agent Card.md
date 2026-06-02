@@ -162,3 +162,6 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 Please report quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)]. <br>
 
 This template was created by NVIDIA.
+
+Please use this template provided in the repo as you see fit per the Creative Commons Zero (CCO) License, adopting as you see fit. If you have recommendations or questions, please file an issue. Stay tuned for regular updates to these templates from our team.
+
