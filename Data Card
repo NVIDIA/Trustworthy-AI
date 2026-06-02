@@ -1,3 +1,53 @@
+# For HuggingFace Publishing/Discovery under Metadata: Please pick one from the following and delete what is not applicable
+ 
+Add a YAML metadata block at the very top of the Hugging Face dataset `README.md`. These are the fields shown in the Hugging Face Metadata UI. <br>
+ 
+```yaml
+---
+ 
+# Choose One or More Allowed HuggingFace Task Slugs:
+ 
+Domain: [code, chat, finance, math, medicine, parsing, personas, reasoning, safety, science, tool use, other]
+ 
+Required_Modality_Tags: [text, image, audio, video, tabular, 3d, geospatial, timeseries]
+ 
+Task_Categories: [Insert Task Category][XX%] [Insert Task Category][XX%] [Insert Task Category][XX%] if available
+ 
+Natural_Language_Processing (NLP): <br>
+Feature-Extraction, Fill-Mask, Masked-Language-Modeling, Multiple-Choice, Question-Answering, Sentence-Similarity, Summarization, Table-Question-Answering, Text-Classification, Text-Generation, Text-Ranking, Text-Retrieval, Text2text-Generation, Token-Classification, Translation, Zero-Shot-Classification
+ 
+Audio: <br>
+Audio-to-Audio, Audio-Classification, Audio-Question-Answering, Automatic-Speech-Recognition, Audio-Text-to-Speech, Audio-Text-to-Text, Text-to-Audio, Voice-Activity-Detection
+ 
+Computer_Vision/Video:
+Depth-Estimation, Document-Question-Answering, Image-Classification, Image-Feature-Extraction, Image-Segmentation, Mask-Generation, Object-Detection, Unconditional-Image-Generation, Visual-Question-Answering, Zero-Shot-Image-Classification, Zero-Shot-Object-Detection
+ 
+Multimodal/Three_Dimensional (3D): <br>
+Any-to-Any, Image-to-3D, Image-to-Image, Image-to-Text, Image-Text-to-Text, Image-to-Video, Text-to-3D, Text-to-Image, Text-to-Video, Video-Classification, Video-Text-to-Text, Visual-Document-Retrieval, Visual-Question-Answering
+ 
+Tabular/Reinforcement_Learning/Other:
+Reinforcement-Graph-ML, Learning, Robotics, Tabular-Classification, Tabular-Regression, Time-Series-Forecasting, [Insert Other Here]
+ 
+Required_Source_Tags: [blend, crowdsourced, human, synthetic, nemo-data-designer, etc.]
+ 
+Required_Training_Stage_Tags: [Benchmark, Evaluation, Pre-Training, Post-Training-Blends, Reward-Modeling, Reinforcement-Learning, Reward-Modeling, Supervised Fine-Tuning]
+ 
+Size_Bin: [n<1K, 1K< n <10K, 10K< n <100K, 100K< n <1M, 1M< n <10M, 10M< n <100M, 100M< n <1B, 1B< n <10B, n>10B]
+ 
+License: [Insert License Type: CC-By-4.0, CC-By-NC-4.0, Apache-2.0, Openrail, MIT, Llama3, Other]
+ 
+License_Name: [Required only when license is "other"]
+ 
+License_Link: [Required only when license is "other"]
+ 
+Language:
+ 
+- [selected language code]
+Pretty_Name: [Dataset display name]
+Task_Categories:
+ 
+Associated Model Tags if applicable:  [Insert link to model release here]
+
 ## Dataset Description:  
 
 [Insert Dataset Description] <br>
@@ -45,9 +95,9 @@ Please pick one of the following to insert at the end of your description:[This 
 (Insert Paper or Public Repo Location):
 
 ## Ethical Considerations: <br> 
-[Insert Name of Company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with our terms of service, developers should work with their internal model team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse. <br>
+[Insert Name of Company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with our terms of service, developers should work with their internal teams to ensure this dataset meets requirements for the relevant industry and use case and addresses unforeseen product misuse. <br>
 
-Please report model quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)].
+Please report quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)].
 
 This template was created by NVIDIA.
 
