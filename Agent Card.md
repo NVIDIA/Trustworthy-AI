@@ -157,8 +157,8 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 **[ ] Internal API/Connector/Service** <br>
 
 ## Ethical Considerations: <br> 
-[Insert Name of Company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  Developers should work with their internal model team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse. <br>
+[Insert Name of Company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  Developers should work with their internal model team to ensure this agent meets requirements for the relevant industry and use case and addresses unforeseen product misuse. <br>
 
-Please report model quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)]. <br>
+Please report quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)]. <br>
 
 This template was created by NVIDIA.
