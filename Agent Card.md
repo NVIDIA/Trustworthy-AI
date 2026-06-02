@@ -8,11 +8,11 @@ scans_passed <br>
 ## Description:
 [Describe what this agent does in one sentence, including supporting image/video and/or reference blog/article as available.  For instance, _______ [insert name of agent] _______ [insert verb] _______.] <br>
 
-[This agent is ready for commercial/non-commercial use.] OR [This agent is for research and development only.] OR [This agent is for demonstration purposes and not for production usage.]  <br>
+[This agent is ready for commercial or non-commercial use.] OR [This agent is for research and development only.] OR [This agent is for demonstration purposes and not for production usage.]  <br>
 
 [This agent is ready for internal/external use.] <br>
 
-## Third-Party Community Consideration [(Insert  for Non-NVIDIA Third-Party Community Agents)] <br>
+## Third-Party Community Consideration [(Insert for Non-NVIDIA Third-Party Community Agents)] <br>
 This agent is not owned or developed by NVIDIA. This agent has been developed and built to a third-party’s requirements for this application and use case; see link to Non-NVIDIA [(Insert Name) Agent Card](Insert Link). <br>
 
 ### License/Terms of Use: <br> 
@@ -22,8 +22,7 @@ This agent is not owned or developed by NVIDIA. This agent has been developed an
 
 [Answer who [Employees (IT Enterprise Agents), External (Open Sourced Agents)], Developers (Coding Agents) would be expected to use this agent and for what.] <br>
 
-### Integration Agent Type: <br>
-* [Astra] <br>
+### Integration Agent: <br>
 * [Blackbox] <br>
 * [Claude Code] <br>
 * [Codex] <br>
@@ -35,10 +34,8 @@ This agent is not owned or developed by NVIDIA. This agent has been developed an
 
 ### Release Management: <br>
 [Answer how this agent is exposed for use/download.] <br>
-Build.Nvidia.com [Insert MM/DD/YYYY] via [URL] <br>
 Github [Insert MM/DD/YYYY] via [URL] <br>
 Hugging Face [Insert MM/DD/YYYY] via [URL] <br>
-NGC [Insert MM/DD/YYYY] via [URL] <br>
 Other [Insert MM/DD/YYY] via [URL] <br>
 
 ### Deployment Geography for Use: <br>
@@ -50,15 +47,14 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 * [Fully Agentic]  <br>
 
 ## Recommended Deployment: <br>
-[Internal Deployment: Astra, Colossus, Astra] <br>
 [Brev] <br>
 [Insert Cloud] <br>
-[Insert Other Sandbox Environment ] <br>
+[Insert Other Sandbox Environment Name] <br>
 
 ## Known Technical Limitations: <br>
 [Where does this agent struggle within its operational design domain? Do NOT leave blank or put "Not Applicable"/"N/A."] <br>
 
-## Known Risks: <br>
+## Known Risks & Mitigations: <br>
 [What would happen if this did not work as intended within its operational design domain?  Do NOT leave blank or put "Not Applicable"/"N/A."] <br>
 
 ## Fail Safe In-Place: <br>
@@ -80,17 +76,17 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 ## Input: <br>
 **Input Type(s):** [Audio, Image, Text, Tabular, etcetera (etc.)] <br>
 **Input Format(s):** [Red, Green, Blue (RGB), Infrared (IR), Lidar, or String] <br>
-**Input Parameters:** [(1D, 2D, 3D)] <br>
+**Input Parameters:** [One-Dimensional (1D), Two-Dimensional (2D), Three-Dimensional (3D)] <br>
 **Other Properties Related to Input:** [Specific Resolution/Minimum or Maximum Resolution, Characters (Including Restrictions), or Tokens;  Image Range Needed (W x Y x Z), Pre-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Such] <br>
 
-## Output:  <br> 
+## Output: <br> 
 **Output Type(s):** [Audio, Image, Text, Tabular, etc.] <br>
 **Output Format:** [Red, Green, Blue (RGB), Infrared (IR), Lidar, or String] <br>
-**Output Parameters:** [(1D, 2D, 3D)] <br>
+**Output Parameters:** [One-Dimensional (1D), Two-Dimensional (2D), Three-Dimensional (3D)] <br><br>
 **Other Properties Related to Output:** [Specific Resolution/Minimum or Maximum Resolution or Characters (Including Restrictions), or Tokens; Image Range (W x Y x Z), Post-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Such] <br>
-**Output Operations Allowed:** Create [Specify], Read [Specify], Update [Specify], Delete [Specify], Execute [Specify] <br>
+**Output Operations Allowed:** Create [Specify New], Read [Specify from Source], Update [Specify], Delete [Specify], Execute [Specify], Search [Specify], Web Search [Specify] <br>
 
-## Fail Operation: <br>
+## Restricted Operation: <br>
 * Functional Restrictions (e.g., Guardrails) <br>
 
 **Data Ingestion Source:** <br>
@@ -99,14 +95,17 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 **Data Ingestion Preparation Techniques:** <br>
 [Describe any data sanitization or enrichment techniques used.] <br>
 
-## Evaluation agent: <br>
+## Evaluation Agent: <br>
 [Answer which agent was used for evaluating the skill.] <br>
 
-## Evaluation tasks: <br>
+## Evaluation Tasks: <br>
 [Answer which dataset was used for evaluating the skill. IF not a public dataset, describe the nature and size of the dataset.] <br>
 
-## Evaluation metrics: <br>
+## Evaluation Metrics: <br>
 [Answer which metrics was computed during the evaluation. E.g. token reduction, accuracy improvement, tool calling, other task specific metrics.] <br>
+
+## Evaluation Result(s): <br>
+[Share score for the referenced metrics above.] <br>
 
 ## Testing Completed: <br>
 **[ ] Agent Red-Teaming** <br>
@@ -119,15 +118,7 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 **Number of GPUs:** <br>
 
 **Supported Hardware Microarchitecture Compatibility:** <br>
-* [NVIDIA Ampere or specific models] <br>
-* [NVIDIA Blackwell or specific models] <br>
-* [NVIDIA Jetson or specific models]  <br>
-* [NVIDIA Hopper or specific models] <br>
-* [NVIDIA Lovelace or specific models] <br>
-* [NVIDIA Pascal or specific models] <br>
-* [NVIDIA Turing or specific models] <br>
-* [NVIDIA Volta or specific models] <br>
-* [Insert NVIDIA Microarchitecture Name Not Listed Above] <br>
+* [Insert Microarchitecture Name] <br>
 
 **[Preferred/Supported] Operating System(s):** <br>
 * [Linux] <br>
@@ -158,13 +149,12 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 **[ ] Regulated** <br>
 **[ ] None** <br>
 
-
 **Security Controls** <br>
 [Authorization (including human-in-the-loop) needs to be added] <br>
 
 **Exposure to Threats** <br>
-**[ ] External** <br>
-**[ ] Internal** <br>
+**[ ] External API/Connector/Service** <br>
+**[ ] Internal API/Connector/Service** <br>
 
 ## Ethical Considerations: <br> 
 Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  Developers should work with their internal team to ensure this agent meets requirements for the relevant industry and use case and addresses unforeseen product misuse. <br>   
