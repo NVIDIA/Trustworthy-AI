@@ -17,6 +17,7 @@
 
 ## Known Risks and Mitigations: <br>
 Risk: Review before execution as proposals could introduce incorrect or misleading guidance into skills. <br> 
+Mitigation: Review and scan skill before deployment. <br>
 
 ## Reference(s): <br>
 [Provide list of reference(s), link(s) to the publication/paper/article, associated works, and other technical documentation where relevant.  Links to model cards underpinning the skill go here.]  <br> 
@@ -43,7 +44,7 @@ Risk: Review before execution as proposals could introduce incorrect or misleadi
 [Signing Identifier]  <br>
 
 ## Ethical Considerations: <br>
-NVIDIA believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  Developers should work with their internal team to ensure this skill meets requirements for the relevant industry and use case and addresses unforeseen product misuse. <br> 
+[Insert name of company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  Developers should work with their internal team to ensure this skill meets requirements for the relevant industry and use case and addresses unforeseen product misuse. <br> 
 
 Please report quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)].
 
