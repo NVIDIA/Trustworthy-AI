@@ -9,13 +9,15 @@ This guide defines every context field: its purpose, where to look for a value, 
 ```
 skill_name, skill_kind, description_sentence, usage_posture,
 owner, license_identifier, use_case,
-deployment_geography, references, output,
+deployment_geography, credential_requirements, references, output,
 skill_version, evaluation
 ```
 
 Every required key must be present. Lists may be empty. Strings may be `""` only if the field genuinely has no grounding in any source you were given. Otherwise write an informed value — even if uncertain — and mark it INFERRED in the review table. Writing "" or HUMAN-REQUIRED is a last resort, not a default.
 
 `evaluation` is optional. Include it only when source evidence or user-provided context supports at least one evaluation field. If no evaluation evidence exists, omit `evaluation` entirely so the optional evaluation sections do not render.
+
+`credential_requirements` is optional for backward compatibility with older contexts, but new or refreshed cards should include it.
 
 ## Verify markers (read this before filling in `owner` and `license_identifier`)
 
@@ -105,6 +107,43 @@ The template's default guidance: assume `"Global"` unless the skill's documentat
 - A specific country, if the skill states one.
 
 This is a business/legal decision; reviewers may adjust it. Writing `"Global"` is the correct default, not a placeholder.
+
+### `credential_requirements` (object, optional for backward compatibility)
+
+Runtime credential and secret-configuration requirements. Include this object for new and refreshed skill cards so reviewers can determine whether the skill needs an API key, token, cloud credential, service account, or other externally supplied credential before deployment.
+
+Shape:
+
+```
+{
+  "requires_api_key_or_credential": "yes",
+  "credential_types": ["API key"],
+  "required_for": "External API calls",
+  "configuration_methods": ["Environment variable"],
+  "environment_variables": ["ENV_VAR_NAME"],
+  "notes": "List credential names and configuration methods only; never include credential values."
+}
+```
+
+`requires_api_key_or_credential` must be one of:
+- `"yes"` — source evidence says the skill requires an external credential for normal operation.
+- `"no"` — source evidence supports that the skill does not require an external credential.
+- `"optional"` — credentials enable an optional path, integration, or enhanced capability, but the skill has a credential-free path.
+- `"unknown"` — source evidence is insufficient; use this when no credential requirement can be confirmed or ruled out.
+
+Field guidance:
+- `credential_types` — list high-level types such as `"API key"`, `"OAuth token"`, `"cloud credentials"`, `"service account"`, or `"None"`.
+- `required_for` — short phrase describing the dependency, such as `"model endpoint access"`, `"cloud storage access"`, `"external API calls"`, or `"None"`.
+- `configuration_methods` — list methods such as `"Environment variable"`, `"Secret manager"`, `"Config file"`, `"Platform-managed credential"`, or `"None"`.
+- `environment_variables` — environment variable names only. Do not include assignments, example values, redacted values, tokens, private keys, file contents, or credential material.
+- `notes` — safe handling guidance or review notes. Always preserve the rule that credential values must not be stored in the skill card or included in prompts, logs, generated output, or review tables.
+
+Where to look:
+- First use the discovery report's **"Detected API-key / credential env vars"** block for environment variable names.
+- Then inspect explicit setup, prerequisite, configuration, or authentication instructions already present in allowed skill-scope files.
+- Do not read `.env`, credential files, hidden auth folders, key files, or unrelated repo files to fill this object.
+
+When source signals conflict, prefer explicit documentation over heuristic environment-variable detection and mark the review table row as `INFERRED` or `HUMAN-REQUIRED` as appropriate.
 
 ### `references` (list of `{label, url}`)
 Technical documentation, model cards, papers, and reference material. Includes:
@@ -196,7 +235,7 @@ Before finalizing the context, verify:
 
 ## What goes in the review table
 
-For every required context key, emit a row with: Section (card section name), Field (context key), Confidence (`HIGH` / `INFERRED` / `HUMAN-REQUIRED`), Review Needed (`Yes` / `No`), Reasoning (short sentence), Source Files (comma-separated relative paths, or `None`). If `evaluation` is present, emit rows for its populated subfields.
+For every required context key, emit a row with: Section (card section name), Field (context key), Confidence (`HIGH` / `INFERRED` / `HUMAN-REQUIRED`), Review Needed (`Yes` / `No`), Reasoning (short sentence), Source Files (comma-separated relative paths, or `None`). If `credential_requirements` or `evaluation` is present, emit rows for their populated subfields.
 
 Rules:
 - `HIGH` when the value is copied verbatim or structurally from a specific source (frontmatter key, LICENSE file, explicit URL).

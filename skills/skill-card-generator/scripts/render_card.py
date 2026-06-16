@@ -15,6 +15,7 @@ deterministic so two identical contexts always produce identical cards.
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -49,6 +50,7 @@ SCHEMA = {
     "license_verify_reason": (str, False),  # short explanation, shown in HTML comment
     "use_case": (str, True),
     "deployment_geography": (str, True),
+    "credential_requirements": (dict, False),  # optional for backward compatibility
     "references": (list, True),  # [{label, url}]
     "output": (dict, True),  # {types: [str], format, parameters, other_properties}
     "skill_version": (str, True),
@@ -57,6 +59,12 @@ SCHEMA = {
 
 VALID_USAGE = {"commercial", "research_dev", "demonstration"}
 VALID_OWNER_KINDS = {"nvidia", "third_party"}
+VALID_CREDENTIAL_STATUSES = {"yes", "no", "optional", "unknown"}
+ENV_VAR_NAME_RE = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*$")
+DEFAULT_CREDENTIAL_NOTES = (
+    "Do not include API key values, tokens, secrets, private keys, or sensitive "
+    "authentication material in this card, prompts, logs, or generated output."
+)
 EVALUATION_STRING_FIELDS = ("agent", "tasks", "results_markdown")
 EVALUATION_METRIC_GROUPS = ("dimensions", "signals")
 TESTING_COMPLETED_FIELDS = (
@@ -71,6 +79,7 @@ def validate(ctx: dict) -> list[str]:
     _validate_schema(ctx, errors)
     _validate_usage(ctx, errors)
     _validate_owner(ctx, errors)
+    _validate_credential_requirements(ctx, errors)
     _validate_output(ctx, errors)
     _validate_evaluation(ctx, errors)
     _validate_references(ctx, errors)
@@ -116,6 +125,71 @@ def _validate_owner(ctx: dict, errors: list[str]) -> None:
                     errors.append(
                         f"'owner.{k}' required when owner.kind == 'third_party'"
                     )
+
+
+def _validate_credential_requirements(ctx: dict, errors: list[str]) -> None:
+    credentials = ctx.get("credential_requirements")
+    if credentials is None or not isinstance(credentials, dict):
+        return
+
+    for key in (
+        "requires_api_key_or_credential",
+        "credential_types",
+        "required_for",
+        "configuration_methods",
+        "environment_variables",
+        "notes",
+    ):
+        if key not in credentials:
+            errors.append(f"'credential_requirements.{key}' missing")
+
+    status = credentials.get("requires_api_key_or_credential")
+    if isinstance(status, str):
+        if status not in VALID_CREDENTIAL_STATUSES:
+            errors.append(
+                "'credential_requirements.requires_api_key_or_credential' must be "
+                f"one of {sorted(VALID_CREDENTIAL_STATUSES)}, got {status!r}"
+            )
+    elif status is not None:
+        errors.append(
+            "'credential_requirements.requires_api_key_or_credential' should be str, "
+            "got "
+            f"{type(status).__name__}"
+        )
+
+    for key in ("credential_types", "configuration_methods", "environment_variables"):
+        _validate_string_list(
+            f"credential_requirements.{key}", credentials.get(key), errors
+        )
+
+    for key in ("required_for", "notes"):
+        if key in credentials and not isinstance(credentials[key], str):
+            errors.append(
+                f"'credential_requirements.{key}' should be str, got "
+                f"{type(credentials[key]).__name__}"
+            )
+
+    env_vars = credentials.get("environment_variables")
+    if isinstance(env_vars, list):
+        for idx, name in enumerate(env_vars):
+            if isinstance(name, str) and not ENV_VAR_NAME_RE.fullmatch(name):
+                errors.append(
+                    "'credential_requirements.environment_variables"
+                    f"[{idx}]' must be an environment variable name only, got {name!r}"
+                )
+
+
+def _validate_string_list(path: str, value: object, errors: list[str]) -> None:
+    if value is None:
+        return
+    if not isinstance(value, list):
+        errors.append(f"'{path}' should be list, got {type(value).__name__}")
+        return
+    for idx, item in enumerate(value):
+        if not isinstance(item, str):
+            errors.append(
+                f"'{path}[{idx}]' should be str, got {type(item).__name__}"
+            )
 
 
 def _validate_output(ctx: dict, errors: list[str]) -> None:
@@ -262,6 +336,14 @@ def _apply_marker_defaults(ctx: dict) -> None:
     if isinstance(ctx.get("owner"), dict):
         ctx["owner"].setdefault("verify", False)
         ctx["owner"].setdefault("verify_reason", "")
+    credentials = ctx.setdefault("credential_requirements", {})
+    if isinstance(credentials, dict):
+        credentials.setdefault("requires_api_key_or_credential", "unknown")
+        credentials.setdefault("credential_types", [])
+        credentials.setdefault("required_for", "None identified")
+        credentials.setdefault("configuration_methods", [])
+        credentials.setdefault("environment_variables", [])
+        credentials.setdefault("notes", DEFAULT_CREDENTIAL_NOTES)
 
 
 def render(context_path: Path, template_path: Path, out_path: Path) -> None:

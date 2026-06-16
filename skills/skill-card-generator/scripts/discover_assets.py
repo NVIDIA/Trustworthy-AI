@@ -37,6 +37,7 @@ CONSTRAINT_LIMIT = int("25")
 DOC_H1_SCAN_LINE_LIMIT = int("40")
 CHANGELOG_BODY_OUTPUT_LINE_LIMIT = int("40")
 URL_PLATFORM_OUTPUT_LIMIT = int("10")
+SOURCE_OUTPUT_LIMIT = int("3")
 DOCS_INDEX_LIMIT = int("30")
 REFERENCE_APPENDIX_CHAR_LIMIT = int("1800")
 MIN_EXPECTED_ARGS = int("2")
@@ -93,12 +94,18 @@ PLATFORM_DOMAINS = {
 }
 
 API_KEY_PATTERNS = [
-    r"\b[A-Z][A-Z0-9_]{2,}_API_KEY\b",
+    (
+        r"\b[A-Z][A-Z0-9_]{2,}_"
+        r"(?:API_KEY|ACCESS_TOKEN|TOKEN|CLIENT_SECRET|SECRET|PRIVATE_KEY)\b"
+    ),
     r"\bHF_TOKEN\b",
     r"\bNGC_API_KEY\b",
     r"\bOPENAI_API_KEY\b",
     r"\bANTHROPIC_API_KEY\b",
     r"\bGITHUB_TOKEN\b",
+    r"\bGOOGLE_APPLICATION_CREDENTIALS\b",
+    r"\bAZURE_(?:CLIENT_ID|CLIENT_SECRET|TENANT_ID|STORAGE_KEY)\b",
+    r"\bAWS_(?:ACCESS_KEY_ID|SECRET_ACCESS_KEY|SESSION_TOKEN)\b",
     r"\bAWS_[A-Z_]+_KEY\b",
 ]
 
@@ -464,6 +471,19 @@ def find_api_keys(text: str) -> list:
     return keys
 
 
+def find_api_key_sources(extracted: list, repo_root: Path) -> dict:
+    sources = {}
+    for _role, path, content in extracted:
+        for key in find_api_keys(content):
+            try:
+                source = str(path.relative_to(repo_root))
+            except ValueError:
+                source = str(path)
+            if source not in sources.setdefault(key, []):
+                sources[key].append(source)
+    return sources
+
+
 def find_mcp_refs(text: str) -> list:
     refs = []
     for pat in MCP_PATTERNS:
@@ -787,8 +807,13 @@ def emit_signal_summary(
     keys = find_api_keys(all_text)
     print("## Detected API-key / credential env vars")
     if keys:
+        key_sources = find_api_key_sources(skill_extracted + repo_extracted, repo_root)
         for k in keys:
-            print(f"  - {k}")
+            sources = key_sources.get(k, [])
+            if sources:
+                print(f"  - {k} (source: {', '.join(sources[:SOURCE_OUTPUT_LIMIT])})")
+            else:
+                print(f"  - {k}")
     else:
         print("  [none detected]")
     print()

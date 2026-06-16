@@ -14,6 +14,14 @@ Developers and skill owners generating governance skill cards for agent skills a
 ### Deployment Geography for Use: <br>
 Global <br>
 
+## Runtime Configuration / Credentials Required: <br>
+**Requires API Key or External Credential:** [No] <br>
+**Credential Type(s):** [None] <br>
+**Required For:** [None] <br>
+**Expected Configuration Method:** [None] <br>
+**Relevant Environment Variable(s):** [None identified] <br>
+**Credential Handling Notes:** [This skill does not require external credential configuration; do not include API key values, tokens, secrets, private keys, or sensitive authentication material in generated cards, prompts, logs, or review tables.] <br>
+
 ## Known Risks and Mitigations: <br>
 Risk: Review before execution as proposals could introduce incorrect or misleading guidance into skills. <br>
 Mitigation: Review and scan skill before deployment. <br>
