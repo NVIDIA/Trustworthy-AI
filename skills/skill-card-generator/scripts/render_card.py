@@ -65,6 +65,29 @@ DEFAULT_CREDENTIAL_NOTES = (
     "Do not include API key values, tokens, secrets, private keys, or sensitive "
     "authentication material in this card, prompts, logs, or generated output."
 )
+SENSITIVE_CREDENTIAL_VALUE_PATTERNS = (
+    re.compile(
+        r"(?i)\b[A-Z][A-Z0-9_]*(?:API_KEY|TOKEN|SECRET|PASSWORD|"
+        r"PRIVATE_KEY|CLIENT_SECRET|ACCESS_KEY)[A-Z0-9_]*\s*[:=]\s*"
+        r"(?:[^\s\"'`]+|\"[^\"]*\"|'[^']*')"
+    ),
+    re.compile(
+        r"(?i)\b(?:password|passwd|pwd|secret|token|api[_-]?key|"
+        r"access[_-]?key|private[_-]?key|client[_-]?secret)\b\s*[:=]\s*"
+        r"(?:[^\s\"'`]+|\"[^\"]*\"|'[^']*')"
+    ),
+    re.compile(r"(?i)\bauthorization\s*:\s*bearer\s+[A-Za-z0-9._~+/=-]+"),
+    re.compile(
+        r"(?i)[?&](?:token|api_key|key|secret|password|access_token)="
+        r"[^&\s)>\]\"'`]+"
+    ),
+    re.compile(
+        r"\b(?:AKIA|ASIA)[A-Z0-9]{16}\b|"
+        r"\b(?:sk|hf|ghp|glpat|nvapi)-?[A-Za-z0-9_=-]{20,}\b|"
+        r"\bgithub_pat_[A-Za-z0-9_]{20,}\b"
+    ),
+    re.compile(r"-----BEGIN [A-Z ]*PRIVATE KEY-----"),
+)
 EVALUATION_STRING_FIELDS = ("agent", "tasks", "results_markdown")
 EVALUATION_METRIC_GROUPS = ("dimensions", "signals")
 TESTING_COMPLETED_FIELDS = (
@@ -161,12 +184,19 @@ def _validate_credential_requirements(ctx: dict, errors: list[str]) -> None:
         _validate_string_list(
             f"credential_requirements.{key}", credentials.get(key), errors
         )
+        _validate_credential_string_list_values(
+            f"credential_requirements.{key}", credentials.get(key), errors
+        )
 
     for key in ("required_for", "notes"):
         if key in credentials and not isinstance(credentials[key], str):
             errors.append(
                 f"'credential_requirements.{key}' should be str, got "
                 f"{type(credentials[key]).__name__}"
+            )
+        elif key in credentials:
+            _validate_no_sensitive_credential_value(
+                f"credential_requirements.{key}", credentials[key], errors
             )
 
     env_vars = credentials.get("environment_variables")
@@ -190,6 +220,27 @@ def _validate_string_list(path: str, value: object, errors: list[str]) -> None:
             errors.append(
                 f"'{path}[{idx}]' should be str, got {type(item).__name__}"
             )
+
+
+def _validate_credential_string_list_values(
+    path: str, value: object, errors: list[str]
+) -> None:
+    if not isinstance(value, list):
+        return
+    for idx, item in enumerate(value):
+        if isinstance(item, str):
+            _validate_no_sensitive_credential_value(f"{path}[{idx}]", item, errors)
+
+
+def _validate_no_sensitive_credential_value(
+    path: str, value: str, errors: list[str]
+) -> None:
+    if any(pattern.search(value) for pattern in SENSITIVE_CREDENTIAL_VALUE_PATTERNS):
+        errors.append(
+            f"'{path}' must describe credential requirements without containing "
+            "credential values, assignments, bearer tokens, private keys, or "
+            "secret-like tokens"
+        )
 
 
 def _validate_output(ctx: dict, errors: list[str]) -> None:

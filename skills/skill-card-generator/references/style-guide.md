@@ -138,6 +138,8 @@ Field guidance:
 - `environment_variables` — environment variable names only. Do not include assignments, example values, redacted values, tokens, private keys, file contents, or credential material.
 - `notes` — safe handling guidance or review notes. Always preserve the rule that credential values must not be stored in the skill card or included in prompts, logs, generated output, or review tables.
 
+The renderer rejects credential-shaped values or assignments in credential requirement fields, including `KEY=value`, bearer tokens, common API-token prefixes, and private key markers. Rewrite those fields to describe credential names, types, and configuration methods only.
+
 Where to look:
 - First use the discovery report's **"Detected API-key / credential env vars"** block for environment variable names.
 - Then inspect explicit setup, prerequisite, configuration, or authentication instructions already present in allowed skill-scope files.
