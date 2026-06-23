@@ -15,6 +15,12 @@
 ### Deployment Geography for Use: <br>
 [Insert Global: Asia-Pacific (APAC); Europe, Middle East, and Africa (EMEA); Latin America (LATAM), North America (NAM), and/or specific countries] <br>
 
+### Requirements / Dependencies <br>
+Requires API Key or External Credential: [Yes / No / Optional / Not Specified] <br>
+Credential Type(s): [API key, OAuth Token, Cloud Credentials, Service Account, None, Other [Specify] <br> 
+
+Do not include secrets in prompts/logs/output; use least-privilege credentials; rotate keys as appropriate. <br>
+
 ## Known Risks and Mitigations: <br>
 Risk: Review before execution as proposals could introduce incorrect or misleading guidance into skills. <br> 
 Mitigation: Review and scan skill before deployment. <br>
