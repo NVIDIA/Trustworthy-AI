@@ -95,7 +95,7 @@ PLATFORM_DOMAINS = {
 
 API_KEY_PATTERNS = [
     (
-        r"\b[A-Z][A-Z0-9_]{2,}_"
+        r"\b[A-Z][A-Z0-9_]{1,}_"
         r"(?:API_KEY|ACCESS_TOKEN|TOKEN|CLIENT_SECRET|SECRET|PRIVATE_KEY)\b"
     ),
     r"\bHF_TOKEN\b",
@@ -107,7 +107,15 @@ API_KEY_PATTERNS = [
     r"\bAZURE_(?:CLIENT_ID|CLIENT_SECRET|TENANT_ID|STORAGE_KEY)\b",
     r"\bAWS_(?:ACCESS_KEY_ID|SECRET_ACCESS_KEY|SESSION_TOKEN)\b",
     r"\bAWS_[A-Z_]+_KEY\b",
+    r"\bPRIVATE_TOKEN\b",
+    r"\bNVAPIKEY\b",
+    r"\bTOKEN\b",
 ]
+
+_PLACEHOLDER_RE = re.compile(
+    r"^(?:YOUR|MY|EXAMPLE|SAMPLE|REPLACE|PLACEHOLDER)_|^<[^>]+>$",
+    re.IGNORECASE,
+)
 
 MCP_PATTERNS = [r"\bmcp__[a-z0-9_\-]+", r"MCP\s+server"]
 
@@ -466,7 +474,7 @@ def find_api_keys(text: str) -> list:
     keys = []
     for pat in API_KEY_PATTERNS:
         for m in re.findall(pat, text):
-            if m not in keys:
+            if m not in keys and not _PLACEHOLDER_RE.match(m):
                 keys.append(m)
     return keys
 
@@ -827,6 +835,24 @@ def emit_signal_summary(
     else:
         print("  [none detected]")
     print()
+
+    # Auth classification hints
+    if mcps and not keys:
+        print(
+            "  NOTE: MCP auth detected with no env vars — "
+            "credential status is likely 'yes' (auth handled server-side)."
+        )
+    skill_files_text = " ".join(
+        str(p) for _, p, _ in skill_extracted
+    ).lower()
+    _CRED_FILE_RE = re.compile(
+        r"\b(?:token|credential|auth|secret)[s]?\.(?:yaml|yml|json)\b"
+    )
+    if _CRED_FILE_RE.search(skill_files_text):
+        print(
+            "  NOTE: File-based credential pattern detected in skill file paths — "
+            "set requires_api_key_or_credential to 'yes'."
+        )
 
     # $ARGUMENTS
     arg_count = count_arguments_usage(all_text)

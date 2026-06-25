@@ -59,12 +59,14 @@ SCHEMA = {
 
 VALID_USAGE = {"commercial", "research_dev", "demonstration"}
 VALID_OWNER_KINDS = {"nvidia", "third_party"}
-VALID_CREDENTIAL_STATUSES = {"yes", "no", "optional", "unknown"}
-ENV_VAR_NAME_RE = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*$")
-DEFAULT_CREDENTIAL_NOTES = (
-    "Do not include API key values, tokens, secrets, private keys, or sensitive "
-    "authentication material in this card, prompts, logs, or generated output."
-)
+VALID_CREDENTIAL_STATUSES = {"yes", "no", "optional", "not specified"}
+VALID_CREDENTIAL_TYPES = {
+    "API key",
+    "OAuth Token",
+    "Cloud Credentials",
+    "Service Account",
+    "None",
+}
 SENSITIVE_CREDENTIAL_VALUE_PATTERNS = (
     re.compile(
         r"(?i)\b[A-Z][A-Z0-9_]*(?:API_KEY|TOKEN|SECRET|PASSWORD|"
@@ -155,14 +157,7 @@ def _validate_credential_requirements(ctx: dict, errors: list[str]) -> None:
     if credentials is None or not isinstance(credentials, dict):
         return
 
-    for key in (
-        "requires_api_key_or_credential",
-        "credential_types",
-        "required_for",
-        "configuration_methods",
-        "environment_variables",
-        "notes",
-    ):
+    for key in ("requires_api_key_or_credential", "credential_types"):
         if key not in credentials:
             errors.append(f"'credential_requirements.{key}' missing")
 
@@ -180,33 +175,23 @@ def _validate_credential_requirements(ctx: dict, errors: list[str]) -> None:
             f"{type(status).__name__}"
         )
 
-    for key in ("credential_types", "configuration_methods", "environment_variables"):
-        _validate_string_list(
-            f"credential_requirements.{key}", credentials.get(key), errors
-        )
-        _validate_credential_string_list_values(
-            f"credential_requirements.{key}", credentials.get(key), errors
-        )
+    _validate_string_list(
+        "credential_requirements.credential_types", credentials.get("credential_types"), errors
+    )
 
-    for key in ("required_for", "notes"):
-        if key in credentials and not isinstance(credentials[key], str):
-            errors.append(
-                f"'credential_requirements.{key}' should be str, got "
-                f"{type(credentials[key]).__name__}"
-            )
-        elif key in credentials:
-            _validate_no_sensitive_credential_value(
-                f"credential_requirements.{key}", credentials[key], errors
-            )
-
-    env_vars = credentials.get("environment_variables")
-    if isinstance(env_vars, list):
-        for idx, name in enumerate(env_vars):
-            if isinstance(name, str) and not ENV_VAR_NAME_RE.fullmatch(name):
-                errors.append(
-                    "'credential_requirements.environment_variables"
-                    f"[{idx}]' must be an environment variable name only, got {name!r}"
+    types = credentials.get("credential_types")
+    if isinstance(types, list):
+        for idx, t in enumerate(types):
+            if isinstance(t, str):
+                valid = (
+                    t in VALID_CREDENTIAL_TYPES
+                    or (t.startswith("Other [") and t.endswith("]"))
                 )
+                if not valid:
+                    errors.append(
+                        f"'credential_requirements.credential_types[{idx}]' must be one of "
+                        f"{sorted(VALID_CREDENTIAL_TYPES)} or 'Other [description]', got {t!r}"
+                    )
 
 
 def _validate_string_list(path: str, value: object, errors: list[str]) -> None:
@@ -389,12 +374,8 @@ def _apply_marker_defaults(ctx: dict) -> None:
         ctx["owner"].setdefault("verify_reason", "")
     credentials = ctx.setdefault("credential_requirements", {})
     if isinstance(credentials, dict):
-        credentials.setdefault("requires_api_key_or_credential", "unknown")
+        credentials.setdefault("requires_api_key_or_credential", "not specified")
         credentials.setdefault("credential_types", [])
-        credentials.setdefault("required_for", "None identified")
-        credentials.setdefault("configuration_methods", [])
-        credentials.setdefault("environment_variables", [])
-        credentials.setdefault("notes", DEFAULT_CREDENTIAL_NOTES)
 
 
 def render(context_path: Path, template_path: Path, out_path: Path) -> None:
