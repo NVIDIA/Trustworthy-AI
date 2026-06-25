@@ -15,16 +15,14 @@
 ### Deployment Geography for Use: <br>
 [Insert Global: Asia-Pacific (APAC); Europe, Middle East, and Africa (EMEA); Latin America (LATAM), North America (NAM), and/or specific countries] <br>
 
-## Runtime Configuration / Credentials Required: <br>
-**Requires API Key or External Credential:** [Yes / No / Optional / Unknown] <br>
-**Credential Type(s):** [API key, OAuth token, cloud credentials, service account, none, etc.] <br>
-**Required For:** [External API calls, model endpoint access, cloud storage, telemetry, none, etc.] <br>
-**Expected Configuration Method:** [Environment variable, secret manager, config file, platform-managed credential, none, etc.] <br>
-**Relevant Environment Variable(s):** [Names only, never values] <br>
-**Credential Handling Notes:** [Do not include API key values, tokens, secrets, private keys, or sensitive authentication material in this card, prompts, logs, or generated output.] <br>
+### Requirements / Dependencies <br>
+Requires API Key or External Credential: [Yes / No / Optional / Not Specified] <br>
+Credential Type(s): [API key, OAuth Token, Cloud Credentials, Service Account, None, Other [Specify] <br> 
+
+Do not include secrets in prompts/logs/output; use least-privilege credentials; rotate keys as appropriate. <br>
 
 ## Known Risks and Mitigations: <br>
-Risk: Review before execution as proposals could introduce incorrect or misleading guidance into skills. <br>
+Risk: Review before execution as proposals could introduce incorrect or misleading guidance into skills. <br> 
 Mitigation: Review and scan skill before deployment. <br>
 
 ## Reference(s): <br>
