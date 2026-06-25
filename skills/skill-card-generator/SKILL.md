@@ -37,7 +37,7 @@ Create a draft NVIDIA governance skill card for an existing agent skill. The ski
 Use this when:
 - A skill directory already exists and needs a new governance card.
 - A changed skill needs its existing card refreshed.
-- A skill owner is preparing NVCARPS or legal/safety review material.
+- A skill owner is preparing legal/safety review material.
 
 Do NOT use for:
 - Explaining, listing, comparing, or discussing skills or skill capabilities.

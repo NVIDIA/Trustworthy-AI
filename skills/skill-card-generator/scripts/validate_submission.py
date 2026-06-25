@@ -19,7 +19,7 @@ The human reviewer is expected to:
 
 This script is a single-pass grep over the rendered markdown that
 exits non-zero if any marker (visual or machine-readable) remains.
-Run it as the pre-submission gate for NVCARPS.
+Run it as the pre-submission gate before final submission.
 
 Usage:
   python3 validate_submission.py <rendered-card.md>
