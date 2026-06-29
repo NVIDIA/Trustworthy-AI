@@ -1,3 +1,14 @@
+# SPDX-FileCopyrightText: Copyright (c) <year> NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: CC-BY-4.0 AND Apache-2.0
+
+/*
+* SPDX-FileCopyrightText: Copyright (c) <year> NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+* SPDX-License-Identifier: CC-BY-4.0 AND Apache-2.0
+*/
+
+Copyright (c) <year> NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+This code is dual-licensed with documentation/skills under the CC-BY-4.0 AND source code under Apache-2.0 license terms.
+
 #!/usr/bin/env python3
 """
 render_card.py — Render a skill card from a validated context JSON
