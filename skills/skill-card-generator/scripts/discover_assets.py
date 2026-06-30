@@ -1,13 +1,5 @@
-# SPDX-FileCopyrightText: Copyright (C) <year> NVIDIA CORPORATION & AFFILIATES. All rights reserved.
-# SPDX-License-Identifier: CC-BY-4.0 AND Apache-2.0
-
-/*
-* SPDX-FileCopyrightText: Copyright (C) <year> NVIDIA CORPORATION & AFFILIATES. All rights reserved.
-* SPDX-License-Identifier: CC-BY-4.0 AND Apache-2.0
-*/
-
-Copyright (C) <year> NVIDIA CORPORATION & AFFILIATES. All rights reserved.
-This code is dual-licensed with documentation/skills under the CC-BY-4.0 AND source code under Apache-2.0 license terms.
+# SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
 
 #!/usr/bin/env python3
 """
