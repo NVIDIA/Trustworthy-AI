@@ -7,7 +7,7 @@ This benchmark summarizes 3-Tier Evaluation from NVSkills-Eval results for the s
 ## Evaluation Summary
 
 - Skill: `skill-card-generator`
-- Evaluation date: 2026-06-25
+- Evaluation date: 2026-06-30
 - NVSkills-Eval profile: `external`
 - Environment: `astra-sandbox`
 - Dataset: 11 evaluation tasks
@@ -54,11 +54,11 @@ Task composition is derived from the evaluation dataset when possible. Entries w
 
 | Dimension | Num | `claude-code` | `codex` |
 |---|---:|---:|---:|
-| Security | 8 | 91% (+0%) | 45% (-45%) |
-| Correctness | 8 | 88% (+44%) | 90% (+36%) |
-| Discoverability | 8 | 82% (+50%) | 86% (+23%) |
-| Effectiveness | 8 | 81% (+35%) | 91% (+44%) |
-| Efficiency | 8 | 72% (+27%) | 80% (+13%) |
+| Security | 8 | 91% (+0%) | 55% (-45%) |
+| Correctness | 8 | 86% (+39%) | 85% (+34%) |
+| Discoverability | 8 | 77% (+41%) | 83% (+33%) |
+| Effectiveness | 8 | 83% (+37%) | 88% (+39%) |
+| Efficiency | 8 | 69% (+20%) | 76% (+17%) |
 
 Score values show skill-assisted performance. Values in parentheses show uplift versus the no-skill baseline when baseline data is available.
 
@@ -68,8 +68,8 @@ Tier 1 validation passed with observations. NVSkills-Eval ran 1 checks and found
 
 Top findings:
 
-- LOW SCHEMA/unexpected_file: Unexpected 'Skill Card Generator License' in skill root (`skills/skill-card-generator/Skill Card Generator License`)
 - LOW SCHEMA/unexpected_file: Unexpected 'Skill Card Generator Card' in skill root (`skills/skill-card-generator/Skill Card Generator Card`)
+- LOW SCHEMA/unexpected_file: Unexpected 'Skill Card Generator License' in skill root (`skills/skill-card-generator/Skill Card Generator License`)
 
 ## Tier 2: Deduplication Summary
 
