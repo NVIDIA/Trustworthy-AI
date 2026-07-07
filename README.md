@@ -47,4 +47,4 @@ For questions or suggestions, open a [GitHub issue](https://github.com/NVIDIA/Tr
 
 ## Community
 
-We will be keeping this page updated on a monthly basis.  Start by checking out our Model Card++ templates [here](Model%20Card%2B%2B%20Templates/).  We invite contributions! Open a GitHub issue or pull request!
+We will be keeping this repo updated on a monthly basis.  Start by checking out our AI Transparency Card templates [here](Model%20Card%2B%2B%20Templates/).  We invite contributions! Open a GitHub issue or pull request!
