@@ -2,7 +2,7 @@
 
 NVIDIA is committed to building a better world through the advancement of AI we can trust, Trustworthy AI, an approach and framework evolved out of our core values.  This page has been developed to share products and tools we use to enable the company, customers, partners, and the larger ecosystem.  Content provided is being made available using Creative Commons and Apache licenses.  Check each folder and file for specific licensing.
 
-Learn more about our guiding principles and our [Trustworthy AI Work](https://www.nvidia.com/en-us/ai-data-science/trustworthy-ai/).  You can also learn more about how the larger ecosystem is incorporating Trustworthy AI into their own initiatives [here](https://www.nvidia.com/gtc/session-catalog/?search=S62411%2C%20S62221%2C%20S62594%2C%20S62292%2C%20S62300#/&ncid=no-ncid).
+Learn more about our guiding principles and our [Trustworthy AI Work](https://www.nvidia.com/en-us/ai-data-science/trustworthy-ai/).  You can also learn more about how the larger ecosystem is incorporating Trustworthy AI into its own initiatives [here](https://www.nvidia.com/gtc/session-catalog/?search=S62411%2C%20S62221%2C%20S62594%2C%20S62292%2C%20S62300#/&ncid=no-ncid).
 
 ## Repository Guide
 
@@ -21,7 +21,7 @@ This repository contains Trustworthy AI documentation templates, example cards, 
 | [System Card](System%20Card) | Template for documenting AI systems. |
 | [Blueprint Card](Blueprint%20Card) | Template for documenting blueprints. |
 | [Container Card](Container%20Card) | Template for documenting containers. |
-| [Helm Chart](Helm%20Chart) | Template for documenting Helm charts. |
+| [Helm Chart Card](Helm%20Chart) | Template for documenting Helm charts. |
 
 ## Good First Contributions
 
