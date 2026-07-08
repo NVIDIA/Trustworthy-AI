@@ -17,7 +17,7 @@ The software components in this blueprint are not owned or developed by [insert 
 ## Architecture Diagram: <br> 
 [Provide a diagram of the blueprint’s overall architecture].
 
-## What’s Included in the Blueprint: <br>
+## Software Used/Referenced (Not Included) in this Blueprint: <br>
 | Software Components | Link to AI Transparency Card |
 | :---- | :---- |
 |  |  |
@@ -30,7 +30,7 @@ The software components in this blueprint are not owned or developed by [insert 
 [Provide a 1-2 paragraph overview of the walkthrough experience].
 
 ## Release Date: <br> 
-[Insert Name of Publishing Platform] [Insert MM/DD/YYY] via [URL] <br>
+[Insert Name of Publishing Platform] [Insert MM/DD/YYYY] via [URL] <br>
 
 ## Blueprint Version: <br>
 [Use unique identifier for identifying the blueprint in the future- this may be part of our internal naming, specifying variation like "pruned," "unpruned," "trained," or "deployable" or "quantized" where necessary and including a versioning number like vX.X along with short description differentiating if multiple versions are available] <br>
@@ -40,13 +40,13 @@ The software components in this blueprint are not owned or developed by [insert 
 **Hardware Requirements <br>
 **OS Requirements <br>
 
-## Software Used in This Blueprint: <br>
+## Software Used (Included) in This Blueprint: <br>
 [Provide a description of the software used in the blueprint; include links where applicable]. <br>
 
 ## Ethical Considerations: <br>  
 [Insert Name of Company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications. Developers should work with their internal teams to ensure this blueprint meets requirements for the relevant industry and use case and addresses unforeseen product misuse.
 
-Please report model quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)].
+Please report blueprint quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)].
 
 This template was created by NVIDIA.
 
