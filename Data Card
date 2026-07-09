@@ -1,16 +1,31 @@
+# Add at least one tag from each grouping below.
+# Each tag must be a plain value on its own line. Do not use prefixes such as domain:, source:, or model-release:.
+
 # For HuggingFace Publishing/Discovery under Metadata: Please pick one from the following and delete what is not applicable
+
+## Hugging Face Metadata
+ 
+Add a YAML metadata block at the very top of the Hugging Face dataset `README.md`. Replace placeholder values, delete guidance comments, and keep each list item on its own line. Additional relevant tags may be included as plain values.
  
 Add a YAML metadata block at the very top of the Hugging Face dataset `README.md`. These are the fields shown in the Hugging Face Metadata UI. <br>
  
 ```yaml
 ---
+
+license:
+# Use Hugging Face license identifiers. If more than one license applies, list each license on its own line.
+- <license-id> # e.g. cc-by-4.0
+- <additional-license-id> # optional, e.g. apache-2.0
+ 
+license_name: <custom-license-name> # Required only when license is "other".
+license_link: <custom-license-url> # Required only when license is "other".
  
 # Choose One or More Allowed HuggingFace Task Slugs:
  
-Domain: [code, chat, finance, math, medicine, parsing, personas, reasoning, safety, science, tool use, other]
- 
-Required_Modality_Tags: [text, image, audio, video, tabular, 3d, geospatial, timeseries]
- 
+Domain: [agentic, code, content moderation, chat, finance, instruction following, math, medicine, parsing, personas, reasoning, safety, science, software engineering, science, tool use, vision-language, other, personas]
+  
+Required_Modality_Tags: [3d, audio, geospatial, image, tabular, text, timeseries, video]
+  
 Task_Categories: [Insert Task Category][XX%] [Insert Task Category][XX%] [Insert Task Category][XX%] if available
  
 Natural_Language_Processing (NLP): <br>
@@ -27,26 +42,56 @@ Any-to-Any, Image-to-3D, Image-to-Image, Image-to-Text, Image-Text-to-Text, Imag
  
 Tabular/Reinforcement_Learning/Other:
 Reinforcement-Graph-ML, Learning, Robotics, Tabular-Classification, Tabular-Regression, Time-Series-Forecasting, [Insert Other Here]
- 
-Required_Source_Tags: [blend, crowdsourced, human, synthetic, nemo-data-designer, etc.]
- 
+
+Source_: [blend, crowdsourced, human, synthetic, nemo-data-designer, etc.]
+# If Nemo Data Designer was used, include `nemo-data-designer`.
+- <source>
+  
 Required_Training_Stage_Tags: [Benchmark, Evaluation, Pre-Training, Post-Training-Blends, Reward-Modeling, Reinforcement-Learning, Reward-Modeling, Supervised Fine-Tuning]
- 
-Size_Bin: [n<1K, 1K< n <10K, 10K< n <100K, 100K< n <1M, 1M< n <10M, 10M< n <100M, 100M< n <1B, 1B< n <10B, n>10B]
- 
+
+Size_Categories: [n<1K, 1K< n <10K, 10K< n <100K, 100K< n <1M, 1M< n <10M, 10M< n <100M, 100M< n <1B, 1B< n <10B, 10B<n<100B, 100B<n<1T, n>1T ]
+  
 License: [Insert License Type: CC-By-4.0, CC-By-NC-4.0, Apache-2.0, Openrail, MIT, Llama3, Other]
  
 License_Name: [Required only when license is "other"]
  
 License_Link: [Required only when license is "other"]
+
+language:
+# Use ISO language codes. If more than one language applies, list each language on its own line.
+- <language-code> # e.g. en
+- <additional-language-code> # optional
  
-Language:
- 
-- [selected language code]
-Pretty_Name: [Dataset display name]
-Task_Categories:
+task_categories:
+# Full list of usable Hugging Face task categories: https://huggingface.co/tasks
+- <hf-task-category> # e.g. text-generation
+- <additional-hf-task-category> # optional
  
 Associated Model Tags if applicable:  [Insert link to model release here]
+
+### Example
+ 
+```yaml
+# ---
+# license:
+# - cc-by-4.0
+# - apache-2.0
+# - mit
+# language:
+# - en
+# task_categories:
+# - text-generation
+# tags:
+# - text
+# - code
+# - tool-use
+# - supervised-fine-tuning
+# - blend
+# - SWE
+# - Nemotron_3_Ultra
+# size_categories:
+# - 100K<n<1M
+# ---
 
 ## Dataset Description:  
 
@@ -58,6 +103,11 @@ Please pick one of the following to insert at the end of your description:[This 
 
 ## Dataset Creation Date: <br> 
 [Insert Dataset Creation/Modified Last Date]
+
+## Versioning: <br>
+[Insert Unique Version Name Here] <br>
+
+Relationship to Previous Version(s): [Replacement | Extension] - [Briefly describe whether this version is a replacement of a previous release.  If there is no previous version, this section can be ignored.] <br>
 
 ## License/Terms of Use: <br> 
 [Insert License Name Here](Insert Link to License here)
