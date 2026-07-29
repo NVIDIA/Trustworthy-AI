@@ -112,9 +112,6 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 **[ ] Network Security** <br>
 **[ ] Product Security** <br>
 
-## Agent Version(s): <br> 
-[Signing Identifier]  <br>
-
 **Number of GPUs:** <br>
 
 **Supported Hardware Microarchitecture Compatibility:** <br>
