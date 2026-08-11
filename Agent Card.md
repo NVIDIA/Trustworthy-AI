@@ -108,7 +108,7 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 [Share score for the referenced metrics above.] <br>
 
 ## Testing Completed: <br>
-**[ ] Agent Red-Teaming** <br>
+**[ ] Agent Red-Teaming** [Run NeMo Agent Toolkit Safety & Security Testing](https://github.com/NVIDIA/NeMo-Agent-Toolkit/tree/release/1.4/examples/safety_and_security/retail_agent) <br>
 **[ ] Network Security** <br>
 **[ ] Product Security** <br>
 
