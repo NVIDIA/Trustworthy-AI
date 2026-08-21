@@ -1,6 +1,6 @@
 # [Insert Name Here] Overview
 
-## Description: <br>
+### Description or Model Summary with Description and License (Insert Optional One-Sentence Link to Quick Start Guide): <br>
 Describe what this algorithm/model does starting with the model name and verb; this should be one sentence starting with the model name. You may add additional detail following the initial sentence. For instance, _______ [insert name of model] _______ [insert verb] _______.] <br> 
 [Insert model name and version] was developed by [Insert Company Name] as a part of [insert model family name, if applicable].<br>
  
@@ -9,7 +9,7 @@ Please pick one of the following to insert at the end of your description:[This 
 ## Third-Party Community Consideration [(Insert for Third-Party Community Models)] <br>
 This model is not owned or developed by [Insert Company Name]. This model has been developed and built to a third-party’s requirements for this application and use case; see link to [(Insert Name) Model Card](Insert Link). <br>
 
-### License/Terms of Use: <br> 
+### License/Terms of Use (Optional if previously included with Model Summary above):
 
 ### Deployment Geography: <br>
 [Insert Global; Asia-Pacific (APAC); Europe, Middle East, and Africa (EMEA); Latin America (LATAM), North America (NAM), and/or specific countries]
@@ -104,7 +104,9 @@ The integration of foundation and fine-tuned models into AI systems requires add
 ** A general description of the data processing involved in transforming the acquired data into the training data for the model (recommended 200 words) <br>
 
 ** A description of any methods implemented in data acquisition or processing, if any, to address other types of potentially harmful (weapons, criminal planning, sexual minor, harassment, hate, profanity, threats, violence, or suicide) data in the training, testing, or evaluation data (recommended 300 words) <br>
- 
+
+** For more information about the datasets used to train this model, please see the [Public Summary of Training Content](insert link). <br>
+
 # Public Datasets
 [Applicable if using] <br>
  
