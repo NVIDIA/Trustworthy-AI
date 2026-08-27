@@ -6,7 +6,7 @@ Intended Users:                                                                 
 Output:                                                                                                |  [Insert Response Here]
 (For GPAI Models): Tools used to evaluate datasets to identify synthetic data and ensure data authenticity | [Insert Response Here]
 Describe how the model works:                                                                          |  [Insert Response Here]
-Name the adversely impacted groups this has been tested to deliver comparable outcomes regardless of:  |  [Insert Response Here]
+List the groups (or group characteristics) for which this was tested to produce comparable outcomes  |  [Insert Response Here]
 Technical Limitations:                                                                  |  [Insert Response Here - Describe where the model might not work well under the intended operational design domain]
 Verified to have met prescribed [Insert Company Name Here] quality standards:                          |  [Insert Response Here]
 Performance Metrics:                                                                                   |  [Insert Response Here]
