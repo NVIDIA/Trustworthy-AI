@@ -95,11 +95,8 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 **Data Ingestion Preparation Techniques:** <br>
 [Describe any data sanitization or enrichment techniques used.] <br>
 
-## Evaluation Agent: <br>
-[Answer which agent was used for evaluating the skill.] <br>
-
 ## Evaluation Tasks: <br>
-[Answer which dataset was used for evaluating the skill. IF not a public dataset, describe the nature and size of the dataset.] <br>
+[Answer which dataset was used for evaluating the agent. IF not a public dataset, describe the nature and size of the dataset.] <br>
 
 ## Evaluation Metrics: <br>
 [Answer which metrics was computed during the evaluation. E.g. token reduction, accuracy improvement, tool calling, other task specific metrics.] <br>
@@ -114,6 +111,7 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 
 **Number of GPUs:** <br>
 
+## Agent Configuration: <br>
 **Supported Hardware Microarchitecture Compatibility:** <br>
 * [Insert Microarchitecture Name] <br>
 
@@ -154,7 +152,7 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 **[ ] Internal API/Connector/Service** <br>
 
 ## Ethical Considerations: <br> 
-[Insert Name of Company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  Developers should work with their internal model team to ensure this agent meets requirements for the relevant industry and use case and addresses unforeseen product misuse. <br>
+[Insert Name of Company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  Developers should work with their internal team to ensure this agent meets requirements for the relevant industry and use case and addresses unforeseen product misuse. <br>
 
 Please report quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)]. <br>
 
