@@ -1,6 +1,7 @@
 ## [Insert Name Here] Overview <br>
 
-### Description: [Provide a general overview of the Helm Chart, including a description of the specific program classes that are housed within the Helm Chart. For example, if models/software components are used/referenced in the Helm Chart, provide a high-level description.] <br>
+### Description: <br>
+[Provide a general overview of the Helm Chart, including a description of the specific program classes that are housed within the Helm Chart. For example, if models/software components are used/referenced in the Helm Chart, provide a high-level description.] <br>
 
 Please pick one of the following to insert at the end of your description: [This helm chart is ready for commercial or non-commercial uses.] OR [This helm chart is for non-commercial uses only.] <br>  
 
