@@ -1,9 +1,4 @@
 # [Insert Name Here] [Agent]
-Nvbase_tier1 <br>
-Nvbase_tier2 <br>
-Nvbase_tier3 <br>
-Skillspector_score <br>
-scans_passed <br>
 
 ## Description:
 [Describe what this agent does in one sentence, including supporting image/video and/or reference blog/article as available.  For instance, _______ [insert name of agent] _______ [insert verb] _______.] <br>
