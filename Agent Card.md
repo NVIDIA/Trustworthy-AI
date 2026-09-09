@@ -68,7 +68,6 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 
 ## Agent Architecture: <br> 
 **Architecture Diagram:** [Insert]  <br>
-**Feature Store:** [Insert] <br>
 **Dependencies:** [Insert] <br>
 
 # Agent Input and Output <br>
