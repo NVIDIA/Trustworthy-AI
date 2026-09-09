@@ -8,16 +8,16 @@ Please pick one of the following to insert at the end of your description: [This
 ### License/Terms of Use: <br> 
 [Insert License/Terms here]
 
-## Deployment Details: <br> 
+### Deployment Details: <br> 
 [Describe deployment details]
 
 ** Kubernetes Compatibility: <br>
 Versions Tested: <br>  
 Recommended Minimum Version: <br>
 
-# Get Help <br>
+### Get Help <br>
 
-## Enterprise Support
+### Enterprise Support
 Get access to knowledge base articles and support cases or [submit a ticket](insert link here). <br>
 
 This template was created by NVIDIA. <br>
