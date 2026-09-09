@@ -15,6 +15,8 @@ Please pick one of the following to insert at the end of your description: [This
 Versions Tested: <br>  
 Recommended Minimum Version: <br>
 
+## Ethical Considerations: <br>
+
 ### Get Help <br>
 
 ### Enterprise Support
