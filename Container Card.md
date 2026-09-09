@@ -5,7 +5,7 @@
 Select one of the following to insert at the end of your description: [The container components are ready for commercial or non-commercial use.] OR [The container components are for research and development only.] OR [The container components are for demonstration purposes and not for production usage.]  <br>
 
 ## Third-Party Community Consideration [(Insert for Third-Party Community Models)] <br>  
-This model is not owned or developed by [Insert name of company]. This model has been developed and built to a third-party’s requirements for this application and use case; see link to [(Insert Name) Model Card](Insert Link).
+This software [embedded in the container] is not owned or developed by [Insert name of company]. This container has been developed and built to a third-party’s requirements for this application and use case; see link to [(Insert Name) software transparency card](Insert Link).
 
 ### License/Terms of Use: <br>  
 [Insert License Name Here](Insert Link to License here)
@@ -41,7 +41,7 @@ Please review [Insert link name here of where security results are located](Inse
 ## Ethical Considerations: <br>
 [Insert name of company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications. Developers should work with their internal developer team to ensure these software components meet requirements for the relevant industry and use case and addresses unforeseen product misuse.
 
-Please report model quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)].
+Please report quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)].
 
 # Get Help <br>
 ## Getting Started Materials  <br>
