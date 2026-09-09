@@ -16,6 +16,9 @@ Versions Tested: <br>
 Recommended Minimum Version: <br>
 
 ## Ethical Considerations: <br>
+[Insert name of company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications. Developers should work with their internal team to ensure this helm chart meets requirements for the relevant industry and use case and addresses unforeseen product misuse.
+
+Please report quality, risk, security vulnerabilities or AI Concerns [insert name of link for follow-up](insert link for follow-up)].
 
 ### Get Help <br>
 
