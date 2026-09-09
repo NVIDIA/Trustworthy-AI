@@ -17,6 +17,8 @@ This system is not owned or developed by [insert name of company]. This system h
 ### Release Management: <br>  
 [Answer how this system is exposed for use/download.] <br>
 
+Insert Release Location Name [MM/DD/YYYY} via [URL]
+
 ## Automation Level: <br>  
 * [Autonomous] <br>  
 * [Partial Automation] <br>  
@@ -28,17 +30,14 @@ This system is not owned or developed by [insert name of company]. This system h
 ## Known Technical Limitations: <br>
 [Where does this system struggle within its operational design domain? Do NOT leave blank or put "Not Applicable"/"N/A."] <br>
 
-## Known Risks: <br>  
-[What would happen if this did not work as intended within its operational design domain?  Do NOT leave blank or put "Not Applicable"/"N/A."] <br>
+## Known Risks & Mitigations: <br>  
+[What would happen if this did not work as intended within its operational design domain? Do NOT leave blank or put "Not Applicable"/"N/A."] <br>
 
 ## Fail Safe In-Place: <br>  
 * [Emergency Override] 
 * [Shut-Down] 
 * [Human-in-the-Loop] 
 * [Policy Enforcement]
-
-### Release Date: <br>  
-[Insert MM/DD/YYYY] <br>
 
 ## Reference(s): <br>  
 [Provide list of reference(s), link(s) to the publication/paper/article, associated works, and lineage where relevant.  Links to model cards underpinning the system go here.]  <br>
