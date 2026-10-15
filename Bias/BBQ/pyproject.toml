@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "bbq-eval"
+version = "1.0.0"
+description = "Python library for BBQ bias and fairness assessment"
+readme = "README.md"
+packages = [
+    {include = "bbq_eval"}
+]
+include = [
+    {path = "bbq_eval/data/*.json", format = ["sdist", "wheel"]},
+    {path = "bbq_eval/additional_data/*.csv", format = ["sdist", "wheel"]},
+    {path = "bbq_eval/**/*.yaml", format = ["sdist", "wheel"]},
+    {path = "bbq_eval/.claude/**/*", format = ["sdist", "wheel"]},
+]
+
+exclude = ["bbq_eval/data/audio-bbq-dataset"]
+
+[tool.poetry.dependencies]
+python = ">=3.15,<3.16"
+datasets = ">=4,<5"
+numpy = "*"
+omegaconf = "==2.3.0"
+pandas = ">=2.3,<4"
+tqdm = "==4.67.1"
+openai = "*"
+langchain-core = ">=0.3,<2"
+langchain-nvidia-ai-endpoints = ">=0.3,<2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-cov = "*"
+pytest-asyncio = "*"
+openpyxl = ">=3.1,<4"
+ruff = "*"
+build = "*"
+
+[build-system]
+requires = ["poetry-core>=2.2,<3"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+bbq_eval = "bbq_eval.main:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: makes live model API requests (explicit opt-in)"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py315"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP"]

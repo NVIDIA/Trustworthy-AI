@@ -1,0 +1,2 @@
+# Run from Bias/BBQ; dependencies are declared in pyproject.toml.
+-e .

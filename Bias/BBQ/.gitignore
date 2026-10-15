@@ -1,0 +1,36 @@
+# Local credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.local.yaml
+*.local.yml
+# Python and build artifacts
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+pycache/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tox/
+.nox/
+.cache/
+*.egg-info/
+build/
+dist/
+.coverage
+.coverage.*
+htmlcov/
+# Local scripts, documentation, and editor tooling
+/scripts/
+/docs/
+.idea/
+.vscode/
+.ipynb_checkpoints/
+node_modules/
+# Generated evaluation outputs and local audit evidence
+results/
+.DS_Store
