@@ -1,1 +1,12 @@
 This version of BBQ enables OpenAI-compatible endpoints, automates metric review, and extends the method to audio inputs. 
+
+## Acknowledgments
+
+A special thank you to **Alicia Parrish**, lead author of BBQ, and to **Google** for their support in bringing this work to NVIDIA's Trustworthy AI repo.
+
+BBQ (Bias Benchmark for QA) is a hand-built dataset that tests how social biases show up in model answers. It covers nine social dimensions relevant to U.S. English-speaking contexts. BBQ has become a widely used standard for measuring stereotypical bias in language models, and it plays a direct role in how NVIDIA evaluates and documents bias in its models. We're grateful to the BBQ authors for releasing it openly.
+
+**Original repository:** [github.com/nyu-mll/BBQ](https://github.com/nyu-mll/BBQ)
+
+If you use BBQ, please cite the original paper:
+> Alicia Parrish, Angelica Chen, Nikita Nangia, Vishakh Padmakumar, Jason Phang, Jana Thompson, Phu Mon Htut, and Samuel R. Bowman. 2022. [BBQ: A Hand-Built Bias Benchmark for Question Answering](https://aclanthology.org/2022.findings-acl.165/). In *Findings of the Association for Computational Linguistics: ACL 2022*.
