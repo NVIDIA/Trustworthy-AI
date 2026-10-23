@@ -369,10 +369,15 @@ class FaceLandmarkExtractor:
         """Process a batch of frames from the S3 manifest."""
         start_time = datetime.now(timezone.utc)
 
-        if not self.config.force_write and self.s3_client.check_output_exists():
-            raise FaceLandmarkExtractorError(
-                f"Output directory already exists: {self.config.s3.output_uri}. " "Use force_write=True to overwrite."
+        if not self.config.force_write:
+            existing_objects = self.s3_client.list_files(
+                bucket=self.s3_client.output_bucket, prefix=self.s3_client.output_prefix
             )
+            if existing_objects:
+                raise FaceLandmarkExtractorError(
+                    f"Output folder already exists at {self.config.s3.output_uri} "
+                    f"and contains {len(existing_objects)} objects. Set force_write=True to overwrite."
+                )
 
         try:
             # Load manifest
