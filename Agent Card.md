@@ -7,6 +7,8 @@
 
 [This agent is ready for internal/external use.] <br>
 
+[This agent can act as: [?] Agent identity only [?] On behalf of users [?] Both <br>]
+
 ## Third-Party Community Consideration [(Insert for Non-NVIDIA Third-Party Community Agents)] <br>
 This agent is not owned or developed by NVIDIA. This agent has been developed and built to a third-party’s requirements for this application and use case; see link to Non-NVIDIA [(Insert Name) Agent Card](Insert Link). <br>
 
@@ -14,8 +16,10 @@ This agent is not owned or developed by NVIDIA. This agent has been developed an
 [Insert Link Here] <br>
 
 ## Use Case: <br>
-
 [Answer who [Employees (IT Enterprise Agents), External (Open Sourced Agents)], Developers (Coding Agents) would be expected to use this agent and for what.] <br>
+
+**Agentic Identity Profile Conformance:**
+[]Core []Enterprise []Safety <br>
 
 ### Integration Agent: <br>
 * [Blackbox] <br>
@@ -27,11 +31,14 @@ This agent is not owned or developed by NVIDIA. This agent has been developed an
 * [Hermes] <br>
 * [Insert Agent Name Not Listed Above] <br>
 
+### Identity Flow per Integration/Harness: <br>
+[?] Native delegation [?] Mediated [?] Impersonation
+
 ### Release Management: <br>
 [Answer how this agent is exposed for use/download.] <br>
 Github [Insert MM/DD/YYYY] via [URL] <br>
 Hugging Face [Insert MM/DD/YYYY] via [URL] <br>
-Other [Insert MM/DD/YYY] via [URL] <br>
+Other [Insert MM/DD/YYYY] via [URL] <br>
 
 ### Deployment Geography for Use: <br>
 [Insert Global: Asia-Pacific (APAC); Europe, Middle East, and Africa (EMEA); Latin America (LATAM), North America (NAM), and/or specific countries.] <br>
@@ -40,6 +47,9 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 * [Bounded] <br>
 * [Deterministic] <br>
 * [Fully Agentic]  <br>
+
+* Autonomy Ceiling Enforced by Policy Bundle: [Bundle ID / digest] <br>
+* Scheduled / Unattended Execution: [?] Yes [?] No <br>
 
 ## Recommended Deployment: <br>
 [Brev] <br>
@@ -56,10 +66,11 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 * [Human-In-the-Loop] <br>
 * [Emergency Override] <br>
 * [Policy Enforcement] <br>
+* [Credential/Registration Revocation — Measured Time to Effect: ___ s (target ≤ 300 s)] <br>
 * [Shut-Down] <br>
 
 ## Reference(s) (Leave Blank If None): <br>
-[Provide list of reference(s), link(s) to the publication/paper/article, associated works, and other technical documentation where relevant.  Links to model cards underpinning the agent go here.]  <br> 
+[Provide list of reference(s), link(s) to the publication/paper/article, associated works, and other technical documentation where relevant.  Links to model cards underpinning the agent go here; please make sure version is properly annotated]  <br>
 
 ## Agent Architecture: <br> 
 **Architecture Diagram:** [Insert]  <br>
@@ -79,6 +90,7 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 **Output Parameters:** [One-Dimensional (1D), Two-Dimensional (2D), Three-Dimensional (3D)] <br><br>
 **Other Properties Related to Output:** [Specific Resolution/Minimum or Maximum Resolution or Characters (Including Restrictions), or Tokens; Image Range (W x Y x Z), Post-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Such] <br>
 **Output Operations Allowed:** Create [Specify New], Read [Specify from Source], Update [Specify], Delete [Specify], Execute [Specify], Search [Specify], Web Search [Specify] <br>
+**Performed As (per operation):** [Agent Instance Identity], or [On Behalf of User], or [Both] <br>
 
 ## Restricted Operation: <br>
 * Functional Restrictions (e.g., Guardrails) <br>
@@ -144,6 +156,8 @@ Other [Insert MM/DD/YYY] via [URL] <br>
 **Exposure to Threats** <br>
 **[ ] External API/Connector/Service** <br>
 **[ ] Internal API/Connector/Service** <br>
+**[ ] Agent-to-Agent Inbound** <br>
+**[ ] Unattended / Scheduled Execution** <br>
 
 ## Ethical Considerations: <br> 
 [Insert Name of Company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  Developers should work with their internal team to ensure this agent meets requirements for the relevant industry and use case and addresses unforeseen product misuse. <br>
