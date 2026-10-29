@@ -82,7 +82,7 @@ Other [Insert MM/DD/YYYY] via [URL] <br>
 **Input Type(s):** [Audio, Image, Text, Tabular, etcetera (etc.)] <br>
 **Input Format(s):** [Red, Green, Blue (RGB), Infrared (IR), Lidar, or String] <br>
 **Input Parameters:** [One-Dimensional (1D), Two-Dimensional (2D), Three-Dimensional (3D)] <br>
-**Other Properties Related to Input:** [Specific Resolution/Minimum or Maximum Resolution, Characters (Including Restrictions), or Tokens;  Image Range Needed (W x Y x Z), Pre-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Such] <br>
+**Other Properties Related to Input:** [Specific Resolution/Minimum or Maximum Resolution, Characters (Including Restrictions), or Tokens;  Image Range Needed (W x Y x Z), Pre-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Such] <br> 
 
 ## Output: <br> 
 **Output Type(s):** [Audio, Image, Text, Tabular, etc.] <br>
@@ -91,7 +91,12 @@ Other [Insert MM/DD/YYYY] via [URL] <br>
 **Other Properties Related to Output:** [Specific Resolution/Minimum or Maximum Resolution or Characters (Including Restrictions), or Tokens; Image Range (W x Y x Z), Post-Processing Needed, Alpha Channel, Bit; If None Applicable, Please State Such] <br>
 **Output Operations Allowed:** Create [Specify New], Read [Specify from Source], Update [Specify], Delete [Specify], Execute [Specify], Search [Specify], Web Search [Specify] <br>
 **Performed As (per operation):** [Agent Instance Identity], or [On Behalf of User], or [Both] <br>
-
+**Delegation per Downstream:** [] Native (ID-JAG / Transaction Token) [] Mediated [] Impersonation (exception ID + 90-day review); downstream can attribute action to [] Agent Instance [] Sponsor [] Initiating Human; Transaction Token on every agent-to-agent hop [] Yes [] No [] N/A <br>
+**Authorization:** Policy Authority [APF (Cedar) | UAM | NAM | Downstream-native], bundle [ID/Figest]; Enforcement Point per Operation [Platform egress | Tool Gateway | Proxy | Downstream API]; Agent Process Confined to Platform Egress [] Yes [] No; Control Loop Handles [] 429 [] REQUIRE_REVIEW [] STOP_SESSION <br>
+**AuthN per Hop** [Human → Agent [Insert]; Agent → Model [Insert]; Agent → Tools/MCP [Insert]; Agent → Other agents [Insert]; Scheduled Trigger → Agent [Insert or N/A] <br>]
+**Revocation:** Who [Sponsor | Platform | Security]; Mechanism [CAEP | Registry | Proxy | Token Expiry only]; Measured Time to Effect ___ s <br>
+**Audit & Lineage:** per-action Event captures []Sponsor []Agent NRN []Instance NRN []Human []Decision ID []Correlation ID; Lineage Sponsor → Every Hop → Resource: []Full or []Partial: Gaps [Insert] <br>
+ 
 ## Restricted Operation: <br>
 * Functional Restrictions (e.g., Guardrails) <br>
 
@@ -158,6 +163,7 @@ Other [Insert MM/DD/YYYY] via [URL] <br>
 **[ ] Internal API/Connector/Service** <br>
 **[ ] Agent-to-Agent Inbound** <br>
 **[ ] Unattended / Scheduled Execution** <br>
+**Exceptions:** [List every deviation from the above with exception ID, approver, sunset date.] <br>
 
 ## Ethical Considerations: <br> 
 [Insert Name of Company] believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  Developers should work with their internal team to ensure this agent meets requirements for the relevant industry and use case and addresses unforeseen product misuse. <br>
